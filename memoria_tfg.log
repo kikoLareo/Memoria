@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.8.19)  19 AUG 2024 19:56
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.8.19)  20 AUG 2024 20:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1779,8 +1779,8 @@ Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@dima=\skip88
 \bigstrutjot=\dimen301
 ) (memoria_tfg.aux (portada/portada.aux) (portada/resumo.aux)
-(contido/introducion.aux) (contido/demo.aux) (contido/conclusions.aux)
-(anexos/adicional.aux))
+(contido/introducion.aux) (contido/fundamentos.aux) (contido/demo.aux)
+(contido/conclusions.aux) (anexos/adicional.aux))
 \openout1 = `memoria_tfg.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
@@ -2056,49 +2056,47 @@ LaTeX Font Info:    Font shape `TU/LinLibertine(0)/b/n' will be
 Capítulo 1.
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/b/n' will be
 (Font)              scaled to size 14.4pt on input line 1.
-LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/sc' will be
-(Font)              scaled to size 10.95pt on input line 4.
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
-(Font)              scaled to size 21.55566pt on input line 4.
-LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
-(Font)              scaled to size 33.01007pt on input line 4.
-Package lettrine.sty Info: Targeted height = 21.55566pt
-(lettrine.sty)             (for loversize=0, accent excluded),
-(lettrine.sty)             Lettrine height = 21.52257pt (P);
-(lettrine.sty)             reported on input line 4.
-
-Package natbib Warning: Citation `CNMC' on page 1 undefined on input line 17.
-
+(Font)              scaled to size 14.4pt on input line 4.
 
 
 [1
 
 
 
-]
-LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
-(Font)              scaled to size 14.4pt on input line 21.
-
+])
 
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 25.
+(Font)              scaled to size 10.0pt on input line 82.
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/sl' in size <10> not avail
 able
 (Font)              Font shape `TU/LinLibertine(0)/m/it' tried instead on input
- line 25.
+ line 82.
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/it' will be
-(Font)              scaled to size 10.0pt on input line 25.
+(Font)              scaled to size 10.0pt on input line 82.
 [2]
+\openout2 = `contido/fundamentos.aux'.
 
-[3])
+ (contido/fundamentos.tex
+Capítulo 2.
+)
 
-[4]
+[3
 
-[5]
+
+
+
+]
 \openout2 = `contido/demo.aux'.
 
  (contido/demo.tex
-Capítulo 2.
+Capítulo 3.
+LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/sc' will be
+(Font)              scaled to size 10.95pt on input line 4.
+LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
+(Font)              scaled to size 21.55566pt on input line 4.
+LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
+(Font)              scaled to size 33.01007pt on input line 4.
 Package lettrine.sty Info: Targeted height = 21.55566pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 21.42354pt (E);
@@ -2117,16 +2115,16 @@ File: imaxes/udc.png Graphic file (type bmp)
 <imaxes/udc.png>
 
 
-[6
+[4
 
 
 
 
 ] (contido/taboa-longa.tex
 
-[7] [8])
+[5] [6])
 
-[9]
+[7]
 (C:\Users\francisco.lareo\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstl
 ang1.sty
 File: lstlang1.sty 2024/05/25 1.10b listings language file
@@ -2139,32 +2137,32 @@ LaTeX Font Info:    Font shape `TU/LinLibertine(5)/m/n' will be
 (Font)              scaled to size 9.0pt on input line 178.
 )
 
-[10]
+[8]
 
-[11]
+[9]
 \openout2 = `contido/conclusions.aux'.
 
  (contido/conclusions.tex
-Capítulo 3.
+Capítulo 4.
 Package lettrine.sty Info: Targeted height = 21.55566pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 21.35751pt (D);
 (lettrine.sty)             reported on input line 4.
 )
 
-[12
+[10
 
 
 
 
 ]
 
-[13]
+[11]
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
-(Font)              scaled to size 24.88pt on input line 92.
+(Font)              scaled to size 24.88pt on input line 93.
 
 
-[14
+[12
 
 
 
@@ -2179,49 +2177,46 @@ Package lettrine.sty Info: Targeted height = 21.55566pt
 (lettrine.sty)             reported on input line 4.
 )
 
-[15
+[13
 
 
 ]
 
-[16]
+[14]
 No file memoria_tfg.acr.
 No file memoria_tfg.gls.
 (memoria_tfg.bbl
 
-[17
+[15
 
-
-])
-
-[18
 
 ]
-
-Package natbib Warning: There were undefined citations.
-
-(memoria_tfg.aux (portada/portada.aux) (portada/resumo.aux)
-(contido/introducion.aux) (contido/demo.aux) (contido/conclusions.aux)
-(anexos/adicional.aux)
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
+Underfull \hbox (badness 1117) in paragraph at lines 42--46
+[]\TU/LinLibertine(0)/m/n/10.95 ——, “6ª ola junio 2024 barÓmetro ott - multidis
+positivo,” 2024.
+ []
 
 )
+
+[16
+
+] (memoria_tfg.aux (portada/portada.aux) (portada/resumo.aux)
+(contido/introducion.aux) (contido/fundamentos.aux) (contido/demo.aux)
+(contido/conclusions.aux) (anexos/adicional.aux))
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-07-20>
  ***********
 Package rerunfilecheck Info: File `memoria_tfg.out' has not changed.
-(rerunfilecheck)             Checksum: DA7C402277810CF08082B7FCA3D0D066;2404.
+(rerunfilecheck)             Checksum: E476F6A901F5DE2F1FD1FD25287C29DB;3621.
  ) 
 Here is how much of TeX's memory you used:
- 36638 strings out of 409029
- 736152 string characters out of 5754711
+ 36669 strings out of 409029
+ 737135 string characters out of 5754711
  1976612 words of memory out of 5000000
- 58767 multiletter control sequences out of 15000+600000
+ 58791 multiletter control sequences out of 15000+600000
  570536 words of font info for 132 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  106i,12n,145p,2348b,1196s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on memoria_tfg.xdv (25 pages, 395156 bytes).
+Output written on memoria_tfg.xdv (23 pages, 333136 bytes).

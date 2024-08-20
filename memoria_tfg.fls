@@ -1,4 +1,4 @@
-PWD C:\Users\francisco.lareo\Multiplataforma\TFG\modelo-tfg-fic
+PWD C:\Users\francisco.lareo\Multiplataforma\TFG\Memoria
 INPUT C:\Users\francisco.lareo\AppData\Local\MiKTeX\miktex\data\le\xetex\xelatex.fmt
 INPUT memoria_tfg.tex
 OUTPUT memoria_tfg.log
@@ -356,6 +356,9 @@ INPUT portada\resumo.aux
 INPUT .\contido\introducion.aux
 INPUT .\contido\introducion.aux
 INPUT contido\introducion.aux
+INPUT .\contido\fundamentos.aux
+INPUT .\contido\fundamentos.aux
+INPUT contido\fundamentos.aux
 INPUT .\contido\demo.aux
 INPUT .\contido\demo.aux
 INPUT contido\demo.aux
@@ -460,6 +463,12 @@ OUTPUT contido\introducion.aux
 INPUT .\contido\introducion.tex
 INPUT .\contido\introducion.tex
 INPUT contido\introducion.tex
+INPUT .\contido\fundamentos.tex
+INPUT .\contido\fundamentos.tex
+OUTPUT contido\fundamentos.aux
+INPUT .\contido\fundamentos.tex
+INPUT .\contido\fundamentos.tex
+INPUT contido\fundamentos.tex
 INPUT .\contido\demo.tex
 INPUT .\contido\demo.tex
 OUTPUT contido\demo.aux
@@ -520,6 +529,9 @@ INPUT portada\resumo.aux
 INPUT .\contido\introducion.aux
 INPUT .\contido\introducion.aux
 INPUT contido\introducion.aux
+INPUT .\contido\fundamentos.aux
+INPUT .\contido\fundamentos.aux
+INPUT contido\fundamentos.aux
 INPUT .\contido\demo.aux
 INPUT .\contido\demo.aux
 INPUT contido\demo.aux

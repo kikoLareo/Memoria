@@ -7,6 +7,8 @@ Reallocating 'name_of_file' (item size: 1) to 19 items.
 A level-1 auxiliary file: portada/resumo.aux
 Reallocating 'name_of_file' (item size: 1) to 24 items.
 A level-1 auxiliary file: contido/introducion.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: contido/fundamentos.aux
 Reallocating 'name_of_file' (item size: 1) to 17 items.
 A level-1 auxiliary file: contido/demo.aux
 Reallocating 'name_of_file' (item size: 1) to 24 items.
@@ -36,42 +38,42 @@ Reallocating 'global_strs' (item size: 1) to 4000000 items.
 Done.
 You've used 4 entries,
             4783 wiz_defined-function locations,
-            965 strings with 8806 characters,
-and the built_in function-call counts, 1853 in all, are:
-= -- 151
-> -- 40
-< -- 4
-+ -- 18
-- -- 10
-* -- 111
-:= -- 325
+            962 strings with 8967 characters,
+and the built_in function-call counts, 1637 in all, are:
+= -- 143
+> -- 22
+< -- 3
++ -- 12
+- -- 6
+* -- 86
+:= -- 300
 add.period$ -- 6
 call.type$ -- 4
-change.case$ -- 8
-chr.to.int$ -- 9
+change.case$ -- 6
+chr.to.int$ -- 3
 cite$ -- 4
-duplicate$ -- 125
-empty$ -- 155
-format.name$ -- 14
-if$ -- 376
+duplicate$ -- 108
+empty$ -- 135
+format.name$ -- 9
+if$ -- 323
 int.to.chr$ -- 1
 int.to.str$ -- 5
-missing$ -- 24
-newline$ -- 37
+missing$ -- 22
+newline$ -- 39
 num.names$ -- 9
 pop$ -- 78
 preamble$ -- 1
 purify$ -- 3
 quote$ -- 4
-skip$ -- 134
+skip$ -- 122
 stack$ -- 0
-substring$ -- 20
-swap$ -- 64
+substring$ -- 11
+swap$ -- 52
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 7
-type$ -- 41
+type$ -- 48
 warning$ -- 0
-while$ -- 7
+while$ -- 6
 width$ -- 0
-write$ -- 58
+write$ -- 59

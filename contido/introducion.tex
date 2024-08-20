@@ -1,28 +1,65 @@
 \chapter{Introdución}
 \label{chap:introducion}
 
-\lettrine{P}{rimer} capítulo da memoria, onde xeralmente se exporán as
-liñas mestras do traballo, os obxectivos, etc. Incluimos un par de
-exemplos de citas~\cite{ErlangBook,ErlangWebBook} e de referencias
-internas (sección \ref{sec:mostra}, páxina \pageref{sec:mostra}).
-
+\section{Contexto y motivación}
+\label{sec:contexto}
 ¿Netflix?¿HBO?¿DAZN?¿Amazon Prime Video?¿Disney+? Me atrevería a afirmar que
-(casi)todos los lectores de este documento tienen o han tenido instalado alguna de 
-estas aplicaciones en alguno de sus dispositivos (incluso en más de uno). Algunos 
-hasta vienen preinstaladas en muchos de estos dispositivos. Y es que, en la actualidad,
-el consumo de contenido audiovisual a través de plataformas de streaming no para de crecer, 
-y no solo en número de usuarios, sino también en número de horas consumidas. Según un estudio
+(casi)todos los lectores de este documento tienen o han tenido acceso a alguna de 
+estas aplicaciones en los últimos meses. Diría también que son unas de las principales
+aplicaciones en las que uno piensa a la hora de descargar alguna aplicacion en alguno de sus dispositivos.
+En muchos de estos dispositivos hasta vienen preinstaladas. Según un estudio
 realizado por la Comisión Nacional de los Mercados y la Competencia (CNMC) el 58\% de los hogares 
 españoles con acceso a Internet usaba algún servicio de vídeo en streaming a mediados del año 2023, 
-frente al 37\% de mediados de 2019. \cite{CNMC}. 
+frente al 37\% de mediados de 2019. \cite{CNMC}. Otras fuentes situan este porcentaje en un 81\% a principios
+de 2023 \cite{Streaming2023} e incluso en un 95\% en junio de 2024 \cite{Streaming2024}. Estas cifras varian un poco dependiendo
+de la fuente, pero todas coinciden en algo: el consumo de contenido audiovisual a través de plataformas de streaming
+está en auge y ya supera a las plataformas televisivas tradicionales. Leyendo estos estudios y viendo la evolución de
+este mercados se entiende el por qué de la constante aparición de nuevas plataformas de este estilo. Desde peliculas y series
+hasta deportes, pasando por documentales, cursos, conciertos, etc. Estas plataformas se adaptan a cualquier estilo
+de contenido y a cualquier tipo de usuario. 
 
-\Blindtext
+No es únicamente el número de usuarios el que ha aumentado, sino también el tiempo que pasamos viendo contenido 
+en estas plataformas, el número de plataformas distintas a las que accedemos y el número de dispositivos en los
+que lo hacemos. La causa de esto es la facilidad de acceso a estas plataformas desde cualquier lugar y dispositivo. 
+Y es que, ¿quién no ha empezado a ver una serie en la televisión del salón, ha continuado en la tablet de la cocina y 
+ha terminado en el móvil de la cama? ¿O quién no ha parado la serie para cambiar de plataforma y ver un partido 
+de fútbol? El consumo de contenido audiovisual nunca había sido tan sencillo y accesible. 
 
-\section{Sección de mostra}
-\label{sec:mostra}
+Sencillo para el consumidor claro, pero para llegar a esta versatilidad y facilidad de uso hay un gran trabajo detrás 
+para lograr que utilizar estas plataformas sea igual sin importar el tamaño, la marca o el sistema operativo del dispositivo
+ni el lugar en el que se encuentre el usuario. 
 
-\Blindtext
 
-\subsection{Subsección de mostra}
+\section{Objetivo del trabajo}
+\label{sec:objetivo}
+\subsection{Desarrollo de una aplicación OTT multiplataforma y multicliente}
+\label{sec:PlataformaOTT_introduccion}
 
-\Blindtext
+Aquí surge el objetivo de este trabajo: desarrollar una aplicación multiplataforma para la visualización de contenido
+audiovisual en streaming.
+
+En este trabajo se va a abordar todas las fases de desarrollo de una aplicación OTT (Over The Top), con dos características
+principales: multiplataforma y multicliente. Multiplataforma porque la aplicación esta orientada a poder adaptarse a cualquier 
+dispositivo y sistema operativo. Multicliente porque el código no está pensado únicamente para un cliente en concreto,
+sino que está pensado para poder ser utilizado por cualquier cliente que quiera tener su propia plataforma donde mostrar
+su contenido.
+
+Estos enfoques suponen varios retos a nivel de desarrollo, los principales: adaptación a las distintas necesidades de cada dispositivo 
+donde se quiera dar soporte a la aplicación, con las características y limitaciones que conlleva utilizar las distintas plataformas, tecnologías
+y sistemas operativos; y la adaptación a las distintas necesidades de cada cliente, tratando de mantener un equilibrios entre la personalización
+de la aplicación y la reutilización del código. 
+
+
+\subsection{Desarrollo e integración de una aplicación para la recogida y visualización de datos de uso}
+\label{sec:Analitica_introduccion}
+
+Cuando se desarrollan aplicaciones comerciales siempre hay un objetivo claro: atraer a los usuarios y mantenerlos el mayor tiempo posible
+en la aplicación. Para ello, es necesario conocer a los usuarios, saber qué les gusta, qué no les gusta, qué les interesa, etc. Por ello,
+las empresas cada vez más están invirtiendo en herramientas de analítica para poder recoger y analizar los datos de uso de sus aplicaciones.
+
+Complementariamente a la aplicación OTT, en este trabajo se va a abordar el desarrollo de una aplicación de analítica de datos de uso de la
+aplicación OTT. Esta aplicación recogerá datos que nos permitirá conocer el comportamiento de los usuarios en la aplicación, para poder
+mejorar la experiencia de usuario y adaptar la aplicación a las necesidades de los distintos usuarios de las distintas plataformas.
+
+Este desarrollo incluye el análisis y seleccion de las métricas necesarias para conocer el comportamiento de los usuarios en este tipo de 
+plataformas, la integración de la API de analítica en la OTT y el desarrollo de una aplicación de visualización de los datos recogidos.

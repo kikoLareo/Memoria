@@ -22,23 +22,26 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem[Armstrong et~al.(1993)Armstrong, Williams, and Virding]{ErlangBook}
-J.~Armstrong, M.~Williams, and R.~Virding, \emph{Concurrent Programming in
-  Erlang}, 2nd~ed.\hskip 1em plus 0.5em minus 0.4em\relax Prentice Hall, 1993.
-
-\bibitem[Hébert(2013)]{ErlangWebBook}
-\BIBentryALTinterwordspacing
-F.~Hébert, ``\BIBforeignlanguage{galician}{Learn you some erlang for great
-  good!}'' 2013, \dataacceso{} \today. [En liña]. Dispoñible en:
-  \url{https://learnyousomeerlang.com/}
-\BIBentrySTDinterwordspacing
-
 \bibitem[de~los Mercados y~la Competencia(2023)]{CNMC}
 \BIBentryALTinterwordspacing
 C.~N. de~los Mercados y~la Competencia, ``Dos de cada tres hogares que consumen
-  contenidos audiovisuales online de pago usan más de una plataforma,'' 2023,
-  \dataacceso{} \today. [En liña]. Dispoñible en:
+  contenidos audiovisuales online de pago usan más de una plataforma,'' 2023.
+  [En liña]. Dispoñible en:
   \url{https://www.cnmc.es/prensa/panel-hogares-audiovisual-20231215}
+\BIBentrySTDinterwordspacing
+
+\bibitem[Comunicación(2023)]{Streaming2023}
+\BIBentryALTinterwordspacing
+B.~Comunicación, ``Análisis sobre la evolución de otts en acceso
+  población,'' 2023. [En liña]. Dispoñible en:
+  \url{https://barloventocomunicacion.es/barometrotv-ott/analisis-sobre-la-evolucion-de-otts-en-acceso-poblacion/}
+\BIBentrySTDinterwordspacing
+
+\bibitem[Comunicación(2024)]{Streaming2024}
+\BIBentryALTinterwordspacing
+------, ``6ª ola junio 2024 barÓmetro ott - multidispositivo,'' 2024. [En
+  liña]. Dispoñible en:
+  \url{https://barloventocomunicacion.es/barometrotv-ott/6a-ola-junio-2024-barometro-ott-multidispositivo/}
 \BIBentrySTDinterwordspacing
 
 \end{thebibliography}
