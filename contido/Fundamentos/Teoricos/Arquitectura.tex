@@ -1,0 +1,75 @@
+\subsection{Arquitectura}
+\label{subsec:fundamentos_teoricos_arquitectura}
+
+Se entiende Arquitectura Software como los modelos y estándares que sirven de base
+para el diseño e implementación de sistemas de software. Indica la estructura, funcionamiento
+e interacción de los componentes de software \cite{ArqSoftware}.
+
+El diseño de la arquitectura de un sistema de software para una aplicación OTT es clave para 
+garantizar el correcto funcionamiento de la misma y la entrega eficiente, escalable y confiable 
+de los contenidos. Existen varias posibilidades para el diseño de la arquitectura de una aplicación
+de estas características como la Arquitectura Monolítica, la Arquitectura Orientada a Servicios (SOA)...
+En este caso, se ha optado por una arquitectura basada en microservicios. 
+
+\subsubsection{Arquitectura basada en microservicios}
+\label{subsec:fundamentos_teoricos_arquitectura_microservicios}
+
+La arquitectura basada en microservicios es un enfoque para el diseño de aplicaciones que consiste en
+un conjunto de pequeños servicios, los cuales se ejecutan en su propio proceso y se comunican con 
+mecanismos ligeros (normalmente una API de recursos HTTP como es el caso de este proyecto) \cite{Microservices}.
+Cada microservicios está especializado en una tarea concreta y trabaja de forma independiente. 
+
+De este modo, tendremos las funcionalidades de la plataforma OTT distribuidas en diferentes microservicios,
+aislando las funcionalidades y permitiendo que cada uno de ellos pueda ser desarrollado, desplegado y
+escalado de forma independiente. Esto facilita la evolución de la plataforma, ya que se puede mejorar 
+cada microservicio con la confianza de que si se hace correctamente no afectará al resto de la plataforma.
+Lo mismo ocurre con la tolerancia a fallos, ya que si la arquitectura está bien diseñada, un fallo en un
+microservicio no debería afectar al resto de la plataforma, o deberia hacerlo lo menos posible.
+
+Ejemplos de microservicios más comunes en una plataforma OTT son:
+\begin{itemize}
+\item \textbf{Gestión de usuarios:} encargado de la gestión de los usuarios de la plataforma,
+incluyendo el registro, autenticación y autorización de los mismos. 
+\item \textbf{Gestión de contenidos:} encargado de la gestión y almacenamiento de los contenidos de la plataforma,
+de los metadatos de los contenidos y de los ficheros multimedia.
+\item \textbf{Orquestador:} encargado de orquestar las peticiones de los usuarios a los diferentes microservicios
+de la plataforma.
+\item \textbf{Recomendaciones:} encargado de la generación de recomendaciones personalizadas para los usuarios
+de la plataforma.
+\end{itemize}
+
+
+\subsubsection{Componentes de la arquitectura}
+\label{subsec:fundamentos_teoricos_arquitectura_componentes}
+
+En una plataforma OTT, además de los microservicios, existen varios componentes clave que conforman la 
+infraestructura técnica y que son esenciales para su funcionamiento. Estos componentes se encargan de 
+soportar las operaciones críticas, desde la ingesta y distribución de contenido hasta la experiencia de 
+usuario final. Algunos de los componentes más importantes son:
+
+\begin{itemize}
+\item \textbf{CDN (Content Delivery Network):} Red de distribución de contenidos que permite la entrega
+rápida y eficiente de contenidos multimedia a los usuarios finales. La CDN almacena copias de los contenidos
+en servidores distribuidos geográficamente, lo que reduce la latencia y mejora la velocidad de carga de los
+contenidos.
+\item \textbf{Ingesta y gestión de contenidos:} Componente encargado de recibir y procesar y gestionar todos 
+los contenidos que van a estar disponibles en la plataforma, permitiendo a los administradores de contenido
+subir, editar, etiquetar, organizar y , en general, gestionar los contenidos de la plataforma y sus metadatos, 
+preparando estos para su distribución.
+\item \textbf{Gestión de usuarios:} Encargado de toda gestión relacionada con los usuarios de la plataforma,
+incluyendo el registro, autenticación, autorización, gestión de perfiles y preferencias, etc.
+\item \textbf{Interfaz de usuario:} Es la parte visible de la plataforma, donde los usuarios interactúan con
+la misma. Es el componente encargado de recibir la información de los microservicios y presentarla de forma
+amigable al usuario.
+\item \textbf{monitorización y análisis:} Componente encargado de monitorizar el rendimiento de la plataforma
+y de analizar los datos generados por los usuarios para mejorar la experiencia de usuario y la eficiencia de la
+plataforma.
+\item \textbf{Otros componentes:} Existen otros componentes que pueden ser necesarios en la plataforma: 
+componentes de seguridad, monetización y publicidad, gestión de pagos, etc.
+\end{itemize}
+
+
+
+
+
+
