@@ -1,0 +1,83 @@
+\subsection{Desarrollo multiplataforma}
+\label{subsec:adaptabilidad_multiplataforma}
+
+El desarrollo de una plataforma OTT que funcione de manera eficiente en múltiples dispositivos 
+requiere un enfoque que combine la flexibilidad de las tecnologías web con herramientas específicas 
+para adaptar la aplicación a distintos sistemas operativos y dispositivos. La aplicación se ha 
+desarrollado utilizando JavaScript (JS), HTML, y CSS, tecnologías que permiten una fácil adaptación 
+a la web y una base sólida para su conversión a otras plataformas, como televisores inteligentes y Android TV.
+
+\subsubsection{Adaptación a Web}
+\label{subsubsec:adaptabilidad_web}
+
+Gracias a la utilización de JavaScript, HTML y CSS, la adaptación de la aplicación a la web es
+sencilla y directa. La aplicación se ha desarrollado siguiendo los principios de diseño responsivo,
+lo que permite que la interfaz se adapte automáticamente al tamaño de la pantalla del dispositivo
+en el que se visualiza. Además, la aplicación se ha probado en los principales navegadores web
+(Chrome, Firefox, Safari, Edge) para garantizar su compatibilidad y funcionamiento en distintos
+entornos.
+
+
+\subsubsection{Adaptación a Smart TVs}
+\label{subsubsec:adaptabilidad_smart_tvs}
+
+La adaptación de la aplicación a televisores inteligentes es un proceso más complejo, ya que
+estos dispositivos suelen tener sistemas operativos propietarios y limitaciones y pecualiariades
+específicas. Cada fabricante de televisores inteligentes tiene su propio sistema operativo y
+plataforma de desarrollo, así como su propia manera de empequetar, ejecutar y distribuir
+aplicaciones. Por ello, la adaptación de la aplicación a televisores inteligentes requiere un
+estudio y enfoque específico para cada plataforma. 
+
+\subsubsection{Tizen}
+\label{subsubsec:adaptabilidad_tizen}
+
+Tizen \cite{Tizen} es un sistema operativo de código abierto desarrollado por Samsung Electronics y la Linux
+Foundation. Tizen utiliza tecnologías web como HTML, CSS y JavaScript para el desarrollo de
+aplicaciones, lo que facilita la adaptación de la aplicación a este sistema operativo. Las pecualiariades
+de Tizen, como su sistema de empaquetado y distribución de aplicaciones, se han tenido en cuenta
+durante el desarrollo de la aplicación para garantizar su compatibilidad y funcionamiento. De este modo,
+la aplicación ha sido probada utilizando la plataforma Tizen studio la cual nos permite emular el
+funcionamiento de la aplicación en un televisor Samsung con Tizen OS y, más importante y confiable, 
+instalar y ejecutar la aplicación en un televisor Samsung. El formato de empaquetado de la aplicación
+para Tizen es un archivo .wgt, el cual contiene todos los recursos y archivos necesarios para la
+ejecución y distribución de la .
+
+\subsubsection{WebOS}
+\label{subsubsec:adaptabilidad_webos}
+
+WebOS \cite{WebOS} es un sistema operativo de código abierto utilizado por LG Electronics para sus televisores
+inteligentes. WebOS utiliza tecnologías web como HTML, CSS y JavaScript para el desarrollo de
+aplicaciones, permitiendo la adaptación de la aplicación a este sistema operativo. Lg proporciona
+un CLI (Command Line Interface) para la ejecución de las funcionalidades necesarias para la creación, 
+empaquetado y distribución de aplicaciones para WebOS. Además, también está disponible una extensión para
+Visual Studio Code que facilita aún más el desarrollo. La aplicación ha sido probada en un televisor LG
+con WebOS a través de ambas herramientas, garantizando su compatibilidad y funcionamiento. El formato de
+empaquetado de la aplicación para WebOS es un archivo .ipk.
+
+\subsubsection{Android TV}
+\label{subsubsec:adaptabilidad_android_tv}
+
+Android TV \cite{AndroidTV} es una plataforma de televisión inteligente desarrollada por Google. Está basado
+en el sistema operativo Android. La adaptación de la aplicación a este sistema operativo varia en comparación
+con las anteriores. Android no permite el uso de las tecnologías de desarrollo js, html y css de manera nativa
+por lo que se requiere de un proceso de conversión de la aplicación a un formato compatible con Android TV.
+
+Para ello se ha utilizado la herramienta Cordova \cite{Cordova}, que permite la utilización de las tecnologías
+Css, Html y JavaScript en lugar de las tecnologías nativas de determinadas plataformas como Ios y Android.
+Cordova permite la creación de aplicaciones híbridas, es decir, aplicaciones que combinan tecnologías web y
+nativas. La aplicación se ha convertido a un proyecto Cordova y se ha añadido la plataforma de Android TV.
+
+La aplicación ha sido probada en un dispositivo Android TV, garantizando su compatibilidad y funcionamiento.
+El formato de empaquetado de la aplicación para Android TV es un archivo .apk.
+
+
+\subsubsection{Empaquetado y ejecución de la aplicación}
+\label{subsubsec:adaptabilidad_empaquetado_ejecucion}
+
+En el caso de las aplicaciones de TV lo que se ha hecho es crear una carpeta que sirve de plantilla para
+la creación de los archivos necesarios para la ejecución de la aplicación en los distintos sistemas operativos
+de las TV. La aplicación se ha ido desarrollando con una estructura que permite que en el momento de querer empaquetar
+una aplicación para probar o distribuir un código, sea sencillo añadir ese código a la plantilla y ejecutar con 
+las herramientas necesarias para cada sistema operativo.
+
+

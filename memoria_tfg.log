@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.8.19)  21 AUG 2024 22:44
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.8.19)  22 AUG 2024 23:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1779,8 +1779,9 @@ Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@dima=\skip88
 \bigstrutjot=\dimen301
 ) (memoria_tfg.aux (portada/portada.aux) (portada/resumo.aux)
-(contido/introducion.aux) (contido/fundamentos.aux) (contido/demo.aux)
-(contido/conclusions.aux) (anexos/adicional.aux))
+(contido/introducion.aux) (contido/Fundamentos/fundamentos.aux)
+(contido/Metodologia/metodologia.aux) (contido/conclusions.aux)
+(anexos/adicional.aux))
 \openout1 = `memoria_tfg.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
@@ -1961,4 +1962,255 @@ LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
 LaTeX Font Info:    Trying to load font information for U+lasy on input line 26
 .
 
-(C:\Users\francisco.lareo\AppData\Local\
+(C:\Users\francisco.lareo\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 26.
+
+
+(C:\Users\francisco.lareo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa
+.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 26.
+
+
+(C:\Users\francisco.lareo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb
+.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Font shape `TU/LinLibertine(0)/b/n' will be
+(Font)              scaled to size 12.0pt on input line 27.
+
+
+[1
+
+\openout3 = `memoria_tfg.ist'.
+
+
+])
+LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/it' will be
+(Font)              scaled to size 10.95pt on input line 59.
+
+
+[1
+
+
+]
+LaTeX Font Info:    Font shape `TU/LinLibertine(0)/b/n' will be
+(Font)              scaled to size 10.95pt on input line 61.
+
+
+[2
+
+]
+\openout2 = `portada/resumo.aux'.
+
+ (portada/resumo.tex (portada/palabras_chave.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+
+ []
+
+)
+
+[1
+
+
+])
+LaTeX Font Info:    Font shape `TU/LinLibertine(0)/b/n' will be
+(Font)              scaled to size 24.88pt on input line 70.
+ (memoria_tfg.toc
+
+[1
+
+
+
+])
+\tf@toc=\write7
+\openout7 = `memoria_tfg.toc'.
+
+
+
+LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
+(Font)              scaled to size 10.0pt on input line 71.
+LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/sl' in size <10> not avail
+able
+(Font)              Font shape `TU/LinLibertine(0)/m/it' tried instead on input
+ line 71.
+LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/it' will be
+(Font)              scaled to size 10.0pt on input line 71.
+[2] (memoria_tfg.lof)
+\tf@lof=\write8
+\openout8 = `memoria_tfg.lof'.
+
+
+
+[3
+
+] (memoria_tfg.lot)
+\tf@lot=\write9
+\openout9 = `memoria_tfg.lot'.
+
+
+
+[4
+
+]
+\openout2 = `contido/introducion.aux'.
+
+ (contido/introducion.tex
+Capítulo 1.
+LaTeX Font Info:    Font shape `TU/LinLibertine(0)/b/n' will be
+(Font)              scaled to size 14.4pt on input line 1.
+LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
+(Font)              scaled to size 14.4pt on input line 4.
+
+
+[1
+
+
+
+])
+
+[2]
+\openout2 = `contido/Fundamentos/fundamentos.aux'.
+
+ (contido/Fundamentos/fundamentos.tex
+Capítulo 2.
+(contido/Fundamentos/Introduccion.tex) (contido/Fundamentos/Teoricos/OTT.tex
+
+[3
+
+
+
+
+]
+
+[4]) (contido/Fundamentos/Teoricos/Arquitectura.tex
+
+[5]
+
+[6]) (contido/Fundamentos/Teoricos/UX.tex
+
+[7]) (contido/Fundamentos/Teoricos/Esc_adapt.tex
+
+[8])
+
+[9] (contido/Fundamentos/Tecnologicos/Arquitectura.tex)
+(contido/Fundamentos/Tecnologicos/TechWeb.tex
+
+[10]) (contido/Fundamentos/Tecnologicos/Adaptabilidad.tex
+
+[11]
+
+[12]))
+
+[13]
+\openout2 = `contido/Metodologia/metodologia.aux'.
+
+ (contido/Metodologia/metodologia.tex
+Capítulo 3.
+(contido/Metodologia/Introduccion.tex) (contido/Metodologia/Diseño.tex
+
+[14
+
+
+
+
+]) (contido/Metodologia/Desarrollo.tex
+
+[15]) (contido/Metodologia/Etapas.tex
+
+[16]
+
+[17]))
+
+[18]
+
+[19]
+\openout2 = `contido/conclusions.aux'.
+
+ (contido/conclusions.tex
+Capítulo 4.
+LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/sc' will be
+(Font)              scaled to size 10.95pt on input line 4.
+LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
+(Font)              scaled to size 21.55566pt on input line 4.
+LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
+(Font)              scaled to size 33.01007pt on input line 4.
+Package lettrine.sty Info: Targeted height = 21.55566pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 21.35751pt (D);
+(lettrine.sty)             reported on input line 4.
+)
+
+[20
+
+
+
+
+]
+
+[21]
+LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
+(Font)              scaled to size 24.88pt on input line 93.
+
+
+[22
+
+
+
+]
+\openout2 = `anexos/adicional.aux'.
+
+ (anexos/adicional.tex
+Apéndice A.
+Package lettrine.sty Info: Targeted height = 21.55566pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 21.42354pt (E);
+(lettrine.sty)             reported on input line 4.
+)
+
+[23
+
+
+]
+
+[24]
+No file memoria_tfg.acr.
+No file memoria_tfg.gls.
+(memoria_tfg.bbl
+
+[25
+
+
+])
+
+[26
+
+] (memoria_tfg.aux (portada/portada.aux) (portada/resumo.aux)
+(contido/introducion.aux) (contido/Fundamentos/fundamentos.aux)
+(contido/Metodologia/metodologia.aux) (contido/conclusions.aux)
+(anexos/adicional.aux))
+ ***********
+LaTeX2e <2024-06-01> patch level 2
+L3 programming layer <2024-07-20>
+ ***********
+Package rerunfilecheck Info: File `memoria_tfg.out' has not changed.
+(rerunfilecheck)             Checksum: FDE63510840B7B880E4D8F99C7484C9A;5593.
+ ) 
+Here is how much of TeX's memory you used:
+ 36614 strings out of 409029
+ 739320 string characters out of 5754711
+ 1939612 words of memory out of 5000000
+ 58718 multiletter control sequences out of 15000+600000
+ 567988 words of font info for 117 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 106i,13n,145p,2348b,593s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on memoria_tfg.xdv (34 pages, 613076 bytes).

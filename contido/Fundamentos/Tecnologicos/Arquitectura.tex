@@ -1,0 +1,32 @@
+\subsection{Arquitectura Software: Comunicación entre componentes y desarrollo multicliente}
+\label{subsec:arquitectura_software}
+
+\subsubsection{Comunicación entre componentes}
+\label{subsec:arquitectura_software_comunicacion}
+
+Una de las claves de la arquitectura software \ref{subsec:fundamentos_teoricos_arquitectura} es la 
+comunicación entre componentes y microservicios \ref{subsec:fundamentos_teoricos_arquitectura_microservicios}.
+En el caso de esta aplicación esta comunicación se realiza a través de una API REST, que es es una interfaz 
+de programación de aplicaciones (API) que se ajusta a los principios de diseño del estilo arquitectónico de 
+transferencia de estado representacional (REST). 
+
+REST es un estilo de arquitectura que se basa en la comunicación a través de HTTP, y que se caracteriza por
+ser sencillo, escalable y que se puede utilizar en cualquier entorno. En una API REST, los recursos son
+identificados por URLs y se acceden a través de los métodos HTTP estándar (GET, POST, PUT, DELETE).
+Esto permite que los clientes de la API puedan realizar operaciones sobre los recursos de forma sencilla y
+estandarizada.
+
+En el caso de esta aplicación, la API REST se encarga de la comunicación entre los diferentes microservicios
+de la plataforma OTT, ofreciendo a la interfaz una forma de obtener la información necesaria para mostrar
+en la aplicación, y a los microservicios una forma de recibir las peticiones de la interfaz y devolver la
+información necesaria.
+
+\subsubsection{Desarrollo multicliente}
+\label{subsec:arquitectura_software_multicliente}
+
+Una de las ventajas que nos proporciona el API REST que utilizamos en esta aplicación es la de tener el poder
+de decisión sobre la información que queremos obtener. Así, en función de los parametros que se añadan a la
+URL, la API nos devolverá la información solicitada o realizará una acción sobre un cliente en concreto.
+
+Esta diferenciación nos permite, a través de la misma API, trabajar sobre diferentes clientes sin necesidad
+de crear una API nueva o un microservicio a medida en cada caso. 

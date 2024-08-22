@@ -7,10 +7,10 @@ Reallocating 'name_of_file' (item size: 1) to 19 items.
 A level-1 auxiliary file: portada/resumo.aux
 Reallocating 'name_of_file' (item size: 1) to 24 items.
 A level-1 auxiliary file: contido/introducion.aux
-Reallocating 'name_of_file' (item size: 1) to 24 items.
-A level-1 auxiliary file: contido/fundamentos.aux
-Reallocating 'name_of_file' (item size: 1) to 17 items.
-A level-1 auxiliary file: contido/demo.aux
+Reallocating 'name_of_file' (item size: 1) to 36 items.
+A level-1 auxiliary file: contido/Fundamentos/fundamentos.aux
+Reallocating 'name_of_file' (item size: 1) to 36 items.
+A level-1 auxiliary file: contido/Metodologia/metodologia.aux
 Reallocating 'name_of_file' (item size: 1) to 24 items.
 A level-1 auxiliary file: contido/conclusions.aux
 Reallocating 'name_of_file' (item size: 1) to 21 items.
@@ -36,44 +36,44 @@ Reallocating 'global_strs' (item size: 1) to 4000000 items.
 ** IEEEtran BST control entry "IEEEexample:BSTcontrol" detected.
 
 Done.
-You've used 8 entries,
+You've used 12 entries,
             4783 wiz_defined-function locations,
-            979 strings with 9313 characters,
-and the built_in function-call counts, 3465 in all, are:
-= -- 307
-> -- 50
-< -- 7
-+ -- 31
-- -- 14
-* -- 166
-:= -- 615
-add.period$ -- 14
-call.type$ -- 8
-change.case$ -- 14
+            993 strings with 9574 characters,
+and the built_in function-call counts, 5293 in all, are:
+= -- 471
+> -- 78
+< -- 11
++ -- 51
+- -- 22
+* -- 246
+:= -- 927
+add.period$ -- 22
+call.type$ -- 12
+change.case$ -- 22
 chr.to.int$ -- 4
-cite$ -- 8
-duplicate$ -- 248
-empty$ -- 295
-format.name$ -- 21
-if$ -- 702
-int.to.chr$ -- 4
-int.to.str$ -- 9
-missing$ -- 50
-newline$ -- 59
-num.names$ -- 21
-pop$ -- 194
+cite$ -- 12
+duplicate$ -- 388
+empty$ -- 455
+format.name$ -- 33
+if$ -- 1082
+int.to.chr$ -- 8
+int.to.str$ -- 13
+missing$ -- 78
+newline$ -- 79
+num.names$ -- 33
+pop$ -- 310
 preamble$ -- 1
-purify$ -- 7
+purify$ -- 11
 quote$ -- 4
-skip$ -- 241
+skip$ -- 361
 stack$ -- 0
-substring$ -- 23
-swap$ -- 116
+substring$ -- 35
+swap$ -- 180
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 7
-type$ -- 108
+type$ -- 168
 warning$ -- 0
-while$ -- 14
+while$ -- 22
 width$ -- 0
-write$ -- 103
+write$ -- 147
