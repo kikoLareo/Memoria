@@ -1,0 +1,196 @@
+\section{Requisitos}
+\label{sec:analisis_requisitos}
+
+En software, se entiende por requisito a una condición o capacidad que debe cumplir un sistema para
+resolver un problema o satisfacer una necesidad. Son las funciones, características y restricciones que
+debe cumplir un producto final.
+
+La identificación de requisitos es una etapa crucial en cualquier proyecto software ya que marca el
+camino a seguir en el desarrollo del sistema. Si no se identifican correctamente los requisitos, el
+sistema no trabajará correctamente y no cumplirá ni sus especificaciones ni las expectativas del
+cliente. Por ello, es importante que los requisitos sean claros, precisos y completos. 
+
+Para hacer una correcta identificación de los requisitos, hay que tener en cuenta y conoces los 
+dos tipos de requisitos que nos podemos encontrar: los requisitos funcionales, que describen las
+funciones que debe realizar el sistema, y los requisitos no funcionales, que describen las
+características que debe tener el sistema. 
+
+Además, es importante conoces de donde se deben obtener los requisitos. Si leemos el apartado 
+7.2 de la norma ISO 9001:2000, Realización del producto. Procesos relacionados con el cliente, 
+este nos dice que los requisitos relativos se obtienen de: 
+
+\begin{itemize}
+    \item Los requisitos especificados por el cliente.
+    \item Requisitos no especificados por el cliente pero necesarios para el uso especificado o
+    para el uso previsto, cuando sea conocido.
+    \item Requisitos legales y reglamentarios relacionados con el producto.
+    \item Requisitos adicionales determinados por la organización.
+\end{itemize}
+
+Todo los requisitos que se detecten en esta fase deben ser revisados por la organización para 
+asegurarse de que son correctos, completos, se entienden y pueden ser suministrados. Este proceso
+de revisión debe llevarse a cabo a lo largo de todo el proyecto cuando alguno de estos requisitos
+sufra alguna modificación.
+
+\subsection{Requisitos de la plataforma OTT}
+\label{subsec:analisis_requisitos_plataforma_ott}
+
+En esta sección se describirán los requisitos recogidos para la plataforma OTT. Los requisitos detallados a 
+continuación son los relacionados con la creación de la aplicación multiplataforma y multicliente, que recibe
+la información y determina como mostrar esta. Dentro de estos requisitos no se incluyen los relacionados 
+con otros componentes de la plataforma, como la CDN, la gestión de usuarios, la gestión de contenidos, etc.
+
+\subsubsection{Requisitos funcionales}
+\label{subsubsec:analisis_requisitos_funcionales}
+
+\paragraph{Requisitos especificados por el cliente}
+\label{par:analisis_requisitos_funcionales_cliente}
+
+En este caso los requisitos no son unicamente de un cliente, sino que como ya se ha comentado
+en la introducción, se han recogido los requisitos de varios clientes. Ejemplos de requisitos
+especificos de clientes:
+
+\paragraph{Generales}
+\label{par:analisis_requisitos_funcionales_generales}
+
+\begin{itemize}
+    \item El usuario debe tener una pantalla donde poder buscar contenido.
+    \item El usuario debe disponer de una pantalla con los ajustes de la aplicación.
+\end{itemize}
+
+\paragraph{Radio Television de Castilla y León. CyLTv Play}
+\label{par:analisis_requisitos_funcionales_cyltvplay}
+
+\begin{itemize}
+    \item El usuario debe tener disponible una pantalla donde se muestre todo el contenido en directo.
+    \item El usuario debe tener disponible una pantalla donde se muestre todo el contenido a la carta.
+    \item El usuario debe tener una pantalla disponible para cada delegación del canal La 8.
+\end{itemize}
+
+\paragraph{Oh!Jazz}
+\label{par:analisis_requisitos_funcionales_ohjazz}
+
+\begin{itemize}
+    \item El usuario debe poder iniciar y cerrar sesión.
+    \item Los usuarios no loggeados no pueden acceder a todos los contenidos.
+    \item El usuario debe poder cambiar de idioma la plataforma.
+\end{itemize}
+
+\paragraph{Requisitos no especificados por el cliente}
+\label{par:analisis_requisitos_funcionales_no_cliente}
+
+Este tipo de plataformas tienen unos requisitos comunes que no han sido especificados por los clientes,
+pero que son necesarios para el correcto funcionamiento de la plataforma. Estos requisitos son:
+
+\begin{itemize}
+    \item La interfaz debe recibir la información necesaria para saber qué y cómo mostrar los contenidos.
+    \item La aplicación debe ser capaz de determinar, para que cliente está trabajando y tomar decisiones 
+    en función de esto.
+    \item La aplicación debe ser capaz de determinar, para que plataforma está trabajando y tomar decisiones
+    en función de esto.
+    \item La aplicación debe crear una interfaz de usuario que sea atractiva, intuitiva y fácil de usar.
+    \item La aplicación debe crear una interfaz que se adapte a distintas resoluciones.
+    \item La aplicacion debe ser capaz de reproducir los contenidos multimedia en cualquier sistema operativo.
+    \item La aplicación debe estar personalizada con los logos y colores de cada cliente.
+    \item La aplicación debe funcionar con los botones del mando a distancia en el caso de las televisiones.
+    \item La aplicación debe mostrar los datos correctamente sin alterar la información.
+\end{itemize}
+
+\subsubsection{Requisitos no funcionales}
+\label{subsubsec:analisis_requisitos_no_funcionales}
+
+\paragraph{Requisitos de rendimiento}
+\label{par:analisis_requisitos_no_funcionales_rendimiento}
+
+\begin{itemize}
+    \item La aplicación debe ser capaz de mostrar los contenidos en el menor tiempo posible.
+    \item La aplicación debe ser capaz de reproducir los contenidos multimedia sin cortes.
+    \item La experiencia de usuario debe ser lo más fluida posible.
+    \item La aplicación debe ser capaz de adaptarse a distintas resoluciones.
+\end{itemize}
+
+\paragraph{Requisitos de seguridad}
+\label{par:analisis_requisitos_no_funcionales_seguridad}
+
+\begin{itemize}
+    \item La aplicación debe ser segura y no permitir accesos no autorizados.
+    \item La aplicación debe proteger los datos de los usuarios.
+    \item La aplicación debe proteger los datos de los clientes.
+\end{itemize}
+
+\paragraph{Requisitos de usabilidad}
+\label{par:analisis_requisitos_no_funcionales_usabilidad}
+
+\begin{itemize}
+    \item La aplicación debe ser intuitiva y fácil de usar.
+    \item La aplicación debe ser atractiva y agradable visualmente.
+    \item La aplicación debe ser accesible para todo tipo de usuarios.
+\end{itemize}
+
+\paragraph{Requisitos de mantenimiento}
+\label{par:analisis_requisitos_no_funcionales_mantenimiento}
+
+\begin{itemize}
+    \item La aplicación debe ser fácil de mantener y actualizar.
+    \item La aplicación debe ser fácil de escalar.
+    \item La aplicación debe ser fácil de desplegar.
+\end{itemize}
+
+\paragraph{Requisitos de escalabilidad}
+\label{par:analisis_requisitos_no_funcionales_escalabilidad}
+
+\begin{itemize}
+    \item La aplicación debe ser capaz de adaptarse a un aumento de usuarios.
+    \item La aplicación debe ser capaz de adaptarse a un aumento de contenidos.
+    \item La aplicación debe ser capaz de adaptarse a un aumento de clientes.
+\end{itemize}
+
+\paragraph{Requisitos de disponibilidad}
+\label{par:analisis_requisitos_no_funcionales_disponibilidad}
+
+\begin{itemize}
+    \item La aplicación debe estar disponible en todo momento.
+    \item La aplicación debe ser capaz de recuperarse de fallos.
+    \item La aplicación debe ser capaz de recuperarse de caídas.
+\end{itemize}
+
+\paragraph{Requisitos de compatibilidad}
+\label{par:analisis_requisitos_no_funcionales_compatibilidad}
+
+\begin{itemize}
+    \item La aplicación debe ser compatible con todos los sistemas operativos.
+    \item La aplicación debe ser compatible con todos los navegadores.
+    \item La aplicación debe ser compatible con todos los dispositivos.
+\end{itemize}
+
+\paragraph{Requisitos de internacionalización}
+\label{par:analisis_requisitos_no_funcionales_internacionalizacion}
+
+\begin{itemize}
+    \item La aplicación debe ser capaz de adaptarse a distintos idiomas.
+    \item La aplicación debe ser capaz de adaptarse a distintas culturas.
+    \item La aplicación debe ser capaz de adaptarse a distintas zonas horarias.
+\end{itemize}
+
+\paragraph{Requisitos de personalización}
+\label{par:analisis_requisitos_no_funcionales_personalizacion}
+
+\begin{itemize}
+    \item La aplicación debe ser personalizable con los logos y colores de cada cliente.
+    \item La aplicación debe ser personalizable con los logos y colores de cada plataforma.
+    \item La aplicación debe ser personalizable con los logos y colores de cada delegación.
+\end{itemize}
+
+\paragraph{Requisitos de adaptabilidad}
+\label{par:analisis_requisitos_no_funcionales_adaptabilidad}
+
+\begin{itemize}
+    \item La aplicación debe ser capaz de adaptarse a distintas resoluciones.
+    \item La aplicación debe ser capaz de adaptarse a distintos dispositivos.
+    \item La aplicación debe ser capaz de adaptarse a distintos navegadores.
+\end{itemize}
+
+
+
+
+

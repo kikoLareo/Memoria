@@ -1,0 +1,34 @@
+\section{Necesidades del cliente}
+\label{sec:analisis_necesidades_cliente}
+
+Como se ha comentado en la sección \ref{sec:analisis_requisitos_funcionales}, el analisis de requisitos
+en esta aplicación es un tanto especial, ya que no existe un solo cliente sino que existen varios clientes
+cada uno con sus necesidades y requisitos. El objetivo del proyecto es satisfacer y cumplir con esos 
+requisitos y necesidades a partir de una única aplicación. 
+
+Esto supone que además del estudio de viabilidad técnica, para cada requisito se ha estudiado la manera
+de implementarlo de forma que, o bien sirva para todos los clientes, o en caso de ser un requisito 
+muy especifico y necesario para un cliente, hacerlo de manera que no afecte al resto de clientes.
+
+Un ejemplo de esto es la interfaz. La interfaz ya cuenta con las funcionalidades necesarias para mostrar
+los colores, logos e imagenes de cada cliente. En cuanto a la presentación de los contenidos general, esta es muy similar
+en cualquier OTT del mercado: listas horizontales con imagenes y textos de los distintos contenidos. Esto 
+no supone ningún problema ya que son los clientes los que gestionan los textos y las imagenes y los responsables
+de que estos esten en armonia para una interfaz atractiva. El reto está en elementos del menú dedicados a mostrar
+de manera especial los contenidos. Un ejemplo de esto, las listas de destacados. Estas listas son aquellas que se sitúan,
+por lo general, en la parte superior de las pantallas y muestran los contenidos más importantes. El problema está en que
+cada cliente tiene una idea de como quiere que se muestren estos contenidos. Las opciones de configuración si se quiere
+dar libertad al cliente son muchas. El cliente puede decidir si quiere botón de play, si quiere que se muestre el título,
+el subtitulo, la duración, la fecha de publicación, etc. Para poder dar soporte a todas estas opciones lo que se ha hecho
+es crear un sistema de "etiquetado" o "clasificación" tanto de los contenidos como de las listas en los que se encuentran
+estos contenidos. De esta manera, en función del tipo de lista (también conocido como widget) y del tipo de contenido,
+estos se mostrarán de una manera u otra. Esto tiene una serie de ventajas y de inconvenientes. Si hablamos de ventajas,
+la principal es que cada cliente puede personalizar la interfaz a su gusto, diferenciandose del resto de clientes.
+Si hablamos de inconvenientes, el principal es que para cada tipo de lista y de contenido se debe dar soporte en la aplicación.
+ Esto supone un esfuerzo extra en el desarrollo y en la gestión de los contenidos. 
+
+ Este ha sido el enfoque que se ha dado a la aplicación desde un principio debido a la arquitectura de los distintos
+ componentes creados y del funcionamiento de otras plataformasque pertenecen a la empresa. El enfoque en el que se está 
+ trabajando ahora mismo es en una mayor personalización de widgets y contenidos, sin necesidad de tener que crear un nuevo
+ tipo de estos elementos cada vez que se requiera una personalización o presentación nueva. Lo mismo para las distintas
+ pantallas. 

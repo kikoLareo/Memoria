@@ -11,6 +11,8 @@ Reallocating 'name_of_file' (item size: 1) to 36 items.
 A level-1 auxiliary file: contido/Fundamentos/fundamentos.aux
 Reallocating 'name_of_file' (item size: 1) to 36 items.
 A level-1 auxiliary file: contido/Metodologia/metodologia.aux
+Reallocating 'name_of_file' (item size: 1) to 30 items.
+A level-1 auxiliary file: contido/Analisis/Analisis.aux
 Reallocating 'name_of_file' (item size: 1) to 24 items.
 A level-1 auxiliary file: contido/conclusions.aux
 Reallocating 'name_of_file' (item size: 1) to 21 items.
@@ -38,7 +40,7 @@ Reallocating 'global_strs' (item size: 1) to 4000000 items.
 Done.
 You've used 12 entries,
             4783 wiz_defined-function locations,
-            993 strings with 9574 characters,
+            994 strings with 9603 characters,
 and the built_in function-call counts, 5293 in all, are:
 = -- 471
 > -- 78

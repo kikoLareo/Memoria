@@ -64,6 +64,29 @@
 \contentsline {subsection}{\numberline {3.3.5}Fase de Despliegue y Mantenimiento}{18}{subsection.3.3.5}%
 \contentsline {subsubsection}{Despliegue en Producción}{18}{subsubsection*.35}%
 \contentsline {subsubsection}{Plan de Mantenimiento}{19}{subsubsection*.36}%
-\contentsline {chapter}{\numberline {4}Conclusións}{20}{chapter.4}%
-\contentsline {chapter}{\numberline {A}Material adicional}{23}{appendix.A}%
-\contentsline {chapter}{Bibliografía}{26}{appendix*.37}%
+\contentsline {chapter}{\numberline {4}Análisis}{20}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introducción}{20}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Requisitos}{20}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Requisitos de la plataforma OTT}{21}{subsection.4.2.1}%
+\contentsline {subsubsection}{Requisitos funcionales}{21}{subsubsection*.37}%
+\contentsline {paragraph}{Requisitos especificados por el cliente}{21}{paragraph*.38}%
+\contentsline {paragraph}{Generales}{21}{paragraph*.39}%
+\contentsline {paragraph}{Radio Television de Castilla y León. CyLTv Play}{21}{paragraph*.40}%
+\contentsline {paragraph}{Oh!Jazz}{22}{paragraph*.41}%
+\contentsline {paragraph}{Requisitos no especificados por el cliente}{22}{paragraph*.42}%
+\contentsline {subsubsection}{Requisitos no funcionales}{22}{subsubsection*.43}%
+\contentsline {paragraph}{Requisitos de rendimiento}{22}{paragraph*.44}%
+\contentsline {paragraph}{Requisitos de seguridad}{23}{paragraph*.45}%
+\contentsline {paragraph}{Requisitos de usabilidad}{23}{paragraph*.46}%
+\contentsline {paragraph}{Requisitos de mantenimiento}{23}{paragraph*.47}%
+\contentsline {paragraph}{Requisitos de escalabilidad}{23}{paragraph*.48}%
+\contentsline {paragraph}{Requisitos de disponibilidad}{23}{paragraph*.49}%
+\contentsline {paragraph}{Requisitos de compatibilidad}{23}{paragraph*.50}%
+\contentsline {paragraph}{Requisitos de internacionalización}{24}{paragraph*.51}%
+\contentsline {paragraph}{Requisitos de personalización}{24}{paragraph*.52}%
+\contentsline {paragraph}{Requisitos de adaptabilidad}{24}{paragraph*.53}%
+\contentsline {section}{\numberline {4.3}Necesidades del cliente}{24}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Estudio de las características de los distintos sistemas operativos, dispositivos y tecnologías}{25}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Conclusións}{26}{chapter.5}%
+\contentsline {chapter}{\numberline {A}Material adicional}{29}{appendix.A}%
+\contentsline {chapter}{Bibliografía}{32}{appendix*.54}%
