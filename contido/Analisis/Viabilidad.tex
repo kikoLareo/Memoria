@@ -1,3 +1,148 @@
 \section{Estudio de viabilidad}
 \label{sec:analisis_estudio_viabilidad}
 
+Cuando se comenzó a trabajar con la idea de crear una aplicación que pudiera generar aplicaciones
+para distintos sistemas operativos y dispositivos a partir de un mismo código, una de las primeras
+preguntas que surgieron fue si era posible hacerlo. Para obtener una respuesta a esta pregunta, era 
+necesario saber si era viable una aplicacion hibrida entre dispospositivos móviles y televisores, 
+si existia una tecnología que permitiera hacerlo en una cantidad de sistemas operativos y dispositivos
+interesante y si era posible hacerlo de manera eficiente y económica. En este apartado se va a dar respuesta
+a estas preguntas, analizando la viabilidad técnica y económica del proyecto.
+
+\subsection{Viabilidad técnica}
+\label{subsec:analisis_estudio_viabilidad_tecnica}
+
+La \href{https://es.wikipedia.org/wiki/Viabilidad_t%C3%A9cnica#:~:text=Condici%C3%B3n%20que%20hace%20posible%20el,leyes%20de%20la%20naturaleza%20involucradas.}{viabilidad técnica} 
+de un proyecto se refiere a la condición que hace posible realizar un proyecto o llevar a cabo una idea
+desde el punto de vista de la tecnología. Para estudiar la viabilidad de este proyecto es necesario saber
+si existe una herramienta o tecnología que permita trabajar en una cantidad de sistemas operativos y dispositivos
+lo suficientemente grande como para que compense realizar el proyecto. A continuación se detallará este estudio. 
+
+En cuanto a infraestructura, la empresa ya dispone de los componentes necesarios, totalmente funcionales, 
+para dar soporte a la aplicación. Tanto el CMS, como la base de datos y servidores de aplicaciones están
+en pleno funcionamiento y son capaces de soportar la carga de trabajo que supondría la aplicación, por lo que
+la viabilidad técnica en este aspecto es positiva.
+
+\subsubsection{Adaptación a web}
+\label{subsubsec:analisis_estudio_viabilidad_tecnica_aplicacion_web}
+
+La aplicación web es una aplicación que se ejecuta en un navegador web. Este tipo de aplicaciones permiten 
+una gran flexibilidad y portabilidad, no solo a la hora de ser explotadas por los usuarios, sino también a la
+hora de ser desarrolladas. Estas aplicaciones permiten utilizar una enorme variedad de tecnologías y lenguajes
+de programación, por lo que este requisito no es determinante a la hora de estudiar la viabilidad técnica del proyecto
+ya que podremos utilizar casi cualquier tecnología que nos permita adaptarnos a los otros dispositivos.
+
+\subsubsection{Adaptación a televisores}
+\label{subsubsec:analisis_estudio_viabilidad_tecnica_aplicacion_tv}
+
+El caso de los televisores es muy distinto. Aunque los televisores inteligentes actuales cuentan con un navegador
+web, estos no son ni tan potentes ni tan comodos de utilizar como los de los dispositivos móviles o los ordenadores, 
+por lo que aunque una persona pueda acceder a la aplicación desde su televisor, no es la opción que queremos para 
+los televisores. La opción que aplica para este proyecto es la de crear una aplicación nativa para televisores.
+Estas aplicaciones son aplicaciones que se ejecutan en el sistema operativo del televisor, por lo que es necesario
+que el sistema operativo del televisor sea compatible con la tecnología que utilicemos para desarrollar la aplicación.
+
+Los sistemas operativos que se estudiaron en un primer momento para este proyecto son los más utilizados en 
+televisores inteligentes: Android Tv, Tizen, webOs y Apple Tv. El estudio comenzó con buscar que tecnologías 
+permite cada opción de modo nativo. La opción que se buscaba era la de utilizar JavaScript, HTML y CSS para
+el desarrollo. Analizando Tizen y webOs encontramos que ambas opciones permiten el desarrollo a través de 
+estas tecnologías, por lo que la viabilidad tecnica comenzaba a ser posible. El problema llegó con Android Tv
+y Apple Tv. Estos sistemas operativos no permiten el desarrollo de aplicaciones a través de estas tecnologías,
+si no que tienen sus propias tecnologías. Buscando soluciones encontramos una opción para Android Tv, que es
+\href{https://cordova.apache.org/}{Apache Cordova}. Apache Cordova es una herramienta que permite desarrollar
+aplicaciones híbridas para distintos sistemas operativos a través de HTML, CSS y JavaScript. En el caso de Apple Tv
+no hubo suerte y no se encontró una solución viable con la que conseguir desarrollar con la tecnología escogida y 
+"traducir" o "adaptar" el código a la tecnología de Apple Tv como se hizo con Android Tv. 
+
+Sin embargo, aunque no se encontró una solución para Apple Tv, el hecho de que se encontrara una solución para
+Android Tv y que las otras dos opciones permitieran el desarrollo con las tecnologías escogidas supone 
+trabajar sobre un 27\% del mercado mundial de televisores inteligentes \cite{smarttv_marketshare}. Aunque no es
+un porcentaje muy alto, es un porcentaje lo suficientemente grande como para que el proyecto sea viable.
+
+Ahora que el proyecto ya está en marcha y ya existen versiones completamente funcionales, se están estudiando
+las implementaciones de nuevos sistemas operativos y dispositivos. Entre estas opciones está Vidaa OS (Hisense), que 
+tiene el 7.8\% del mercado mundial ahora mismo, posicionandose como el segundo sistema operativo más utilizado. El 
+primer estudio que se hizo sobre este sistema operativo fue positivo, ya que indicó que se podía desarrollar con las
+tecnologías escogidas, por lo que a corto plazo se continuará con el estudio y se comenzará con la integración
+si el estudio de viabilidad técnica es positivo.
+
+Por otro lado, Apple Tv se desarrollará por separado, y se buscará la manera de adaptar el código de la aplicación 
+a la tecnología de Apple Tv e Ios en un futuro, si fuera posible. 
+
+\subsubsection{Adaptación a dispositivos móviles}
+\label{subsubsec:analisis_estudio_viabilidad_tecnica_aplicacion_movil}
+
+En una primera etapa del proyecto, los objetivo no están centrados ahora mismo en que este proyecto generé aplicaciones
+para dispositivos móviles, pero si la adaptación de la página web para que sea \href{https://es.wikipedia.org/wiki/Dise%C3%B1o_web_adaptable}{responsive}
+y permita una buena experiencia de usuario en dispositivos móviles. Además, si que existe está implemetación como objetivo
+a medio plazo por lo que el código permite una rapida integración de esta funcionalidad. Sin embargo, todo indica que
+al igual que para los televisores, el sistema operativo Ios no permitirá el desarrollo con las tecnologías escogidas, por
+lo que por el momento se centraría en Android y en la adaptación de la página web para dispositivos móviles.
+
+
+
+\subsubsection{Conclusión}
+\label{subsubsec:analisis_estudio_viabilidad_tecnica_conclusion}
+
+La conclusión tras el estudio de viabilidad técnica en las diferentes plataformas es que el proyecto es viable.
+Aunque no se ha encontrado una solución para Apple Tv, el hecho de que se haya encontrado una solución para Android Tv
+y que las otras dos opciones permitan el desarrollo con las tecnologías escogidas, además de la gran flexibilidad que
+ofrece el desarrollo web, hacen que el proyecto sea viable técnicamente.
+
+
+\subsection{Viabilidad económica}
+\label{subsec:analisis_estudio_viabilidad_economica}
+
+La \href{https://es.wikipedia.org/wiki/Viabilidad_econ%C3%B3mica#:~:text=La%20viabilidad%20econ%C3%B3mica%20es%20la,de%20un%20proyecto%20o%20inversi%C3%B3n.}{viabilidad económica}
+de un proyecto es la capacidad que tiene un proyecto de generar beneficios económicos. Para estudiar la viabilidad
+económica de este proyecto es necesario estudiar los costes que conlleva el desarrollo del proyecto y los beneficios
+que se pueden obtener. A continuación se detallará el estudio realizado, sin mostrar cifras concretas ya que es información
+confidencial.
+
+\subsubsection{Costes}
+\label{subsubsec:analisis_estudio_viabilidad_economica_costes}
+
+Los costes que conlleva el desarrollo de este proyecto son los siguientes:
+
+\begin{itemize}
+    \item Costes de desarrollo: el proyecto requiere de un equipo que se encargue de desarrollar la aplicación. En estos costes 
+    se incluyen los costes de desarrollar la aplicación, los diseñadores, herramientas... Para este proyecto el único coste
+    que se ha tenido ha sido el de los desarrolladores, en este caso 1 persona únicamente. El resto de costes o bien no han sido
+    necesarios (las herramientas son gratuitas, el sistema de pruebas también...) o bien son gastos del cliente (diseñadores, licencias del marketplace...).
+    o bien son gastos que ya existían (servidores, base de datos...).
+    \item Costes de mantenimiento: el proyecto requiere de un mantenimiento continuo para asegurar su correcto funcionamiento.
+    En este caso, la aplicación está en continuo desarrollo y mejora ya que a medida que entren nuevos clientes y se adapte a nuevos
+    sistemas operativos y dispositivos, se irán añadiendo nuevas funcionalidades y mejoras para todos los clientes. Dentro de este
+    desarrollo entra también el mantenimiento de la aplicación, que se encarga de solucionar los problemas que puedan surgir. Por lo tanto, 
+    los costes derivados del mantenimiento son los mismos que los costes de desarrollo. 
+
+\end{itemize}
+
+\subsubsection{Beneficios}
+\label{subsubsec:analisis_estudio_viabilidad_economica_beneficios}
+
+Los ingresos previstos para este proyecto vienen derivados de la contratación de los servicios de la empresa. La empresa
+cobra una cantidad fija por la creación de la aplicación y una cantidad fija por el mantenimiento de la misma. 
+
+Dentro de este cobro están incluidos los costes de desarrollo y mantenimiento y se indica que toda aquella funcionalida extra que no está contemplada
+ni en el desarrollo ni en el contrato, se cobrará aparte. 
+
+\subsubsection{Conclusión}
+\label{subsubsec:analisis_estudio_viabilidad_economica_conclusion}
+
+Uno de los baneficios de este proyecto es la reducción de costes, ya que no es necesario realizar un desarrollo para todos los clientes, 
+evitando los gastos de desarrollo y mantenimiento de una aplicación en cada proyecto de cada cliente. Esta reducción de costes es debido
+a la reutilización del , reducción del tiempo de desarrollo, reducción de personal necesario... 
+
+Por lo que si el estudio y la previsión de gastos y beneficios es correcta, y esto se refleja correctamente en el contrato, el proyecto
+es viable económicamente.
+
+
+\subsection{Conclusión final}   
+\label{subsec:analisis_estudio_viabilidad_conclusion}
+
+Tras el estudio de viabilidad técnica y económica, se puede concluir que el proyecto es viable. La viabilidad técnica
+se ha demostrado a través de la creación de la aplicación y la adaptación a los distintos sistemas operativos y dispositivos
+y la viabilidad económica se ha demostrado a través de los costes y beneficios previstos. Por lo tanto, se puede afirmar que
+el proyecto es viable y que se puede continuar con su desarrollo.
+

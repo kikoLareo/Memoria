@@ -529,6 +529,9 @@ INPUT contido\Analisis\Requisitos.tex
 INPUT .\contido\Analisis\Necesidades_cliente.tex
 INPUT .\contido\Analisis\Necesidades_cliente.tex
 INPUT contido\Analisis\Necesidades_cliente.tex
+INPUT .\contido\Analisis\Viabilidad.tex
+INPUT .\contido\Analisis\Viabilidad.tex
+INPUT contido\Analisis\Viabilidad.tex
 INPUT .\contido\Analisis\Estudio.tex
 INPUT .\contido\Analisis\Estudio.tex
 INPUT contido\Analisis\Estudio.tex

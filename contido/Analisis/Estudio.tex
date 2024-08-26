@@ -1,3 +1,127 @@
 \section{Estudio de las características de los distintos sistemas operativos, dispositivos y tecnologías}
 \label{sec:analisis_estudio}
 
+Cuando se realizó el primer estudio del proyecto y los distintos estudios de viabilidad se analizaron las 
+características de los distintos sistemas operativos, dispositivos y tecnologías que se podían utilizar para
+el desarrollo de la aplicación. En este apartado se va a realizar un estudio de las características de estos 
+elementos y como estos encajan entre sí para el desarrollo de la aplicación.
+
+\subsection{Sistemas operativos}
+\label{subsec:analisis_estudio_sistemas_operativos}
+
+Cuando se comenzó a hablar del proyecto, el objetivo principal era el de comenzar con el desarrollo enfocado
+en televisores, pero sin perder la perspectiva del resto de dispositivos. Además, también se tenía una idea
+más o menos clara de los sistemas operativos con los que comenzar: Android TV, Tizen, webOs y Apple TV. Como ya 
+se ha mencionado en la sección \ref{subsubsec:analisis_estudio_viabilidad_tecnica_aplicacion_tv}, Apple Tv tuvo
+que ser descartado, pero los otros tres sistemas operativos siguen siendo válidos. Se estudiaron las características
+de estos sistemas operativos a través de la documentación oficial y de la (escasa) información que se podía encontrar
+en la red. Las características tecnológicas básicas ya han sido comentadas en la sección de fundamentos tecnológicos
+\ref{subsec:adaptabilidad_multiplataforma}. En este apartado vamos a extender un poco más estas características, a 
+través del análisis realizado para el proyecto.
+
+\paragraph{características de los sistemas operativos}
+\label{par:analisis_estudio_sistemas_operativos_caracteristicas}
+Como ya se ha comentado las tecnologías que se querían utilizar para el desarrollo de la aplicación eran JavaScript,
+HTML y CSS. El primer análisis que se realizó fue el de la compatibilidad de estas tecnologías con los distintos
+sistemas operativos. Aqui se descubrió que tanto Tizen como webOs son compatibles con estas tecnologías, por lo 
+menos con las funcionalidades más básicas y necesarias, ya que existen funcionalidades más recientes o complejas
+que, aunque poco a poco se van integrando, todavía no están disponibles en estos sistemas operativos. Por otro lado,
+Android TV propuso un reto, ya que, por defecto, no es compatible con estas tecnologías. Sin embargo, estudiando un 
+poco más a fondo, se descubrió que Android TV permite el desarrollo de aplicaciones utilizando tecnologías web a través
+de una herramienta llamada Apache Cordova \ref{par:adaptabilidad_android_tv_conversión}.
+
+\paragraph{Empaquetado y distribución de aplicaciones}
+\label{par:analisis_estudio_sistemas_operativos_empaquetado}
+Otro punto importante que fue objeto de estudio fue como se debian configurar y empaquetar las aplicaciones para
+poder probar y distribuir en los distintos sistemas operativos. De nuevo, Tizen y webOs son muy similares en este
+aspecto, ya que aunque tienen formatos de empaquetado diferentes (wgt e ipk respectivamente), la estructura de los
+archivos son muy parecidos: ambas plataformas requieren un archivo HTML principal, un archivo de configuración  (config.xml y package.json respectivamente) principal 
+de la aplicacion como nombre, version, etc. , el código de la aplicación (JavaScript, HTML y CSS) y los recursos necesarios
+(imágenes, fuentes, etc.). Por otro lado, la estructura de Android Tv es distinta ya que la estructura principal de la aplicación
+es la de Apache Cordova y todo el código de este necesario para convertir la aplicación a un formato compatible con Android TV.
+Dentro de esta estructuta encontramos: 
+\begin{itemize}
+    \item \textbf{www}: Directorio que contiene el código de la aplicación (JavaScript, HTML y CSS).
+    \item \textbf{config.xml}: Archivo de configuración de la aplicación.
+    \item \textbf{platforms}: Directorio que contiene las plataformas en las que se ha empaquetado la aplicación.
+    \item \textbf{plugins}: Directorio que contiene los plugins de Cordova que se han utilizado en la aplicación.
+\end{itemize}
+
+\paragraph{Herramientas de desarrollo}
+\label{par:analisis_estudio_sistemas_operativos_herramientas_desarrollo}
+Por último, se estudiaron las herramientas de desarrollo que se podían utilizar para el desarrollo de la aplicación.
+El desarrollo llevado a cabo ha sido a través de un código común desarrollado en Visual Studio Code. Sin embargo,
+la ejecución de las pruebas y la generación de los archivos de empaquetado no se podía realizar de la misma manera.
+Para cada SO se han creado unas plantillas con la estructura necesaria en cada caso y en las que se adjuntaba el código común
+y se añadía el código específico para cada SO (un archivo de configuración básico necesario para unas pocas funcionalidades específicas de cada SO).
+
+Cada SO ofrece distintas opciones para la ejecución, pruebas y empaquetado de las aplicaciones.
+
+\begin{itemize}
+    \item \textbf{Tizen}: Tizen Studio es la herramienta oficial de Samsung para el desarrollo de aplicaciones para Tizen. 
+    Esta herramienta ofrece muchas funcionalidades para el desarrollo como la gestión de dispositivos, emuladores, etc. 
+    Además, permite la generación de los archivos de empaquetado y la instalación de la aplicación en un televisor Samsung con Tizen OS.
+    \item \textbf{WebOs}: LG ofrece una CLI (Command Line Interface) para la ejecución de las funcionalidades necesarias para la creación, 
+    empaquetado y distribución de aplicaciones para WebOS. Además, también está disponible una extensión para Visual Studio Code que facilita aún más el desarrollo.
+    \item \textbf{Android TV}: Las aplicaciones para Android Tv se pueden empaquetar y distribuir a través de Android Studio, que ofreces todas las funcionalidades
+    necesarias para el desarrollo de las aplicaciones, desde escribir código hasta depurar e inspeccionar la aplicación. Sin embargo, como en este 
+    proyecto no se está utilizando Android de forma nativa, si no que se esta adaptando a través de Cordova, Android Studio deja de tener todas las funcionalidades
+    disponibles, debido a que ni tiene la estructura ni el lenguaje de programación que se utiliza por defecto en Android. La funcionalidad más afectada
+    por esto es la de ejecución ya que no permite crear el apk correctamente porque no reconoce el código.  Por este motivo, el empaquetado e instalación 
+    de la aplicación en un televisor Android se ha realizado a través de un terminal utilizando los comando ofrecidos por Cordova. 
+\end{itemize}
+
+
+\subsection{Dispositivos}
+\label{subsec:analisis_estudio_dispositivos}
+
+Para el estudio de los dispositivos, los puntos en los que se centró el análisis fueron la capacidad de los 
+dispositivos para ejecutar la aplicación, la resolución de pantalla y el tamaño de la pantalla.
+
+El segundo punto arrojó una respuesta muy clara: la aplicación debía ser adaptativa. La aplicación debía ser capaz
+de adaptarse a cualquier resolución de pantalla, ya que se iba a ejecutar en televisores de distintas marcas y modelos, en 
+móviles, en Pc, etc.
+
+La filosofía de diseño que se tomó desde un principio fue la filosofia de diseño responsivo. Esta filosofía permite adaptarse
+automáticamente al tamaño de la pantalla del dispositivo en el que se visualiza. Para ello, se utilizan unidades relativas
+como porcentajes o vh y vw en lugar de unidades absolutas como px. De esta manera, la aplicación se adapta a cualquier
+resolución de pantalla, ya sea un televisor, un móvil o una tablet. Por ejemplo, para este proyecto las pruebas se han realizado
+en dos televisores (Samsung y Lg) que tienen una resolución de 1920x1080 ambas, y con una TCL(Android TV) que tiene una resolución
+de 920*540. La aplicación se ha adaptado correctamente a los tres dispositivos, mostrando la misma información y funcionalidades
+en todos ellos. 
+
+Por otro lado, el primer punto fue un estudio clave, ya que la capacidad actual varia enormemente entre los distintos 
+dispositivos sobre los que queremos trabajar, incluso entre dispositivos de la misma familia como los televisores,
+existen diferencias de eficiencia y capacidad entre los distintos modelos y SO. Unas primeras pruebas de eficiencia
+demostrarón que las funcionalidades que en un portatil funcionaban sin ningún tipo de problema ni sobrecarga para el dispositivo,
+a la hora de probar en las televisiones los movimientos se veían pesados y lentos. Como no es posible estudiar todos los 
+modelos de los diferentes dispositivos de las distintas marcas y la aplicación busca llegar al mayor número de dispositivos posible, 
+el estudio se realizó sobre las herramientas y funcionalidades del desarrollo más eficientes.
+
+Gracias a este estudio se consiguió mejorar la eficiencia y fluidez de la aplicación en los dispositivos de menor capacidad
+buscando cual era la manera más eficiente de realizar las distintas funcionalidades. Por ejemplo, se demostró que utilizar
+la propieda transform: translate() en lugar de la propiedad top o left para mover los elementos de la aplicación era mucho más
+eficiente y fluido. 
+
+Se encontró otra manera de aumentar la eficiencia, por ejemplo, con una propiedad de CSS que permite acelerar el renderizado
+de la aplicación. Esta propiedad es la de will-change. Esta propiedad permite al navegador saber que un elemento va a cambiar
+y que debe prepararse para ello. De esta manera, el navegador puede optimizar el renderizado de la aplicación y mejorar la
+experiencia del usuario.
+
+
+\subsection{Tecnologías}
+\label{subsec:analisis_estudio_tecnologias}
+
+En cuanto al estudio de las tecnologías, este es constante a lo largo de todo el desarrollo del proyecto. Si bien también 
+lo es el estudio de los sistemas operativos y dispositivos en casos concretos, el estudio de las tecnologías es algo que se
+realiza de manera constante, ya que no solo las tecnologías cambian y evolucionan, sino que es muy importante para un proyecto
+buscar, estudiar y analizar las distintas tecnologías para sacarles el máximo partido y mejorar la eficiencia y la calidad de la
+aplicación. Así, a lo largo de todo el desarrollo se han buscado las mejores funciones que nos ofrece JavaScript que nos pudieran 
+ayudar con cada una de las funcionalidades a implementar. También se estudian las mejores librerias disponibles para utilizar en la
+aplicación de análisis de datos, a través de Node.js, una potentisima herramienta con un catalogo de librerias muy amplio, el cual
+si se estudia a fondo puede mejorar nuestros desarrollos de manera exponencial. Por otro lado, estudiar las mejores estructuras
+y elementos que nos ofrece HTML y Css, y las mejores combinaciones entre estas tecnologías,  va a ser clave tanto para la eficiencia 
+de la aplicación como para la presentación de la interfaz.
+
+
+
