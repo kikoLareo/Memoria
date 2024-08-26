@@ -365,6 +365,9 @@ INPUT contido\Metodologia\metodologia.aux
 INPUT .\contido\Analisis\Analisis.aux
 INPUT .\contido\Analisis\Analisis.aux
 INPUT contido\Analisis\Analisis.aux
+INPUT .\contido\Diseño\Diseño.aux
+INPUT .\contido\Diseño\Diseño.aux
+INPUT contido\Diseño\Diseño.aux
 INPUT .\contido\conclusions.aux
 INPUT .\contido\conclusions.aux
 INPUT contido\conclusions.aux
@@ -538,6 +541,15 @@ INPUT contido\Analisis\Estudio.tex
 INPUT .\contido\Analisis\Analisis_multiSO.tex
 INPUT .\contido\Analisis\Analisis_multiSO.tex
 INPUT contido\Analisis\Analisis_multiSO.tex
+INPUT .\contido\Diseño\Diseño.tex
+INPUT .\contido\Diseño\Diseño.tex
+OUTPUT contido\Diseño\Diseño.aux
+INPUT .\contido\Diseño\Diseño.tex
+INPUT .\contido\Diseño\Diseño.tex
+INPUT contido\Diseño\Diseño.tex
+INPUT .\contido\Diseño\Introduccion.tex
+INPUT .\contido\Diseño\Introduccion.tex
+INPUT contido\Diseño\Introduccion.tex
 INPUT .\contido\conclusions.tex
 INPUT .\contido\conclusions.tex
 OUTPUT contido\conclusions.aux
@@ -572,6 +584,9 @@ INPUT contido\Metodologia\metodologia.aux
 INPUT .\contido\Analisis\Analisis.aux
 INPUT .\contido\Analisis\Analisis.aux
 INPUT contido\Analisis\Analisis.aux
+INPUT .\contido\Diseño\Diseño.aux
+INPUT .\contido\Diseño\Diseño.aux
+INPUT contido\Diseño\Diseño.aux
 INPUT .\contido\conclusions.aux
 INPUT .\contido\conclusions.aux
 INPUT contido\conclusions.aux

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.8.19)  26 AUG 2024 22:03
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.8.19)  26 AUG 2024 23:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1781,7 +1781,7 @@ Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 ) (memoria_tfg.aux (portada/portada.aux) (portada/resumo.aux)
 (contido/introducion.aux) (contido/Fundamentos/fundamentos.aux)
 (contido/Metodologia/metodologia.aux) (contido/Analisis/Analisis.aux)
-(contido/conclusions.aux) (anexos/adicional.aux))
+(contido/Diseño/Diseño.aux) (contido/conclusions.aux) (anexos/adicional.aux))
 \openout1 = `memoria_tfg.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
@@ -2164,13 +2164,32 @@ Capítulo 4.
 
 [29]
 
-[30]) (contido/Analisis/Analisis_multiSO.tex))
+[30]
 
-[31]
+[31]) (contido/Analisis/Analisis_multiSO.tex))
+
+[32]
+\openout2 = `contido/Diseño/Diseño.aux'.
+
+ (contido/Diseño/Diseño.tex
+Capítulo 5.
+(contido/Diseño/Introduccion.tex
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 1.
+
+))
+
+[33
+
+
+
+
+]
 \openout2 = `contido/conclusions.aux'.
 
  (contido/conclusions.tex
-Capítulo 5.
+Capítulo 6.
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/sc' will be
 (Font)              scaled to size 10.95pt on input line 4.
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
@@ -2178,4 +2197,89 @@ LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
 (Font)              scaled to size 33.01007pt on input line 4.
 Package lettrine.sty Info: Targeted height = 21.55566pt
-(le
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 21.35751pt (D);
+(lettrine.sty)             reported on input line 4.
+)
+
+[34
+
+
+
+
+]
+
+[35]
+LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
+(Font)              scaled to size 24.88pt on input line 95.
+
+
+[36
+
+
+
+]
+\openout2 = `anexos/adicional.aux'.
+
+ (anexos/adicional.tex
+Apéndice A.
+Package lettrine.sty Info: Targeted height = 21.55566pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 21.42354pt (E);
+(lettrine.sty)             reported on input line 4.
+)
+
+[37
+
+
+]
+
+[38]
+No file memoria_tfg.acr.
+No file memoria_tfg.gls.
+(memoria_tfg.bbl
+
+[39
+
+
+]
+Underfull \hbox (badness 1418) in paragraph at lines 97--102
+\TU/LinLibertine(0)/m/n/10.95 the day).” [En liña]. Dispoñible en: [][]$[][][][
+][] [] [] [] [][][] [] [][][][][][] [] [][][] [] [][][][] []
+ []
+
+
+Overfull \hbox (116.91383pt too wide) in paragraph at lines 97--102
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][]$[][] 
+ []
+
+
+
+[40
+
+])
+
+[41] (memoria_tfg.aux (portada/portada.aux) (portada/resumo.aux)
+(contido/introducion.aux) (contido/Fundamentos/fundamentos.aux)
+(contido/Metodologia/metodologia.aux) (contido/Analisis/Analisis.aux)
+(contido/Diseño/Diseño.aux) (contido/conclusions.aux) (anexos/adicional.aux))
+ ***********
+LaTeX2e <2024-06-01> patch level 2
+L3 programming layer <2024-07-20>
+ ***********
+Package rerunfilecheck Info: File `memoria_tfg.out' has not changed.
+(rerunfilecheck)             Checksum: 1040F48FC43DF18C17778192277D05C5;7607.
+ ) 
+Here is how much of TeX's memory you used:
+ 36757 strings out of 409029
+ 744753 string characters out of 5754711
+ 1940612 words of memory out of 5000000
+ 58827 multiletter control sequences out of 15000+600000
+ 567988 words of font info for 117 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 106i,13n,145p,2348b,593s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on memoria_tfg.xdv (49 pages, 964928 bytes).
