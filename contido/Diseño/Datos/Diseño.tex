@@ -1,0 +1,46 @@
+\subsection{Estudio y diseño de la aplicación de análisis de datos}
+\label{sec:diseno-estudio}
+
+\subsubsection{Diseño general}
+\label{sec:diseno-general}
+
+El diseño de la aplicación de análisis de datos se ha realizado siguiendo una metodología de diseño centrada en el usuario. 
+Para ello, se ha realizado un análisis de las necesidades de los usuarios, se han definido los requisitos de la aplicación 
+y se ha diseñado la interfaz de usuario.
+
+Dentro de las necesidades de los usuarios y de los requisitos de la aplicación se destaca la necesidad de que la visualización
+de los datos sea clara y sencilla y que para utilizar la aplicación no sea necesario tener conocimientos avanzados de análisis de datos.
+
+En cuanto al diseño de la interfaz de usuario, se ha optado por un enfoque sencillo y minimalista, utilizando colores suaves y 
+una tipografía clara y legible. La interfaz ha sido diseñada para ser intuitiva y fácil de usar, permitiendo al usuario acceder 
+rápidamente a todas las funcionalidades de la aplicación. El diseño se centra en la visualización de gráficos y datos, presentando 
+la información de manera ordenada y consistente, para que el usuario pueda comprenderla rápidamente. Todas las gráficas y tablas 
+comparten un estilo uniforme y limpio, evitando elementos recargados que puedan distraer la atención.
+
+De forma similar a la OTT, el diseño de la aplicacion de análisis de datos se ha realizado siguiendo un enfoque modular,
+dividiendo la aplicación en diferentes componentes independientes que se comunican entre sí. Esto permite que la aplicación sea
+más fácil de mantener y extender, ya que cada componente puede ser modificado o reemplazado sin afectar al resto de los componenetes 
+ni a la interfaz. Además, el diseño modular facilita la reutilización de código y la integración de nuevas funcionalidades.
+
+\subsubsection{Estudio de las agrupaciones de datos}
+\label{sec:diseno-agrupaciones}
+
+Una vez definidos los requisitos de la aplicación y el diseño general, era importante estudiar que agrupaciones de datos 
+se podian lograr con las funcionalidades que ofrece Matomo y que opciones de visualización se podían implementar. 
+
+Lo primero fue detectar que tipos de gráficos eran necesarios soportar y diseñar. Tras un análisis de la entrega de los datos
+que hace Matomo se decidió comenzar con el soporte para gráficos lineales, de barras, circulares y tablas. Así, en función 
+de la utilidad, periodo y enfoque de los datos, se podrán seleccionar diferentes tipos de gráficos para visualizar la información.
+
+\paragraph{Páginas y secciones}
+Lo siguiente era estudiar que páginas o apartados de la aplicación de análisis de datos se podían implementar. La primera página en la que 
+se pensó fue la página de inicio o dashboard, en la que se mostrarán los gráficos que presenten una información más general y resumida
+de los datos. 
+
+Otra página en la que se pensó durante el análisis fue una página que permitiera al usuario comparar gráficas provenientes de diferentes
+módulos. La idea era que el cliente tuviera la oportunidad de comparar varias gráficas de diferentes módulos en una misma página para 
+poder analizar la información en busca de patrones, tendencias o correlaciones entre los datos.
+
+El resto de páginas son dedicadas a agrupaciones de datos que tienen relación entre sí. La creación de estas páginas se enfocó en 
+que fuera más dinámica y que permitiera la creación fácil y rápida de nuevas secciones. 
+
