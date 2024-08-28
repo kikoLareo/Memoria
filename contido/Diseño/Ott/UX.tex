@@ -1,38 +1,30 @@
+
 \subsection{Diseño de la interfaz de usuario}
-\label{sec:diseno-ux}
-
-\subsubsection{Introducción}
-\label{sec:diseno-ux-introduccion}
-
+\label{sec:diseno-ux-diseno}
 La interfaz de usuario es la parte de un programa que interactúa con el usuario. En el caso de \textit{Ott} 
 es la parte que se encarga de mostrar la información al usuario y de permitirle interactuar con el sistema
 La interfaz de usuario es una parte fundamental de cualquier sistema, ya que es la parte que el usuario ve 
 y con la que interactúa. Por tanto, es importante que la interfaz de usuario sea clara, sencilla e intuitiva, 
 para que el usuario pueda utilizar el sistema de forma eficiente y sin problemas.
 
-En este apartado se describe como se enfoca las fases de diseño de la interfaz de usuario de \textit{Ott}.
-
-\subsubsection{Diseño de la interfaz de usuario}
-\label{sec:diseno-ux-diseno}
-
 Cuando se comenzó con el diseño de de la aplicación, no se trabajó sobre un diseño final exacto ya que este
 dependía de los clientes que fueran uniendose al proyecto y decidiendo su propia interfaz. Lo que se fue diseñando
 a medida que avanzaba el proyecto fue una interfaz base que permitiera ir añadiendo nuevas funcionalidades y 
 los distintos componentes personalizables que se irían añadiendo a la interfaz. 
 
-\begin{figure}[hp!]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{imaxes/UX_inicios.png}
     \caption{Captura de la interfaz en las primeras fases del proyecto}
     \label{fig:UX_inicios}
 \end{figure}
-\begin{figure}[hp!]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{imaxes/Home_desp_OhJazz.png}
     \caption{Captura de la interfaz más recientes, todavía con pruebas por parte del cliente}
     \label{fig:Home_desp_OhJazz}
 \end{figure}
-\begin{figure}[hp!]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{imaxes/Home_CyLTv.png}
     \caption{Captura de la interfaz casi final}
@@ -115,31 +107,36 @@ destacar contenidos y para mostrar más información de estos, etc.
 
 A continuación se muestran algunos ejemplos de personalización de los widgets de la interfaz de usuario de \textit{Ott}.
 
-\begin{figure}[hp!]
-    \centering
-    \includegraphics[width=0.8\textwidth]{imaxes/Widget_banner.png}
-    \caption{Ejemplo de un widget básico de tipo "banner"}
-    \label{fig:Widget_banner}
+
+\begin{figure}[H]
+    \begin{subfigure}[c]{0.5\textwidth}
+        \includegraphics[width=\textwidth]{imaxes/Widget_banner.png}
+        \subcaption{Ejemplo de un widget básico de tipo "banner"}
+        \label{fig:Widget_banner}
+    \end{subfigure}
+    \hspace{0.1\textwidth}
+    \begin{subfigure}[c]{0.5\textwidth}
+        \includegraphics[width=0.8\textwidth]{imaxes/Widget_destacado.png}
+        \subcaption{Ejemplo de un widget básico de tipo "destacado"}
+        \label{fig:Widget_destacado}
+    \end{subfigure}
+    \caption{Ejemplos de un widget básico de tipo "banner" y "destacado"}
+    \label{fig:Widget_banner_destacado}
 \end{figure}
-\begin{figure}[hp!]
+
+\begin{figure}[H]
     \begin{subfigure}[c]{0.5\textwidth}
         \includegraphics[width=\textwidth]{imaxes/Widget_poster.png}
-        \caption{Ejemplo de un widget básico de tipo "poster"}
-        \label{fig:Widget_destacado}
+        \subcaption{Ejemplo de un widget básico de tipo "poster"}
+        \label{fig:Widget_poster}
     \end{subfigure}
     \hspace{0.1\textwidth}
     \begin{subfigure}[c]{0.5\textwidth}
         \includegraphics[width=\textwidth]{imaxes/Widget_poster_abierto.png}
-        \caption{Ejemplo de un widget básico de tipo "poster" con la información mostrada}
-        \label{fig:Widget_poster}
+        \subcaption{Ejemplo de un widget básico de tipo "poster" con la información mostrada}
+        \label{fig:Widget_poster_abierto}
     \end{subfigure}
     \caption{Ejemplos de un widget básico de tipo "poster"}
-    \label{fig:Widget_poster}
-\end{figure}
-\begin{figure}[hp!]
-    \centering
-    \includegraphics[width=0.8\textwidth]{imaxes/Widget_destacado.png}
-    \caption{Ejemplo de un widget básico de tipo "destacado"}
-    \label{fig:Widget_mosaico}
+    \label{fig:Widgets_poster}
 \end{figure}
 

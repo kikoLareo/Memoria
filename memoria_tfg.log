@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.8.19)  27 AUG 2024 22:47
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.8.19)  28 AUG 2024 23:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1771,21 +1771,45 @@ Package glossaries Info: Writing glossary file memoria_tfg.acn on input line 23
 0.
  (bibliografia/acronimos.tex)
 (bibliografia/glosario.tex))
+(C:\Users\francisco.lareo\AppData\Local\Programs\MiKTeX\tex/latex/float\float.s
+ty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count415
+\float@exts=\toks53
+\float@box=\box117
+\@float@everytoks=\toks54
+\@floatcapt=\box118
+)
 (C:\Users\francisco.lareo\AppData\Local\Programs\MiKTeX\tex/latex/multirow\mult
 irow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip87
-\multirow@cntb=\count415
+\multirow@cntb=\count416
 \multirow@dima=\skip88
 \bigstrutjot=\dimen301
 ) (memoria_tfg.aux (portada/portada.aux) (portada/resumo.aux)
 (contido/introducion.aux) (contido/Fundamentos/fundamentos.aux)
 (contido/Metodologia/metodologia.aux) (contido/Analisis/Analisis.aux)
-(contido/Diseño/Diseño.aux
+(contido/Diseño/Diseño.aux) (contido/Implementacion/Implementacion.aux
 
-LaTeX Warning: Label `fig:Widget_poster' multiply defined.
+LaTeX Warning: Label `fig:Widget_banner' multiply defined.
 
-) (contido/conclusions.aux) (anexos/adicional.aux))
+
+LaTeX Warning: Label `sub@fig:Widget_banner' multiply defined.
+
+
+LaTeX Warning: Label `fig:Widget_banner' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:Widget_banner' multiply defined.
+
+
+LaTeX Warning: Label `fig:Widget_mosaico' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:Widget_mosaico' multiply defined.
+
+) (anexos/adicional.aux))
 \openout1 = `memoria_tfg.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
@@ -1918,8 +1942,9 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count416
+\c@lstlisting=\count417
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
 
@@ -1962,4 +1987,426 @@ LaTeX Font Info:    Font shape `TU/LinLibertine(0)/b/n' will be
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
 (Font)              scaled to size 8.0pt on input line 26.
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
-(Font)              scaled 
+(Font)              scaled to size 6.0pt on input line 26.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 26
+.
+
+(C:\Users\francisco.lareo\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 26.
+
+
+(C:\Users\francisco.lareo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa
+.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 26.
+
+
+(C:\Users\francisco.lareo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb
+.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Font shape `TU/LinLibertine(0)/b/n' will be
+(Font)              scaled to size 12.0pt on input line 27.
+
+
+[1
+
+\openout3 = `memoria_tfg.ist'.
+
+
+])
+LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/it' will be
+(Font)              scaled to size 10.95pt on input line 59.
+
+
+[1
+
+
+]
+LaTeX Font Info:    Font shape `TU/LinLibertine(0)/b/n' will be
+(Font)              scaled to size 10.95pt on input line 61.
+
+
+[2
+
+]
+\openout2 = `portada/resumo.aux'.
+
+ (portada/resumo.tex (portada/palabras_chave.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+
+ []
+
+)
+
+[1
+
+
+])
+LaTeX Font Info:    Font shape `TU/LinLibertine(0)/b/n' will be
+(Font)              scaled to size 24.88pt on input line 70.
+ (memoria_tfg.toc
+
+[1
+
+
+
+]
+
+LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
+(Font)              scaled to size 10.0pt on input line 140.
+LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/sl' in size <10> not avail
+able
+(Font)              Font shape `TU/LinLibertine(0)/m/it' tried instead on input
+ line 140.
+LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/it' will be
+(Font)              scaled to size 10.0pt on input line 140.
+[2])
+\tf@toc=\write7
+\openout7 = `memoria_tfg.toc'.
+
+
+
+[3] (memoria_tfg.lof)
+\tf@lof=\write8
+\openout8 = `memoria_tfg.lof'.
+
+
+
+[4
+
+] (memoria_tfg.lot)
+\tf@lot=\write9
+\openout9 = `memoria_tfg.lot'.
+
+
+
+[5
+
+]
+\openout2 = `contido/introducion.aux'.
+
+ (contido/introducion.tex
+Capítulo 1.
+LaTeX Font Info:    Font shape `TU/LinLibertine(0)/b/n' will be
+(Font)              scaled to size 14.4pt on input line 1.
+LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
+(Font)              scaled to size 14.4pt on input line 4.
+
+
+[1
+
+
+
+])
+
+[2]
+\openout2 = `contido/Fundamentos/fundamentos.aux'.
+
+ (contido/Fundamentos/fundamentos.tex
+Capítulo 2.
+(contido/Fundamentos/Introduccion.tex) (contido/Fundamentos/Teoricos/OTT.tex
+
+[3
+
+
+
+
+]
+
+[4]) (contido/Fundamentos/Teoricos/Arquitectura.tex
+
+[5]
+
+[6]) (contido/Fundamentos/Teoricos/UX.tex
+
+[7]) (contido/Fundamentos/Teoricos/Esc_adapt.tex
+
+[8])
+
+[9] (contido/Fundamentos/Tecnologicos/Arquitectura.tex)
+(contido/Fundamentos/Tecnologicos/TechWeb.tex
+
+[10]) (contido/Fundamentos/Tecnologicos/Adaptabilidad.tex
+
+[11]
+
+[12]))
+
+[13]
+\openout2 = `contido/Metodologia/metodologia.aux'.
+
+ (contido/Metodologia/metodologia.tex
+Capítulo 3.
+(contido/Metodologia/Introduccion.tex) (contido/Metodologia/Diseño.tex
+
+[14
+
+
+
+
+]) (contido/Metodologia/Desarrollo.tex
+
+[15]) (contido/Metodologia/Etapas.tex
+
+[16]
+
+[17]))
+
+[18]
+
+[19]
+\openout2 = `contido/Analisis/Analisis.aux'.
+
+ (contido/Analisis/Analisis.tex
+Capítulo 4.
+(contido/Analisis/Introduccion.tex) (contido/Analisis/Requisitos.tex
+
+[20
+
+
+
+
+]
+
+[21]
+
+[22]
+
+[23]) (contido/Analisis/Necesidades_cliente.tex
+
+[24]) (contido/Analisis/Viabilidad.tex
+
+[25]
+
+[26]
+
+[27]
+
+[28]) (contido/Analisis/Estudio.tex
+
+[29]
+
+[30]
+
+[31]) (contido/Analisis/Analisis_multiSO.tex))
+
+[32]
+\openout2 = `contido/Diseño/Diseño.aux'.
+
+ (contido/Diseño/Diseño.tex
+Capítulo 5.
+(contido/Diseño/Introduccion.tex) (contido/Diseño/Ott/Introduccion.tex
+LaTeX Font Info:    Font shape `TU/LinLibertine(0)/b/it' will be
+(Font)              scaled to size 12.0pt on input line 1.
+
+
+[33
+
+
+
+
+]) (contido/Diseño/Ott/arquitectura_sistema.tex
+
+[34]
+
+[35]
+
+[36]) (contido/Diseño/Ott/UX.tex
+
+[37]
+File: imaxes/UX_inicios.png Graphic file (type bmp)
+<imaxes/UX_inicios.png>
+File: imaxes/Home_desp_OhJazz.png Graphic file (type bmp)
+<imaxes/Home_desp_OhJazz.png>
+File: imaxes/Home_CyLTv.png Graphic file (type bmp)
+<imaxes/Home_CyLTv.png>
+
+
+[38]
+
+[39]
+
+[40]
+File: imaxes/Widget_banner.png Graphic file (type bmp)
+<imaxes/Widget_banner.png>
+File: imaxes/Widget_destacado.png Graphic file (type bmp)
+<imaxes/Widget_destacado.png>
+
+Overfull \hbox (44.90903pt too wide) in paragraph at lines 112--123
+[]$[]$   $[]$[][] 
+ []
+
+
+
+[41]
+File: imaxes/Widget_poster.png Graphic file (type bmp)
+<imaxes/Widget_poster.png>
+File: imaxes/Widget_poster_abierto.png Graphic file (type bmp)
+<imaxes/Widget_poster_abierto.png>
+
+Overfull \hbox (44.90903pt too wide) in paragraph at lines 128--139
+[]$[]$   $[]$[][] 
+ []
+
+) (contido/Diseño/Ott/UML.tex) (contido/Diseño/Datos/Introduccion.tex)
+(contido/Diseño/Datos/Diseño.tex
+
+[42]
+
+[43]
+
+[44]))
+
+[45]
+\openout2 = `contido/Implementacion/Implementacion.aux'.
+
+ (contido/Implementacion/Implementacion.tex
+Capítulo 6.
+(contido/Implementacion/introduccion.tex)
+(contido/Implementacion/OTT/Desarrollo.tex
+
+[46
+
+
+
+
+]
+
+[47]
+
+[48]
+File: imaxes/OTT/menu_lateral_cerrado.png Graphic file (type bmp)
+<imaxes/OTT/menu_lateral_cerrado.png>
+
+Underfull \hbox (badness 5504) in paragraph at lines 113--113
+[]\TU/LinLibertine(0)/m/n/10 (a) |Menú
+ []
+
+File: imaxes/OTT/menu_lateral_abierto.png Graphic file (type bmp)
+<imaxes/OTT/menu_lateral_abierto.png>
+
+Underfull \hbox (badness 3679) in paragraph at lines 119--119
+[]\TU/LinLibertine(0)/m/n/10 (b) |Menú
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--119
+\TU/LinLibertine(0)/m/n/10 lateral
+ []
+
+
+
+[49]
+
+[50]
+File: imaxes/OTT/pantalla_detalle_contenedor1.png Graphic file (type bmp)
+<imaxes/OTT/pantalla_detalle_contenedor1.png>
+File: imaxes/OTT/pantalla_detalle_contenedor2.png Graphic file (type bmp)
+<imaxes/OTT/pantalla_detalle_contenedor2.png>
+
+Overfull \hbox (44.90903pt too wide) in paragraph at lines 154--165
+[]$[]$   $[]$[][] 
+ []
+
+File: imaxes/OTT/Pantalla_detalle_contenido.png Graphic file (type bmp)
+<imaxes/OTT/Pantalla_detalle_contenido.png>
+
+
+[51]
+
+[52]))
+
+[53]
+LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
+(Font)              scaled to size 24.88pt on input line 95.
+
+
+[54
+
+
+
+]
+\openout2 = `anexos/adicional.aux'.
+
+ (anexos/adicional.tex
+Apéndice A.
+LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/sc' will be
+(Font)              scaled to size 10.95pt on input line 4.
+LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
+(Font)              scaled to size 21.55566pt on input line 4.
+LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
+(Font)              scaled to size 33.01007pt on input line 4.
+Package lettrine.sty Info: Targeted height = 21.55566pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 21.42354pt (E);
+(lettrine.sty)             reported on input line 4.
+)
+
+[55
+
+
+]
+
+[56]
+No file memoria_tfg.acr.
+No file memoria_tfg.gls.
+(memoria_tfg.bbl
+
+[57
+
+
+]
+Underfull \hbox (badness 1418) in paragraph at lines 97--102
+\TU/LinLibertine(0)/m/n/10.95 the day).” [En liña]. Dispoñible en: [][]$[][][][
+][] [] [] [] [][][] [] [][][][][][] [] [][][] [] [][][][] []
+ []
+
+
+Overfull \hbox (116.91383pt too wide) in paragraph at lines 97--102
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][]$[][] 
+ []
+
+
+
+[58
+
+])
+
+[59] (memoria_tfg.aux (portada/portada.aux) (portada/resumo.aux)
+(contido/introducion.aux) (contido/Fundamentos/fundamentos.aux)
+(contido/Metodologia/metodologia.aux) (contido/Analisis/Analisis.aux)
+(contido/Diseño/Diseño.aux) (contido/Implementacion/Implementacion.aux)
+(anexos/adicional.aux))
+ ***********
+LaTeX2e <2024-06-01> patch level 2
+L3 programming layer <2024-07-20>
+ ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `memoria_tfg.out' has not changed.
+(rerunfilecheck)             Checksum: 44C247A747A2C77CD9D9630F2353DF21;10533.
+ ) 
+Here is how much of TeX's memory you used:
+ 37032 strings out of 409029
+ 753145 string characters out of 5754711
+ 1941612 words of memory out of 5000000
+ 59062 multiletter control sequences out of 15000+600000
+ 567996 words of font info for 118 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 106i,13n,145p,2348b,659s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on memoria_tfg.xdv (68 pages, 1419164 bytes).
