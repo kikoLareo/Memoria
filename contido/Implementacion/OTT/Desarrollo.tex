@@ -111,18 +111,33 @@ arriba y abajo y el foco hará que el elemento seleccionado destaque en tamaño.
     \begin{subfigure}[c]{0.1\textwidth} 
         \includegraphics[width=\textwidth]{imaxes/OTT/menu_lateral_cerrado.png}
         \subcaption{Menú lateral colapsado}
-        \label{fig:Widget_banner}
+        \label{fig:menu_lateral_cerrado}
     \end{subfigure}
     \hspace{0.05\textwidth}
     \begin{subfigure}[c]{0.1\textwidth}
         \includegraphics[width=\textwidth]{imaxes/OTT/menu_lateral_abierto.png}
         \subcaption{Menú lateral abierto}
-        \label{fig:Widget_mosaico}
+        \label{fig:menu_lateral_abierto}
     \end{subfigure}
     \caption{Menú lateral}
 \end{figure}
 
     
+Durante el desarrollo del proyecto se han ido probando diferentes maneras de efectuar el movimiento. Se comenzó moviendo los 
+elementos hacia el foco y más tarde se decició utilizar las funcionalidades de Html de "scroll", que permite mover elementos
+sin realizar calculos de posición. Sin embargo, estas dos opciones fueron descartadas en favor de la utilización de 
+las funcionalidades de "transform" de CSS. Tras analizar las tres opciones, la utilización de "transform" casi obligada. Si 
+bien es cierto que la utilización de "scroll" es más sencillo y presenta multiples ventajas, su utilización es menos eficiente
+y optima y por ello exige un mayor esfuerzo al navegador. En el caso de los ordenadores y dispositivo móviles este esfuerzo
+no es tan significativo, pero en el caso de las televisiones, que tienen menos recursos, el esfuerzo es mucho mayor y la aplicación
+se notaba lenta y pesada. La primera opción se descarto debido a que es mas efectivo y eficiente mover la pantalla con todos los elementos
+que mover cada elemento por separado para reordenarlos.
+
+En futuras implementaciones y con la aplicación mucho más optimizada no se descarta, de hecho se tiene en mente, la posibilidad de 
+estudiar y volver a probar la funcionalidad de "scroll" debido a sus ventajas. Pero, por el momento, se seguirá utilizando la funcionalidad
+de "transform" de CSS y no es un cambio urgente ni necesario ya que para el usuario de la aplicación no supone una diferencia significativa
+en cuanto a funcionamiento, pero si en cuanto a rendimiento.
+
 
 \subsubsection{Selección de un componente}
 \label{sec:seleccion_componente}
@@ -154,7 +169,7 @@ en los contenidos relacionados el funcionamiento es el mismo que el de los widge
     \begin{subfigure}[c]{0.5\textwidth}
         \includegraphics[width=\textwidth]{imaxes/OTT/pantalla_detalle_contenedor1.png}
         \subcaption{Pantalla de detalle de un contenedor}
-        \label{fig:Widget_banner}
+        \label{fig:Widget_banner_contenedor}
     \end{subfigure}
     \hspace{0.1\textwidth}
     \begin{subfigure}[c]{0.5\textwidth}
@@ -195,7 +210,6 @@ el caso de los ordenadores existe la opción incluso de que la API nos devuelva 
 por el momento. Lo hace el código es detectar en que SO y con que contenido se esta trabajando. Aquí tenemos por el momento dos reproductores (VideoJs y ShakaPlayer) y dos 
 tipos de video (VoD y Lives o Youtube). Para cada caso se monta el reproductor de una manera especifica. 
 
-
 Una vez el video se está reproducciendo, el usuario dispone de las funcionalidades básicas para controlar la reproducción: pause, play, adelantar, retroceder y salir. 
 En caso de permitir la funcionalidad y tener usuarios registrados la aplicación guarda el instante en el que se detuvo la reproducción para que el usuario pueda
 continuar viendo el contenido en el mismo punto en el que lo dejó.
@@ -215,7 +229,6 @@ situada en la parte superior derecha de todas las pantallas. Al abrir el menú d
 contenido que se desea buscar. Una vez escrito el nombre completo o parcial del contenido y hacer click en el botón de búsqueda, la aplicación realiza una llamada a la
 API con el nombre del contenido y obtiene una lista de los contenidos que coinciden con el nombre introducido. Esta lista se muestra en una pantalla de resultados de
 búsqueda en forma de mosaico. 
-
 
 \subsubsection{Obtención de la información de un directo}
 \label{sec:obtencion_informacion_directo}

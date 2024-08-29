@@ -618,6 +618,9 @@ INPUT .\imaxes\OTT\pantalla_detalle_contenedor2.png
 INPUT .\imaxes\OTT\Pantalla_detalle_contenido.png
 INPUT .\imaxes\OTT\Pantalla_detalle_contenido.png
 INPUT .\imaxes\OTT\Pantalla_detalle_contenido.png
+INPUT .\contido\Implementacion\OTT\Adaptacion.tex
+INPUT .\contido\Implementacion\OTT\Adaptacion.tex
+INPUT contido\Implementacion\OTT\Adaptacion.tex
 INPUT .\anexos\adicional.tex
 INPUT .\anexos\adicional.tex
 OUTPUT anexos\adicional.aux

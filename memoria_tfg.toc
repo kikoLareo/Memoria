@@ -128,13 +128,29 @@
 \contentsline {subsubsection}{Indicaciones previas}{46}{subsubsection*.76}%
 \contentsline {subsubsection}{Creación de los componentes de la aplicación}{47}{subsubsection*.77}%
 \contentsline {subsubsection}{Movimiento por la aplicación}{48}{subsubsection*.78}%
-\contentsline {subsubsection}{Selección de un componente}{50}{subsubsection*.80}%
-\contentsline {subsubsection}{Creación de la pantalla de detalle}{50}{subsubsection*.81}%
+\contentsline {subsubsection}{Selección de un componente}{51}{subsubsection*.80}%
+\contentsline {subsubsection}{Creación de la pantalla de detalle}{51}{subsubsection*.81}%
 \contentsline {subsubsection}{Reproducción de un contenido}{52}{subsubsection*.84}%
-\contentsline {paragraph}{Origen del contenido:}{52}{paragraph*.85}%
-\contentsline {paragraph}{Reproductor:}{52}{paragraph*.86}%
-\contentsline {subsubsection}{Añadir a favoritos}{52}{subsubsection*.87}%
+\contentsline {paragraph}{Origen del contenido:}{53}{paragraph*.85}%
+\contentsline {paragraph}{Reproductor:}{53}{paragraph*.86}%
+\contentsline {subsubsection}{Añadir a favoritos}{53}{subsubsection*.87}%
 \contentsline {subsubsection}{Búsqueda de contenidos}{53}{subsubsection*.88}%
-\contentsline {subsubsection}{Obtención de la información de un directo}{53}{subsubsection*.89}%
-\contentsline {chapter}{\numberline {A}Material adicional}{55}{appendix.A}%
-\contentsline {chapter}{Bibliografía}{58}{appendix*.90}%
+\contentsline {subsubsection}{Obtención de la información de un directo}{54}{subsubsection*.89}%
+\contentsline {subsection}{\numberline {6.2.2}Adaptación a los diferentes sistemas operativos de televisión}{54}{subsection.6.2.2}%
+\contentsline {paragraph}{Capacidad de procesamiento de las televisiones}{54}{paragraph*.90}%
+\contentsline {paragraph}{Soporte de los sistemas operativos a las tecnologías web}{55}{paragraph*.91}%
+\contentsline {paragraph}{Diversidad de sistemas operativos}{55}{paragraph*.92}%
+\contentsline {subsubsection}{Adaptación a los diferentes sistemas operativos de televisión}{55}{subsubsection*.93}%
+\contentsline {subsubsection}{Adaptaciones realizadas}{55}{subsubsection*.94}%
+\contentsline {paragraph}{Interfaz}{56}{paragraph*.95}%
+\contentsline {paragraph}{Soporte de tecnologías web}{56}{paragraph*.96}%
+\contentsline {paragraph}{Navegación}{56}{paragraph*.97}%
+\contentsline {paragraph}{Reproducción de video}{57}{paragraph*.98}%
+\contentsline {paragraph}{Detección del estado de la red}{57}{paragraph*.99}%
+\contentsline {paragraph}{Cerrar la aplicación}{57}{paragraph*.100}%
+\contentsline {subsubsection}{Desafios encontrados}{57}{subsubsection*.101}%
+\contentsline {paragraph}{Foco automático en AndroidTv}{57}{paragraph*.102}%
+\contentsline {paragraph}{Botón de retorno con funcionamiento predefinido en AndroidTv}{58}{paragraph*.103}%
+\contentsline {paragraph}{Splash screen en AndroidTv}{58}{paragraph*.104}%
+\contentsline {chapter}{\numberline {A}Material adicional}{60}{appendix.A}%
+\contentsline {chapter}{Bibliografía}{63}{appendix*.105}%
