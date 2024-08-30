@@ -1,0 +1,66 @@
+\subsection{APIs y librerías utilizadas}
+\label{sec:apis-librerias}
+
+\subsubsection{Librerias}
+\label{sec:librerias}
+
+Para la implementación de la aplicación de análisis de datos se han utilizado diversas librerías que facilitaron el desarrollo de la misma.
+Estas librerías establecen una serie de funciones y métodos que permiten realizar operaciones de forma más sencilla y rápida que si se
+tuviesen que implementar desde cero. 
+
+Una de estas librerías es \textit{Axios}. Esta librería facilita la realización de peticiones HTTP desde el cliente a un servidor.
+Esta popular herramienta está basada en promesas que simplifica la comunicación con APIs. Permite realizar solicitudes \textit{GET},
+\textit{POST}, \textit{PUT}, \textit{DELETE}, entre otras, de manera eficiente y con un manejo simplificado de las respuestas y errores.
+Su facilidad de uso y su capacidad para manejar tanto solicitudes asíncronas como configuraciones avanzadas, como el establecimiento 
+de cabeceras personalizadas y la gestión de tiempos de espera, han sido fundamentales para la integración con las APIs REST de la 
+plataforma. Además, \textit{Axios} soporta la interceptación de solicitudes y respuestas, lo que facilita la implementación de
+mecanismos de autenticación y la gestión centralizada de errores, mejorando así la robustez y seguridad de la aplicación.
+
+\begin{verbatim}
+    const config = {
+    method: 'post',
+    url: `${BASE_URL}/insertOne`,
+    headers: {
+      'Content-Type': 'application/json',
+      'api-key': API_KEY,
+    },
+    data: data
+  };
+
+  try {
+    const response = await axios(config);
+    ...
+
+\end{verbatim}
+
+Otra libreria utilizada fue ChartJs cuyo uso se ha explicado en la sección \ref{sec:desarrollo-aplicacion}. Esta librería permite la
+ creación de gráficas de forma sencilla y rápida. Ofrece una amplia variedad de gráficos, como barras, líneas, radar, polar,
+entre otros, y permite personalizar los con colores, títulos, leyendas, entre otros.
+
+\subsubsection{APIs : OpenAi y MongoDB}
+\label{sec:apis}
+
+Además de la API de Matomo, se han utilizado otras APIs para dotar de funcionalidades a la aplicación de análisis de datos.
+Una de estas funcionalidades es el análisis y explicación de los datos recopilados a través de la API de \textit{OpenAi}. Esta funcionalidad
+permite a los usuarios obtener una explicación de los datos recopilados, lo que facilita la interpretación de los mismos y la toma
+de decisiones. 
+
+Esta API utiliza tanto el contexto de la página como los datos de la gráfica a analizar para generar una explicación en lenguaje natural y
+comprensible para cualquier usuario sin conocimientos técnicos. Para ello, hay varios elementos necesarios: contexto, datos y petición. 
+
+\paragraph{Contexto: } Información general de la página web. Este contexto se va creando y detallando con el tiempo ya que cada vez
+que se realiza una petición a la API, además del análisis, se pide que se actualice ese contexto para siguientes peticiones para poder dotar
+a la explicación de un mayor detalle y precisión. 
+
+\paragraph{Datos: } Datos de la gráfica a analizar. Estos datos son los que se recopilan a través de la API de Matomo y se envían a la API
+de \textit{OpenAi} para su análisis.
+
+\paragraph{Petición: } Promt generado a partir de información de la página (Contexto) y los datos de la gráfica (descripción, variables, valores, etc).
+Este promt se envía a la API de \textit{OpenAi} para que genere una explicación en lenguaje natural.
+
+Tanto el contexto como los datos son almacenados para alimentar a futuras llamadas y crear promts más precisos y detallados. Para almacenar
+estos datos se ha utilizado una base de datos no relacional, en concreto \textit{MongoDB}. 
+
+\paragraph{MongoDB: } MongoDB es una base de datos no relacional que permite almacenar datos en formato JSON. Es una base de datos
+escalable y flexible que permite almacenar grandes cantidades de datos y realizar consultas de forma rápida y eficiente.
+Para la integración de MongoDB con la aplicación de análisis de datos se ha utilizado la librería \textit{Mongoose}. Esta librería

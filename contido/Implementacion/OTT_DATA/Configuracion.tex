@@ -1,0 +1,55 @@
+\subsection{Instalación, configuración e integración de la API de Matomo}
+\label{sec:configuracion-matomo}
+
+Para la construcción y desarrollo de la aplicación de análisis de datos, se ha utilizado la herramienta de análisis web Matomo. 
+Aunque existen otras herramientas de análisis web, como Google Analytics, para un primer desarrollo se ha optado únicamente por 
+esta herramienta, ya que es la más utilizada en las distintas aplicaciones de la empresa. 
+
+Matomo \cite{matomo} es una herramienta de análisis web de código abierto que permite a los administradores de sitios web
+obtener información sobre los visitantes de sus aplicaciones y páginas web. Ofrece una amplia gama de funcionalidades, como la
+recopilación de datos, la generación de informes y la personalización de los mismos. Una de las funcionalidades que ofrece es 
+la utilización de una API REST, que permite a los desarrolladores acceder a los datos recopiados por Matomo y realizar operaciones
+sobre ellos. 
+
+Con estas consultas, se puede obtener la información necesaria para la construcción de la aplicación de análisis de datos.
+A través de la API se obtienen los datos que que servirán como entrada para la construcción de las gráficas y tablas.
+
+Matomo ofrece una rápida y sencilla instalación e integración con las distintas aplicaciones en las que se requiera la 
+recogida de datos. Los pasos a seguir son: 
+
+\begin{enumerate}
+    \item Darse de alta en la plataforma de Matomo.
+    \item Dar de alta un nuevo sitio web en la plataforma.
+    \item Descargar el código de seguimiento y añadirlo a la aplicación.
+\end{enumerate}
+
+Con estos pasos, Matomo comenzará a recopilar los datos de los visitantes de la aplicación. Si se desea obtener información más
+detallada y concreta existen más opciones de configuración, como la creación de eventos personalizados, la configuración de
+objetivos o la creación de segmentos. Para conocer datos sobre las reproducciones de los vídeos, habrá que configurar el reproductor
+de vídeo para que envíe eventos a Matomo cada vez que se reproduzca un vídeo.
+
+\paragraph{Ejemplo de código de seguimiento de Matomo}
+
+\begin{lstlisting}[language=HTML]
+    <!-- Matomo -->
+    <script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u="https://tiivii-ott.matomo.cloud/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', 'IdSite']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src='https://cdn.matomo.cloud/tiivii-ott.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+    </script>
+    <!-- End Matomo Code -->
+\end{lstlisting}
+
+Una vez Matomo ya está recopilando los datos, se puede comenzar a realizar consultas a la API para obtener la información
+necesaria. Para ello, se debe obtener un token de acceso a la API disponible en la configuración de la cuenta de Matomo y 
+registrar la URL de la página web en la que se está realizando la consulta. Con esta configuración lista, y conociendo los
+datos que se quieren obtener \ref{sec:diseno-estudio} y a través de qué métodos, se puede comenzar a realizar las consultas 
+a la API. 

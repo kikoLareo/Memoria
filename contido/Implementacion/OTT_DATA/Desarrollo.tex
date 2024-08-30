@@ -1,0 +1,349 @@
+\subsection{Desarrollo de la aplicación de análisis de datos}
+\label{sec:desarrollo-matomo}
+
+Una vez configurada la API de Matomo, se puede comenzar a realizar consultas a la misma para obtener la información. Esta información
+será la que se utilizará para la construcción de las gráficas y tablas que se mostrarán en la aplicación de análisis de datos.
+
+Para la obtención, procesamiento y gestión de los datos, se ha desarrollado la aplicación con un enfoque escalable y mantenible.
+Durante el desarrollo se ha utilizado la tecnología de React, una biblioteca de JavaScript para la creación de interfaces de usuario.
+ Complementado con el uso de Html y Css y diversas librerías y APIs. 
+
+\subsubsection{Estructura de la aplicación}
+\label{sec:estructura-aplicacion}
+
+La aplicación está compuesta por varios módulos cada uno encargado de una tarea específica. La estructura de la aplicación es la
+siguiente:
+
+\begin{itemize}
+    \item \textbf{Configuración:} Módulo encargado de la configuración de la aplicación. Gracias a este módulo la aplicación
+    crea las URLs necesarias y realiza las consultas a la API de Matomo. Cada URL está formada en función del módulo 
+    correspondiente de Matomo, la acción pertinente y las variables necesarias para la consulta. También existen configuraciones
+    para indicar que gráficos y datos se muestran en cada página. 
+    \item \textbf{Consultas:} Módulo encargado de realizar las consultas a la API de Matomo. En este módulo se encuentran las
+    funciones que realizan las consultas a la API y devuelven los datos obtenidos. Para cada acción se intenta llamar al Módulo
+    API y a la acción getProcessedReport para obtener toda la información que nos ofrece Matomo acerca de cada acción. 
+    \item \textbf{Procesamiento:} Módulo encargado de pedir y procesar los datos obtenidos para crear las distintas páginas
+    de la aplicación. Para cada página se buscarán los datos y llamadas asignadas para la creación de la página, se pedirán 
+    los datos y se enviarán a los componentes de gráficas y tablas para su creación y ordenará los resultados de estos componentes 
+    para mostrarlos en la página.
+    \item \textbf{Componentes:} Dentro de este módulo se encuentran los componentes de gráficas y tablas que se utilizan en la
+    aplicación. Cada componente es un archivo independiente que se encarga de la creación de una gráfica o tabla en concreto.
+    \item \textbf{Diseño:} En este módulo se encuentran las hojas de estilo de Css que se utilizan en la aplicación para darle
+    un diseño más atractivo y usable.
+\end{itemize}
+
+\subsubsection{Desarrollo de la aplicación}
+\label{sec:desarrollo-aplicacion}
+
+Para el desarrollo de la aplicación haciendo uso de la API el primer paso tras tener configurado y listo Matomo fue obtener un 
+servidor donde alojar la aplicación ya que por seguridad el API bloquea las consultas que se realizan desde un servidor local.
+Para ello se utilizó el servicio de Netlify \cite{netlify}, un servicio de alojamiento de aplicaciones web que permite desplegar aplicaciones
+de forma sencilla y rápida.
+   
+Una vez alojada la aplicación, se comenzó a desarrollar la aplicación. Para ello se se comenzó con los archivos de configuración
+los cuales se encargan de crear las URLs necesarias para realizar las consultas a la API. 
+
+\paragraph{Ejemplo de archivo de configuración de la API de Matomo}
+\begin{lstlisting}[language=Java]
+    const methodBase = 'MediaAnalytics';
+    const module = 'API';
+
+    export const MediaAnalytics_get = (idSite, period = 'day', date = '2023-12-01,2024-07-01') => {
+        const method = `${methodBase}.get`;
+        return { url: getBaseUrl(module ,method, { idSite, period, date }), title: 'Overall Metrics' };
+    };
+
+    export const MediaAnalytics_getCurrentNumPlays = async (idSite, lastMinutes = 180) => {
+        const action = 'getCurrentNumPlays';
+        const method = `${methodBase}.getCurrentNumPlays`;
+        return await fetchData(idSite, { module: methodBase, action,url: getBaseUrl(module ,method, { idSite, lastMinutes })});
+    };
+
+\end{lstlisting}
+
+Estos archivos reciben los parámetros necesarios para realizar las consultas a la API, crean la URL (getBaseUrl) y consiguen los
+datos (fetchData) necesarios para la creación de las gráficas y tablas. 
+
+\paragraph{Función para la creación de la URL de la API de Matomo}
+\begin{lstlisting}[language=Java]
+    export const getBaseUrl = (module, method, params = {}) => {
+        const baseUrl = `${baseURL}index.php?module=${module}&format=${format}&method=${method}&token_auth=${token_auth}`;
+        const queryParams = new URLSearchParams(params).toString();
+        return `${baseUrl}&${queryParams}`;
+  };
+\end{lstlisting}
+
+\paragraph{Función para la obtención de los datos de la API de Matomo}
+\begin{lstlisting}[language=Java]
+    
+export const fetchData = async (idSite, requestData) => {
+    var newChartData = null;
+    try {
+      try {
+        let dataUrl = API_getProcessedReport(idSite, 'year', 'yesterday', requestData.module, requestData.action, language);
+        let response = await axios.get(dataUrl.url);
+        var processedData = response.data;
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+  
+      // Usar la función de API general
+      const response1 = await axios.get(requestData.url);
+      const responseData = response1.data;
+  
+      const data = {
+        value: responseData,
+        info: processedData ? processedData : {}
+      };
+  
+      newChartData = data;
+      console.log('Data fetched:', newChartData);
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    }
+  
+    return newChartData;
+  };
+\end{lstlisting}
+
+
+Una vez obtenidos los datos, a través de la configuración de la página pertinente y con el formato adecuado y unificado se envían
+a los componentes de gráficas y tablas para su creación. Una vez creados los componentes, estos son añadidos a la página y se
+muestran los resultados.
+
+\paragraph{Ejemplo de creación de una gráfica}
+\begin{lstlisting}[language=Java]
+    return (
+        <div key={index} className="data-table-section">
+          <h2>{chartConfig.title}</h2>
+          <div className="chart-group">
+            {metrics.map((metric, metricIndex) => (
+              <GraphRenderer
+                key={metricIndex}
+                chart={{
+                  type: chartConfig.type,
+                  labels: labels,
+                  data: dataPoints[metric],
+                  title: chartConfig.metrics[metric],
+                  metricType: chartConfig.data.info?.metadata.metricTypes[metric] || 'number',
+                }}
+              />
+            ))}
+          </div>
+        </div>
+      );
+\end{lstlisting}
+
+Para detectar los formatos y los componentes que hay que crear, se creo el componente GraphRenderer que recibe los datos y el
+tipo de gráfica que se quiere crear y se encarga de llamar al componente correspondiente para la creación de la gráfica. Este componente
+se creo como puentre entre los datos y los componentes de gráficas y tablas para favorecer la escalabilidad y mantenibilidad de la
+aplicación. 
+
+\paragraph{Código del componente GraphRenderer}
+\begin{lstlisting}[language=Java]
+    
+    const GraphRenderer = ({ chart, chartIndex }) => {
+        const { type, labels, data, title, metricType } = chart;
+    
+    
+        switch (type) {
+        case 'lineal':
+            return (
+            <div className="graph_component" key={chartIndex}>
+                <ChartComponent
+                labels={labels}
+                data={data}
+                label={title}
+                title={title}
+                metricType={metricType}
+                />
+            </div>
+            );
+    
+        case 'pie':
+            return (
+            <div className="graph_component" key={chartIndex}>
+                <PieChartComponent
+                labels={labels}
+                data={data}
+                title={title}
+                />
+            </div>
+            );
+            ...
+        }
+    };
+\end{lstlisting}
+
+
+Para la creación de los distintos gráficos y tablas se han utilizado la librería de Chart.js \cite{ChartJS}. Esta librería
+permite la creación de gráficos y tablas de forma sencilla y rápida. Ofrece una amplia gama de gráficos y tablas que se pueden
+personalizar y adaptar a las necesidades de la aplicación. Es muy flexible lo que permite la creación de gráficos y tablas
+adaptado a las necesidades de la aplicación. Se han utilizado los componentes Line, Bar, Pie y Bubble por el momento para 
+la creación de las gráficas.
+
+\paragraph{Ejemplo de creación de un grafico lineal}
+\begin{lstlisting}[language=Java]
+    
+const ChartComponent = ({ data, labels, title, metricType }) => {
+    const chartData = {
+      labels,
+      datasets: [
+        {
+          label: title,
+          data,
+          fill: false,
+          backgroundColor: 'rgba(75, 192, 192, 0.6)',
+          borderColor: 'rgba(75, 192, 192, 1)',
+        },
+      ],
+    };
+  
+    if(metricType === 'percentage') {
+      chartData.datasets[0].yAxisID = 'percentage';
+    }
+    const options = {
+      scales: {
+        x: {
+          beginAtZero: true,
+        },
+        y: {
+          beginAtZero: true,
+        },
+      },
+    };
+  
+    return (
+      <div className="graph">
+        <h2>{title}</h2>
+        <Line data={chartData} options={options} />
+      </div>
+    );
+  };
+\end{lstlisting}
+
+Como se puede ver en el ejemplo de código, ChartJs permite la personalización de los distintos componente modificando los colores, 
+títulos, ejes, etc. 
+
+\subsubsection{Automatización y configuración de las páginas}
+\label{sec:automatizacion-configuracion-paginas}
+
+Siguiendo con el enfoque de escalabilidad y mantenibilidad de la aplicación, las aplicaciones se han creado de forma dinámica.
+Para cada página existe un archivo de configuración que indica que metodos y acciones se deben realizar para la creación de la
+página. Existe otro archivo con la información básica de cada gráfica por si la llamada a API.getProcessedReport no devuelve la
+información necesaria y con la función para obtener los datos correspondiente para crear dicha gráfica. 
+
+\paragraph{Ejemplo de archivo de configuración de una página}
+
+\begin{lstlisting}[language=Java]
+    export const pagesConfig = [
+  {
+    path: '/visitorSummary',
+    title: 'Resumen del visitante',
+    chartsConfig:visitCharts_summary,
+    components: ["chartOptions", "DataOverviewTable", "GraphRenderer"],
+  },
+  {
+    path: '/visitTime',
+    title: 'Tiempo',
+    chartsConfig: visitCharts_time,
+    components: ["GraphRenderer", "periodSelecter"]
+  },
+  ...
+];
+\end{lstlisting}
+
+\paragraph{Ejemplo de archivo de configuración de una gráfica}
+
+\begin{lstlisting}[language=Java]
+    export const visitsCharts_frequency = [
+    {
+      title: 'Visits - Frequency',
+      description: 'Get the frequency of visits.',
+      action: "get",
+      module: 'Visits',
+      period: 'month',
+      date: '2024-03-01,yesterday',
+      type: 'lineal',
+      metrics: {
+        "nb_visits_new" : "Nuevas visitas",
+        "nb_visits_returning": "Visitas que regresan"
+      },
+      data : [],
+      params: ["period"],
+      fetchDataFunction: visitFrequency_get,
+      async getData(idSite, period = this.period, date = this.date){
+        this.data = await visitFrequency_get(idSite, period, date)
+        if(this.data.info.metadata){
+          this.description = this.data.info.metadata.documentation;
+          this.title = this.data.info.metadata.name;
+          this.metrics = this.data.info.columns || this.data.info.metadata.metrics || this.metrics;
+        }  
+        return this;
+      }
+      
+    },
+   
+  ];
+\end{lstlisting}
+
+Esta función se llamará desde la página correspondiente y se comenzará el proceso de creación de las gráficas. 
+
+\subsubsection{Context y Hooks}
+\label{sec:context-hooks}
+
+Para la gestión de los datos y la comunicación entre los distintos componentes de la aplicación se ha utilizado la API de Context
+y Hooks de React. Context es una API que permite compartir datos entre componentes de la aplicación sin tener que pasar los datos
+a través de props. Se crea un contexto y se envuelve la aplicación en un componente que provee el contexto. Los componentes utilizarán
+el contexto para acceder a los datos. 
+
+En el caso de esta aplicación, se ha creado un contexto para la detección del id del sitio web que se está analizando. Este id
+se utiliza para realizar las consultas a la API de Matomo y obtener los datos correspondientes a ese sitio web. 
+
+\paragraph{Ejemplo de uso de Context:}   
+\begin{verbatim}
+    const { idSite } = useContext(IdSiteContext);
+\end{verbatim}
+
+Hooks es una API que permite a los componentes de la aplicación utilizar el estado y otras características de React sin tener que
+escribir una clase. Se utilizan para la gestión del estado de los componentes y para la comunicación entre los distintos componentes
+de la aplicación. 
+
+Los hooks más utilizados en la aplicación son useState y useEffect (y useContext para el uso de Context del id). 
+
+\paragraph{UseState: } Hook que permite añadir estado a los componentes funcionales y actualizarlo cuando sea necesario.
+
+\begin{verbatim}
+    const [isLoading, setIsLoading] = useState(true);
+\end{verbatim}
+
+\paragraph{UseEffect: } Hook que permite realizar efectos secundarios en los componentes funcionales. Se ejecuta después de cada
+renderizado del componente.
+
+\paragraph{Ejemplo de uso de useEffect para la actualización de los datos cuando cambia el id del sitio web:}
+\begin{verbatim}
+    useEffect(() => {
+        const fetchData = async () => {
+          setLoading(true);
+          try {
+            const evolutionData = await homeCharts_VisitsSection_Evolution.getData(idSite); 
+            setVisitsEvolution(evolutionData);
+          } catch (error) {
+            console.error('Error fetching visits data:', error);
+          } finally {
+            setLoading(false);
+          }
+        };
+        fetchData();
+      }, [idSite]);
+\end{verbatim}
+
+
+\subsubsection{Despliegue de la aplicación}
+\label{sec:despliegue-aplicacion}
+
+Conforme se iba desarrollando la aplicación, se iban realizando pruebas para comprobar que todo funcionaba correctamente.
+Para realizar estas pruebas se utilizó postman, una herramienta que permite realizar peticiones a una API y comprobar que los
+datos devueltos son los correctos y el servicio de Netlify \cite{netlify} que permite desplegar aplicaciones de forma sencilla y rápida
+para comprobar que la aplicación se desplegaba correctamente. Por el momento la aplicación sigue alojada en Netlify y se puede
+acceder a ella a través de la URL \url{https://kanaloa-dev.netlify.app}
