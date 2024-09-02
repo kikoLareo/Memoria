@@ -1,0 +1,92 @@
+\chapter{Pruebas}
+\label{chap:pruebas}
+
+\section{Introducción}
+\label{sec:introduccion_pruebas}
+
+En este capítulo se describen las pruebas realizadas durante el desarrollo del proyecto. Estas pruebas tienen como
+objetivo verificar el correcto funcionamiento de la aplicación y comprobar que cumple con los requisitos establecidos
+en la fase de análisis. 
+
+\subsection{Plan de pruebas unitarias, integración y sistema}
+\label{subsec:plan_pruebas}
+
+Desde el inicio del proyecto, se planificó un enfoque de pruebas exhaustivo que abarcara pruebas unitarias, 
+de integración y de sistema, adaptado a la naturaleza de la aplicación y sus requisitos específicos. Dado naturaleza
+de la aplicación, las pruebas se realizaron principalmente de manera manual, llevadas a 
+cabo por diferentes miembros del equipo de desarrollo y calidad.
+
+\subsubsection{Pruebas Unitarias}
+Las pruebas unitarias se enfocaron en validar componentes individuales de la aplicación en sus fases iniciales de desarrollo. 
+Estas pruebas se realizaron en paralelo al desarrollo de cada funcionalidad, comprobando que cada módulo y microservicio funcionara 
+correctamente de forma aislada. El objetivo era identificar y corregir errores en las unidades más pequeñas de código antes de 
+integrarlas en el sistema global.
+
+\subsubsection{Pruebas de Integración}
+Una vez validadas las unidades individuales, se realizaron pruebas de integración para verificar que los diferentes componentes 
+del sistema, incluyendo microservicios y módulos de la aplicación, interactuaran correctamente entre sí. Estas pruebas fueron 
+esenciales para garantizar que la comunicación entre los distintos componentes y partes de la aplicación funcionara sin problemas
+y que no se produjeran errores de integración. 
+
+\subsubsection{Pruebas de Sistema}
+Las pruebas de sistema se llevaron a cabo utilizando la aplicación completa en dispositivos reales. Aunque inicialmente se consideró 
+el uso de emuladores, se constató que estos no ofrecían una representación precisa de las capacidades de procesamiento y 
+comportamiento de los dispositivos reales. Por ello, se optó por realizar pruebas directamente en los dispositivos finales, 
+asegurando que la aplicación funcionara de manera fluida y sin errores en condiciones reales de uso.
+
+El proceso de pruebas de sistema incluyó tanto pruebas funcionales, que verificaron que todas las funcionalidades de la
+ aplicación operaban como se esperaba, como pruebas de rendimiento, que aseguraron que la aplicación mantenía un comportamiento 
+ óptimo bajo diferentes cargas y en distintos dispositivos.
+
+\subsubsection{Enfoque de Pruebas Continua}
+Durante el desarrollo de cada funcionalidad, las pruebas fueron iterativas y continuas. Se realizaban pruebas parciales conforme 
+se avanzaba en la implementación, asegurando que cada nueva parte integrada no introducía errores ni afectaba negativamente al 
+rendimiento. Al finalizar cada funcionalidad, se llevaban a cabo pruebas más exhaustivas, tanto por el desarrollador como por 
+otros miembros del equipo, para garantizar que la aplicación en su conjunto funcionaba correctamente antes de proceder con nuevas adiciones.
+
+Este enfoque de pruebas continuas permitió identificar y resolver problemas de manera temprana, reduciendo el riesgo de errores 
+acumulados en las etapas finales del desarrollo. Además, este método aseguró una alta calidad del producto final al abordar las 
+posibles fallas en cada fase del desarrollo.
+
+\subsection{Pruebas de aceptación}
+\label{subsec:pruebas_aceptacion}
+
+Al estar desarrollando aplicaciones para terceros, las pruebas de la aplicación OTT realizadas por el equipo de desarrollo no son suficientes
+para garantizar la calidad del producto final. Por ello, se planificaron pruebas de aceptación que involucraran a los
+clientes, con el objetivo de validar que la aplicación cumplía con sus expectativas y requerimientos.
+
+Las pruebas de aceptación se llevaron a cabo en diferentes etapas del desarrollo, permitiendo a los clientes evaluar y
+proporcionar retroalimentación sobre la aplicación en su estado actual. Esta retroalimentación fue fundamental para
+ajustar y mejorar la aplicación en función de las necesidades y preferencias de los clientes, asegurando que el producto
+final cumpliera con sus expectativas. 
+
+Las pruebas de aceptación se realizaron a través de un servidor de pruebas donde estaba alojada la aplicación, permitiendo
+a los clientes acceder a la aplicación y probarla en un entorno controlado. Una vez el cliente completaba las pruebas, se
+realizaba una reunion telemática para obtener los resultados de las pruebas y el feedback del cliente. Durante estas reuniones
+se discutían los resultados y se acordaban los cambios y mejoras necesarios para la aplicación.
+
+\subsection{Pruebas realizadas por los marketplaces}
+\label{subsec:pruebas_marketplaces}
+
+Además de las pruebas de aceptación realizadas por los clientes, la aplicación OTT también es sometida a pruebas por parte
+de los marketplaces en los que se quiere publicar. Cada marketplace tiene sus propios requisitos y estándares de calidad que la
+aplicación debe cumplir para ser aprobada y publicada en su plataforma. Por ello, se realizan pruebas específicas para
+cada marketplace, asegurando que la aplicación cumple con los requisitos técnicos y de calidad establecidos por cada uno.
+
+Una vez completadas las pruebas de cada marketplace y corregidas las deficiencias detectadas, se envía la aplicación en el formato
+adecuado para cada plataforma, junto con la documentación y la información requerida. A continuación, se espera la aprobación o los 
+resultados de las distintas pruebas que realizan los marketplaces, que pueden incluir pruebas de rendimiento, seguridad, usabilidad,
+entre otras.
+
+\section{Resultados de las pruebas}
+\label{sec:resultados_pruebas}
+
+Para este proyecto ya se han realizado pruebas con versiones del código en varios marketplaces. Uno de ellos fue el de LG. Los 
+resultados de su prueba arrojaron un problema con la reproducción de los vídeos en la aplicación en un primer envio (fue corregido de 
+inmediato en la siguiente versión ya que no era un problema grave). Al reenviar la aplicación, las funcionalidades pasaron satisfactoriamente
+las pruebas de funcionalidades y de rendimiento. Sin embargo, se encontró otro problema importante: la aplicación no se inicia en 
+versiones más antiguas de webOs 5.0, esta incluida. Este problema se está intentando solucionar, pero no es un problema grave ya que
+a los clientes se ofreció una aplicación compatible y funcional con televisiones con alguno de las últimas 4 versiones de webOs
+(webOs 6.0, 22, 23, 24) por lo que será un error que se intentará solucionar pero que no afecta a la publicación de la aplicación.
+
+

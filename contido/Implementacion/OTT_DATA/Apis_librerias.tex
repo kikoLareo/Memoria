@@ -63,4 +63,54 @@ estos datos se ha utilizado una base de datos no relacional, en concreto \textit
 
 \paragraph{MongoDB: } MongoDB es una base de datos no relacional que permite almacenar datos en formato JSON. Es una base de datos
 escalable y flexible que permite almacenar grandes cantidades de datos y realizar consultas de forma rápida y eficiente.
-Para la integración de MongoDB con la aplicación de análisis de datos se ha utilizado la librería \textit{Mongoose}. Esta librería
+Para la integración de MongoDB con la aplicación de análisis de datos se ha utilizado el servicio en la nube de MongoDB Atlas.
+Este servicio ofrece una base de datos en la nube que permite almacenar y consultar datos de forma segura y eficiente. Además, MongoDB Atlas
+ofrece una serie de funcionalidades avanzadas, como la replicación de datos, la recuperación ante desastres y la escalabilidad automática,
+que garantizan la disponibilidad y el rendimiento de la base de datos.
+
+MongoDB Atlas se ha utilizado a través de su api para almacenar los datos de contexto y datos de las gráficas para su posterior análisis
+y generación de explicaciones. 
+
+\paragraph{API de MongoDB}
+\begin{lstlisting}[language=Java]
+  const BASE_URL = 'https://eu-west-2.aws.data.mongodb-api.com
+    /app/data-hrcfvpe/endpoint/data/v1/action';
+
+  exports.handler = async (event, context) => {
+    const { collection, query } = JSON.parse(event.body);
+  
+    const data = JSON.stringify({
+      collection: collection,
+      database: 'kanaloa',
+      dataSource: 'kanaloa',
+      filter: query,
+    
+    });
+  
+    const config = {
+      method: 'post',
+      url: `${BASE_URL}/findOne`,
+      headers: {
+        'Content-Type': 'application/json',
+        'api-key': API_KEY,
+      },
+      data: data
+    };
+  
+    try {
+      const response = await axios(config);
+      return {
+        statusCode: 200,
+        body: JSON.stringify(response.data.document),
+      };
+    } catch (error) {
+      console.error(error);
+      return {
+        statusCode: 500,
+        body: 'Error fetching data',
+      };
+    }
+  };
+\end{lstlisting}
+    
+
