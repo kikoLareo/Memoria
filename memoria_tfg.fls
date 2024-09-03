@@ -498,6 +498,9 @@ INPUT contido\Fundamentos\Teoricos\UX.tex
 INPUT .\contido\Fundamentos\Teoricos\Esc_adapt.tex
 INPUT .\contido\Fundamentos\Teoricos\Esc_adapt.tex
 INPUT contido\Fundamentos\Teoricos\Esc_adapt.tex
+INPUT .\contido\Fundamentos\Teoricos\Analisis.tex
+INPUT .\contido\Fundamentos\Teoricos\Analisis.tex
+INPUT contido\Fundamentos\Teoricos\Analisis.tex
 INPUT .\contido\Fundamentos\Tecnologicos\Arquitectura.tex
 INPUT .\contido\Fundamentos\Tecnologicos\Arquitectura.tex
 INPUT contido\Fundamentos\Tecnologicos\Arquitectura.tex
@@ -507,6 +510,9 @@ INPUT contido\Fundamentos\Tecnologicos\TechWeb.tex
 INPUT .\contido\Fundamentos\Tecnologicos\Adaptabilidad.tex
 INPUT .\contido\Fundamentos\Tecnologicos\Adaptabilidad.tex
 INPUT contido\Fundamentos\Tecnologicos\Adaptabilidad.tex
+INPUT .\contido\Fundamentos\Tecnologicos\Otros.tex
+INPUT .\contido\Fundamentos\Tecnologicos\Otros.tex
+INPUT contido\Fundamentos\Tecnologicos\Otros.tex
 INPUT .\contido\Metodologia\metodologia.tex
 INPUT .\contido\Metodologia\metodologia.tex
 OUTPUT contido\Metodologia\metodologia.aux
