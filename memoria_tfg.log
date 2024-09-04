@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.8.19)  4 SEP 2024 21:07
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.8.19)  4 SEP 2024 21:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -219,16 +219,20 @@ File: gloss-latex.ldf polyglossia: module for default language
 (C:\Users\francisco.lareo\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.s
 ty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
-) Estilo TFG: elixiuse como lingua do documento: gal
-Estilo TFG: cargando definicións para galego
+) Estilo TFG: elixiuse como lingua do documento: esp
+Estilo TFG: cargando definicións para español
+(C:\Users\francisco.lareo\AppData\Local\Programs\MiKTeX\tex/latex/polyglossia\g
+loss-spanish.ldf
+File: gloss-spanish.ldf polyglossia: module for Spanish
+)
+
+Package polyglossia Info: Default language is spanish
+
+
 (C:\Users\francisco.lareo\AppData\Local\Programs\MiKTeX\tex/latex/polyglossia\g
 loss-galician.ldf
 File: gloss-galician.ldf polyglossia: module for Galician
 )
-
-Package polyglossia Info: Default language is galician
-
-
 (C:\Users\francisco.lareo\AppData\Local\Programs\MiKTeX\tex/latex/polyglossia\g
 loss-english.ldf
 File: gloss-english.ldf polyglossia: module for English
@@ -1079,6 +1083,14 @@ Package: tracklang 2022/12/13 v1.6.1 (NLCT) Track Languages
 
 (C:\Users\francisco.lareo\AppData\Local\Programs\MiKTeX\tex/generic/tracklang\t
 racklang.tex))
+(C:\Users\francisco.lareo\AppData\Local\Programs\MiKTeX\tex/latex/datetime2-gal
+ician\datetime2-galician.ldf
+File: datetime2-galician.ldf 2018/04/13 v1.1
+
+(C:\Users\francisco.lareo\AppData\Local\Programs\MiKTeX\tex/latex/datetime2-gal
+ician\datetime2-galician-utf8.ldf
+File: datetime2-galician-utf8.ldf 2018/04/13 v1.1
+))
 (C:\Users\francisco.lareo\AppData\Local\Programs\MiKTeX\tex/latex/datetime2-eng
 lish\datetime2-en-US.ldf
 File: datetime2-en-US.ldf 2019/10/21 v1.05 (NLCT)
@@ -1087,13 +1099,13 @@ File: datetime2-en-US.ldf 2019/10/21 v1.05 (NLCT)
 lish\datetime2-english-base.ldf
 File: datetime2-english-base.ldf 2019/10/21 v1.05 (NLCT)
 ))
-(C:\Users\francisco.lareo\AppData\Local\Programs\MiKTeX\tex/latex/datetime2-gal
-ician\datetime2-galician.ldf
-File: datetime2-galician.ldf 2018/04/13 v1.1
+(C:\Users\francisco.lareo\AppData\Local\Programs\MiKTeX\tex/latex/datetime2-spa
+nish\datetime2-spanish.ldf
+File: datetime2-spanish.ldf 2017/11/13 v1.1
 
-(C:\Users\francisco.lareo\AppData\Local\Programs\MiKTeX\tex/latex/datetime2-gal
-ician\datetime2-galician-utf8.ldf
-File: datetime2-galician-utf8.ldf 2018/04/13 v1.1
+(C:\Users\francisco.lareo\AppData\Local\Programs\MiKTeX\tex/latex/datetime2-spa
+nish\datetime2-spanish-utf8.ldf
+File: datetime2-spanish-utf8.ldf 2017/11/13 v1.1
 ))
 (C:\Users\francisco.lareo\AppData\Local\Programs\MiKTeX\tex/latex/datetime2\dat
 etime2-calc.sty
@@ -1676,10 +1688,23 @@ Package: fp-eval 1995/04/03
 \dtl@codeB=\count406
 \@dtl@foreach@level=\count407
 )
+
+Package glossaries Warning: No language module detected for `gl'.
+(glossaries)                Language modules need to be installed separately.
+(glossaries)                Please check on CTAN for a bundle called
+(glossaries)                `glossaries-galician' or similar.
+
+
 (C:\Users\francisco.lareo\AppData\Local\Programs\MiKTeX\tex/latex/glossaries-en
 glish\glossaries-english.ldf
 File: glossaries-english.ldf 2014/11/23 v1.0
 )
+(C:\Users\francisco.lareo\AppData\Local\Programs\MiKTeX\tex/latex/glossaries-sp
+anish\glossaries-spanish.ldf
+File: glossaries-spanish.ldf 2014/11/23 v1.0
+
+(C:\Users\francisco.lareo\AppData\Local\Programs\MiKTeX\tex/latex/glossaries-sp
+anish\glossaries-spanish-utf8.ldf))
 
 Package glossaries Warning: No language module detected for `galician'.
 (glossaries)                Language modules need to be installed separately.
@@ -1790,11 +1815,8 @@ Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 ) (memoria_tfg.aux (portada/portada.aux) (portada/resumo.aux)
 (contido/introducion.aux) (contido/Fundamentos/fundamentos.aux)
 (contido/Metodologia/metodologia.aux) (contido/Analisis/Analisis.aux)
-(contido/Diseño/Diseño.aux) (contido/Implementacion/Implementacion.aux
-
-LaTeX Warning: Label `sec:adaptacion' multiply defined.
-
-) (contido/Pruebas/Pruebas.aux) (contido/Conclusiones.aux)
+(contido/Diseño/Diseño.aux) (contido/Implementacion/Implementacion.aux)
+(contido/Pruebas/Pruebas.aux) (contido/Conclusiones.aux)
 (contido/FuturosObjetivos.aux))
 \openout1 = `memoria_tfg.aux'.
 
@@ -2021,22 +2043,30 @@ LaTeX Font Info:    Font shape `TU/LinLibertine(0)/b/n' will be
 ]
 \openout2 = `portada/resumo.aux'.
 
- (portada/resumo.tex (portada/palabras_chave.tex
+ (portada/resumo.tex
+Overfull \hbox (1.48848pt too wide) in paragraph at lines 27--32
+[]\TU/LinLibertine(0)/m/n/10.95 Este traballo presenta o desenvolvemento e impl
+ementación dunha plataforma OTT (Over-
+ []
+
+
+
+[1
+
+
+] (portada/palabras_chave.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--11
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
 
  []
 
 )
 
-[1
-
-
-])
+[2])
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/b/n' will be
 (Font)              scaled to size 24.88pt on input line 70.
  (memoria_tfg.toc
@@ -2183,11 +2213,6 @@ Capítulo 4.
 
 [29]
 
-LaTeX Warning: Reference `par:adaptabilidad_android_tv_conversión' on page 30 u
-ndefined on input line 25.
-
-
-
 [30]))
 
 [31]
@@ -2259,6 +2284,11 @@ File: imaxes/comparador.png Graphic file (type bmp)
 [41]
 File: imaxes/circleGraph.png Graphic file (type bmp)
 <imaxes/circleGraph.png>
+
+Underfull \hbox (badness 1270) in paragraph at lines 64--64
+[]\TU/LinLibertine(0)/m/n/10.95 Figura 5.8: |Ejemplo de grafico circular
+ []
+
 File: imaxes/lineGraph.png Graphic file (type bmp)
 <imaxes/lineGraph.png>
 
@@ -2460,9 +2490,15 @@ No file memoria_tfg.gls.
 (memoria_tfg.bbl
 
 [77]
-Underfull \hbox (badness 1418) in paragraph at lines 97--102
-\TU/LinLibertine(0)/m/n/10.95 the day).” [En liña]. Dispoñible en: [][]$[][][][
-][] [] [] [] [][][] [] [][][][][][] [] [][][] [] [][][][] []
+Underfull \hbox (badness 1147) in paragraph at lines 42--46
+[]\TU/LinLibertine(0)/m/n/10.95 ——, “6ª ola junio 2024 barÓmetro ott - multidis
+positivo,” 2024.
+ []
+
+
+Underfull \hbox (badness 1968) in paragraph at lines 97--102
+\TU/LinLibertine(0)/m/n/10.95 the day).” [En línea]. Disponible en: [][]$[][][]
+[][] [] [] [] [][][] [] [][][][][][] [] [][][] [] [][][][] []
  []
 
 
@@ -2489,23 +2525,16 @@ Overfull \hbox (116.91383pt too wide) in paragraph at lines 97--102
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-07-20>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `memoria_tfg.out' has not changed.
 (rerunfilecheck)             Checksum: 2E571F51C91A30BDA8DD0D95AFB71B5A;15007.
  ) 
 Here is how much of TeX's memory you used:
- 37612 strings out of 409029
- 763455 string characters out of 5754711
+ 37920 strings out of 409029
+ 772741 string characters out of 5754711
  2185612 words of memory out of 5000000
- 59606 multiletter control sequences out of 15000+600000
+ 59899 multiletter control sequences out of 15000+600000
  567890 words of font info for 119 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  106i,13n,145p,2348b,2051s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on memoria_tfg.xdv (88 pages, 1862880 bytes).
+Output written on memoria_tfg.xdv (89 pages, 1888528 bytes).

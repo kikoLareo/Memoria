@@ -1,6 +1,6 @@
-\selectlanguage *[]{galician}
+\selectlanguage *[]{spanish}
 \selectlanguage *[]{english}
-\selectlanguage *[]{galician}
+\selectlanguage *[]{spanish}
 \contentsline {chapter}{\numberline {1}Introdución}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Contexto y motivación}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Objetivo del trabajo}{2}{section.1.2}%
@@ -19,7 +19,7 @@
 \contentsline {subsubsection}{Principios de diseño de UX}{8}{subsubsection*.8}%
 \contentsline {subsubsection}{Elementos clave de la UX en una plataforma OTT}{8}{subsubsection*.9}%
 \contentsline {subsubsection}{Elementos clave para la UX de la plataforma de análisis de datos}{9}{subsubsection*.10}%
-\contentsline {subsection}{\numberline {2.2.4}Escalabilidad, adaptabilidad y multiplataforma}{10}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.4}Escalabilidad, adaptabilidad y multiplataforma}{9}{subsection.2.2.4}%
 \contentsline {subsubsection}{Escalabilidad}{10}{subsubsection*.11}%
 \contentsline {subsubsection}{Adaptabilidad}{10}{subsubsection*.12}%
 \contentsline {subsubsection}{Multiplataforma}{11}{subsubsection*.13}%
@@ -153,7 +153,7 @@
 \contentsline {paragraph}{Interfaz}{54}{paragraph*.102}%
 \contentsline {paragraph}{Soporte de tecnologías web}{54}{paragraph*.103}%
 \contentsline {paragraph}{Navegación}{54}{paragraph*.104}%
-\contentsline {paragraph}{Reproducción de video}{55}{paragraph*.105}%
+\contentsline {paragraph}{Reproducción de video}{54}{paragraph*.105}%
 \contentsline {paragraph}{Detección del estado de la red}{55}{paragraph*.106}%
 \contentsline {paragraph}{Cerrar la aplicación}{55}{paragraph*.107}%
 \contentsline {subsubsection}{Desafíos encontrados}{55}{subsubsection*.108}%
