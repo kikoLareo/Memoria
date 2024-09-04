@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.8.19)  3 SEP 2024 22:11
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.8.19)  4 SEP 2024 21:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2048,13 +2048,13 @@ LaTeX Font Info:    Font shape `TU/LinLibertine(0)/b/n' will be
 ]
 
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 133.
+(Font)              scaled to size 10.0pt on input line 134.
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/sl' in size <10> not avail
 able
 (Font)              Font shape `TU/LinLibertine(0)/m/it' tried instead on input
- line 133.
+ line 134.
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/it' will be
-(Font)              scaled to size 10.0pt on input line 133.
+(Font)              scaled to size 10.0pt on input line 134.
 [2])
 \tf@toc=\write7
 \openout7 = `memoria_tfg.toc'.
@@ -2184,17 +2184,13 @@ Capítulo 4.
 [29]
 
 LaTeX Warning: Reference `par:adaptabilidad_android_tv_conversión' on page 30 u
-ndefined on input line 31.
+ndefined on input line 25.
 
 
 
-[30]
+[30]))
 
 [31]
-
-[32]) (contido/Analisis/Analisis_multiSO.tex))
-
-[33]
 \openout2 = `contido/Diseño/Diseño.aux'.
 
  (contido/Diseño/Diseño.tex
@@ -2202,66 +2198,76 @@ Capítulo 5.
 (contido/Diseño/Introduccion.tex) (contido/Diseño/Ott/Introduccion.tex
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/b/it' will be
 (Font)              scaled to size 12.0pt on input line 1.
+)
+(contido/Diseño/Ott/arquitectura_sistema.tex
+
+[32
 
 
-[34
 
 
+]
 
+[33]
 
-]) (contido/Diseño/Ott/arquitectura_sistema.tex
-
-[35]
-
-[36]
-
-[37]) (contido/Diseño/Ott/UX.tex
-
-[38]
+[34]) (contido/Diseño/Ott/UX.tex
 File: imaxes/UX_inicios.png Graphic file (type bmp)
 <imaxes/UX_inicios.png>
 File: imaxes/Home_desp_OhJazz.png Graphic file (type bmp)
 <imaxes/Home_desp_OhJazz.png>
+
+
+[35]
 File: imaxes/Home_CyLTv.png Graphic file (type bmp)
 <imaxes/Home_CyLTv.png>
 
 
-[39]
+[36]
 
-[40]
+[37]
 
-[41]
+[38]
 File: imaxes/Widget_banner.png Graphic file (type bmp)
 <imaxes/Widget_banner.png>
 File: imaxes/Widget_destacado.png Graphic file (type bmp)
 <imaxes/Widget_destacado.png>
 
-Overfull \hbox (44.90903pt too wide) in paragraph at lines 112--123
+Overfull \hbox (44.90903pt too wide) in paragraph at lines 101--112
 []$[]$   $[]$[][] 
  []
 
-
-
-[42]
 File: imaxes/Widget_poster.png Graphic file (type bmp)
 <imaxes/Widget_poster.png>
 File: imaxes/Widget_poster_abierto.png Graphic file (type bmp)
 <imaxes/Widget_poster_abierto.png>
 
-Overfull \hbox (44.90903pt too wide) in paragraph at lines 128--139
+Overfull \hbox (44.90903pt too wide) in paragraph at lines 117--128
 []$[]$   $[]$[][] 
  []
 
-) (contido/Diseño/Ott/UML.tex) (contido/Diseño/Datos/Introduccion.tex)
-(contido/Diseño/Datos/Diseño.tex
 
-[43]
+
+[39]) (contido/Diseño/Datos/Introduccion.tex) (contido/Diseño/Datos/Diseño.tex
+
+[40]
+File: imaxes/dashboard.png Graphic file (type bmp)
+<imaxes/dashboard.png>
+File: imaxes/comparador.png Graphic file (type bmp)
+<imaxes/comparador.png>
+
+
+[41]
+File: imaxes/circleGraph.png Graphic file (type bmp)
+<imaxes/circleGraph.png>
+File: imaxes/lineGraph.png Graphic file (type bmp)
+<imaxes/lineGraph.png>
+
+
+[42]
+
+[43]))
 
 [44]
-
-[45]))
-
-[46]
 \openout2 = `contido/Implementacion/Implementacion.aux'.
 
  (contido/Implementacion/Implementacion.tex
@@ -2269,69 +2275,64 @@ Capítulo 6.
 (contido/Implementacion/introduccion.tex)
 (contido/Implementacion/OTT/Desarrollo.tex
 
-[47
+[45
 
 
 
 
 ]
 
-[48]
+[46]
 
-[49]
+[47]
 File: imaxes/OTT/menu_lateral_cerrado.png Graphic file (type bmp)
 <imaxes/OTT/menu_lateral_cerrado.png>
 
-Underfull \hbox (badness 5504) in paragraph at lines 113--113
+Underfull \hbox (badness 5504) in paragraph at lines 117--117
 []\TU/LinLibertine(0)/m/n/10 (a) |Menú
  []
 
 File: imaxes/OTT/menu_lateral_abierto.png Graphic file (type bmp)
 <imaxes/OTT/menu_lateral_abierto.png>
 
-Underfull \hbox (badness 3679) in paragraph at lines 119--119
+Underfull \hbox (badness 3679) in paragraph at lines 123--123
 []\TU/LinLibertine(0)/m/n/10 (b) |Menú
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--119
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
 \TU/LinLibertine(0)/m/n/10 lateral
  []
 
 
 
-[50]
+[48]
 
-[51]
+[49]
 File: imaxes/OTT/pantalla_detalle_contenedor1.png Graphic file (type bmp)
 <imaxes/OTT/pantalla_detalle_contenedor1.png>
 File: imaxes/OTT/pantalla_detalle_contenedor2.png Graphic file (type bmp)
 <imaxes/OTT/pantalla_detalle_contenedor2.png>
 
-Overfull \hbox (44.90903pt too wide) in paragraph at lines 169--180
+Overfull \hbox (44.90903pt too wide) in paragraph at lines 173--184
 []$[]$   $[]$[][] 
  []
 
-
-
-[52]
 File: imaxes/OTT/Pantalla_detalle_contenido.png Graphic file (type bmp)
 <imaxes/OTT/Pantalla_detalle_contenido.png>
 
 
+[50]
+
+[51]) (contido/Implementacion/OTT/Adaptacion.tex
+
+[52]
+
 [53]
 
-[54]) (contido/Implementacion/OTT/Adaptacion.tex
+[54])
 
-[55]
-
-[56]
-
-[57]
-
-[58]) (contido/Implementacion/OTT_DATA/Configuracion.tex
-
-[59]
+[55] (contido/Implementacion/OTT_DATA/Configuracion.tex
 (C:\Users\francisco.lareo\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstl
 ang1.sty
 File: lstlang1.sty 2024/05/25 1.10b listings language file
@@ -2341,105 +2342,115 @@ isc.sty
 File: lstmisc.sty 2024/05/25 1.10b (Carsten Heinz)
 )
 LaTeX Font Info:    Font shape `TU/LinLibertine(5)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 33.
+(Font)              scaled to size 9.0pt on input line 30.
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 34.
+(Font)              scaled to size 9.0pt on input line 31.
 
 
-[60]
-Overfull \hbox (15.89778pt too wide) in paragraph at lines 45--46
+[56]
+Overfull \hbox (15.89778pt too wide) in paragraph at lines 42--43
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 ) (contido/Implementacion/OTT_DATA/Desarrollo.tex
 
-[61]
+[57]
 (C:\Users\francisco.lareo\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstl
 ang1.sty
 File: lstlang1.sty 2024/05/25 1.10b listings language file
 )
 
-[62]
-Overfull \hbox (177.89943pt too wide) in paragraph at lines 70--71
+[58]
+Overfull \hbox (177.89943pt too wide) in paragraph at lines 59--60
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 
 
+[59]
+
+[60]
+
+[61]
+
+[62]
+
 [63]
+Overfull \hbox (22.88933pt too wide) in paragraph at lines 302--303
+[]\TU/LinLibertine(0)/m/n/10.95 Los hooks más utilizados en esta aplicación son
+ \TU/LinLibertine(5)/m/n/10.95 useState \TU/LinLibertine(0)/m/n/10.95 y \TU/Lin
+Libertine(5)/m/n/10.95 useEffect \TU/LinLibertine(0)/m/n/10.95 (y \TU/LinLibert
+ine(5)/m/n/10.95 useContext
+ []
 
-[64]
+LaTeX Font Info:    Font shape `TU/LinLibertine(5)/b/n' will be
+(Font)              scaled to size 10.95pt on input line 304.
 
-[65]
-
-[66]
-
-[67]
-Overfull \hbox (187.78683pt too wide) in paragraph at lines 339--339
+Overfull \hbox (187.78683pt too wide) in paragraph at lines 328--328
 []            \TU/LinLibertine(5)/m/n/10.95 const evolutionData = await homeCha
 rts_VisitsSection_Evolution.getData(idSite);[] 
  []
 
 
 
-[68]) (contido/Implementacion/OTT_DATA/Apis_librerias.tex
+[64]) (contido/Implementacion/OTT_DATA/Apis_librerias.tex
 
-[69]
+[65]
 
-[70]
+[66]
 
-[71]))
+[67]))
 
-[72]
+[68]
 \openout2 = `contido/Pruebas/Pruebas.aux'.
 
  (contido/Pruebas/Pruebas.tex
 Capítulo 7.
 
 
-[73
+[69
 
 
 
 
 ]
 
-[74])
+[70])
 
-[75]
+[71]
 \openout2 = `contido/Conclusiones.aux'.
 
  (contido/Conclusiones.tex
 Capítulo 8.
 
 
-[76
+[72
 
 
 
 
 ])
 
-[77]
+[73]
 \openout2 = `contido/FuturosObjetivos.aux'.
 
  (contido/FuturosObjetivos.tex
 Capítulo 9.
 
 
-[78
+[74
 
 
 
 
 ])
 
-[79]
+[75]
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
 (Font)              scaled to size 24.88pt on input line 97.
 
 
-[80
+[76
 
 
 
@@ -2448,7 +2459,7 @@ No file memoria_tfg.acr.
 No file memoria_tfg.gls.
 (memoria_tfg.bbl
 
-[81]
+[77]
 Underfull \hbox (badness 1418) in paragraph at lines 97--102
 \TU/LinLibertine(0)/m/n/10.95 the day).” [En liña]. Dispoñible en: [][]$[][][][
 ][] [] [] [] [][][] [] [][][][][][] [] [][][] [] [][][][] []
@@ -2464,11 +2475,11 @@ Overfull \hbox (116.91383pt too wide) in paragraph at lines 97--102
 
 
 
-[82
+[78
 
 ])
 
-[83] (memoria_tfg.aux (portada/portada.aux) (portada/resumo.aux)
+[79] (memoria_tfg.aux (portada/portada.aux) (portada/resumo.aux)
 (contido/introducion.aux) (contido/Fundamentos/fundamentos.aux)
 (contido/Metodologia/metodologia.aux) (contido/Analisis/Analisis.aux)
 (contido/Diseño/Diseño.aux) (contido/Implementacion/Implementacion.aux)
@@ -2486,15 +2497,15 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `memoria_tfg.out' has not changed.
-(rerunfilecheck)             Checksum: B8A5746520B50F6CB256AAF4905EF749;15077.
+(rerunfilecheck)             Checksum: 2E571F51C91A30BDA8DD0D95AFB71B5A;15007.
  ) 
 Here is how much of TeX's memory you used:
- 37581 strings out of 409029
- 762738 string characters out of 5754711
+ 37612 strings out of 409029
+ 763455 string characters out of 5754711
  2185612 words of memory out of 5000000
- 59574 multiletter control sequences out of 15000+600000
- 567882 words of font info for 118 fonts, out of 8000000 for 9000
+ 59606 multiletter control sequences out of 15000+600000
+ 567890 words of font info for 119 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  106i,13n,145p,2348b,2051s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on memoria_tfg.xdv (92 pages, 2036196 bytes).
+Output written on memoria_tfg.xdv (88 pages, 1862880 bytes).

@@ -1,90 +1,110 @@
 \subsection{Estudio y diseño de la aplicación de análisis de datos}
 \label{sec:diseno-estudio}
 
-El diseño de la aplicación de análisis de datos se ha realizado siguiendo una metodología de diseño centrada en el usuario. 
-Para ello, se ha realizado un análisis de las necesidades de los usuarios, se han definido los requisitos de la aplicación 
-y se ha diseñado la interfaz de usuario.
+El diseño de la aplicación de análisis de datos se ha realizado siguiendo una metodología centrada en el usuario. Para ello, 
+se llevó a cabo un análisis de las necesidades de los usuarios, se definieron los requisitos de la aplicación y se diseñó la 
+interfaz de usuario.
 
-Dentro de las necesidades de los usuarios y de los requisitos de la aplicación se destaca la necesidad de que la visualización
-de los datos sea clara y sencilla y que para utilizar la aplicación no sea necesario tener conocimientos avanzados de análisis de datos.
+Entre las principales necesidades y requisitos de la aplicación destaca la importancia de que la visualización de los datos sea 
+clara y sencilla, evitando la necesidad de conocimientos avanzados en análisis de datos para su uso.
 
-En cuanto al diseño de la interfaz de usuario, se ha optado por un enfoque sencillo y minimalista, utilizando colores suaves y 
-una tipografía clara y legible. La interfaz ha sido diseñada para ser intuitiva y fácil de usar, permitiendo al usuario acceder 
-rápidamente a todas las funcionalidades de la aplicación. El diseño se centra en la visualización de gráficos y datos, presentando 
-la información de manera ordenada y consistente, para que el usuario pueda comprenderla rápidamente. Todas las gráficas y tablas 
-comparten un estilo uniforme y limpio, evitando elementos recargados que puedan distraer la atención.
+El diseño de la interfaz de usuario sigue un enfoque sencillo y minimalista, con colores suaves y tipografía clara y legible. 
+Se ha diseñado para ser intuitiva y fácil de usar, permitiendo al usuario acceder rápidamente a todas las funcionalidades. 
+El foco está en la visualización de gráficos y datos, presentando la información de forma ordenada y consistente para facilitar 
+su comprensión. Todas las gráficas y tablas comparten un estilo uniforme y limpio, evitando elementos visualmente recargados.
 
-De forma similar a la OTT, el diseño de la aplicacion de análisis de datos se ha realizado siguiendo un enfoque modular,
-dividiendo la aplicación en diferentes componentes independientes que se comunican entre sí. Esto permite que la aplicación sea
-más fácil de mantener y extender, ya que cada componente puede ser modificado o reemplazado sin afectar al resto de los componenetes 
-ni a la interfaz. Además, el diseño modular facilita la reutilización de código y la integración de nuevas funcionalidades.
+De forma similar a la OTT, este diseño sigue un enfoque modular, dividiendo la aplicación en componentes independientes que se 
+comunican entre sí. Esto facilita el mantenimiento y la extensibilidad de la aplicación, ya que cada componente puede ser modificado 
+o reemplazado sin afectar al resto. Además, el diseño modular permite la reutilización de código y la integración de nuevas funcionalidades.
 
 \subsubsection{Estudio de las agrupaciones de datos}
 \label{sec:diseno-agrupaciones}
+Una vez definidos los requisitos de la aplicación y el diseño general, era importante estudiar qué agrupaciones de datos se podían 
+lograr con las funcionalidades que ofrece Matomo y qué opciones de visualización se podían implementar.
 
-Una vez definidos los requisitos de la aplicación y el diseño general, era importante estudiar que agrupaciones de datos 
-se podian lograr con las funcionalidades que ofrece Matomo y que opciones de visualización se podían implementar. 
-
-Lo primero fue detectar que tipos de gráficos eran necesarios soportar y diseñar. Tras un análisis de la entrega de los datos
-que hace Matomo se decidió comenzar con el soporte para gráficos lineales, de barras, circulares y tablas. Así, en función 
-de la utilidad, periodo y enfoque de los datos, se podrán seleccionar diferentes tipos de gráficos para visualizar la información.
+Lo primero fue identificar qué tipos de gráficos eran necesarios soportar y diseñar. Tras analizar la entrega de datos que realiza 
+Matomo, se decidió comenzar con el soporte para gráficos lineales, de barras, circulares y tablas. De esta manera, en función de la 
+utilidad, periodo y enfoque de los datos, se podrán seleccionar diferentes tipos de gráficos para visualizar la información.
 
 \paragraph{Páginas y secciones}
-Lo siguiente era estudiar que páginas o apartados de la aplicación de análisis de datos se podían implementar. La primera página en la que 
-se pensó fue la página de inicio o dashboard, en la que se mostrarán los gráficos que presenten una información más general y resumida
-de los datos. 
+Posteriormente, se estudió qué páginas o apartados de la aplicación de análisis de datos podían implementarse. La primera página en la 
+que se pensó fue el dashboard o página de inicio, donde se mostrarán gráficos que presenten información más general y resumida de los datos.
 
-Otra página en la que se pensó durante el análisis fue una página que permitiera al usuario comparar gráficas provenientes de diferentes
-módulos. La idea era que el cliente tuviera la oportunidad de comparar varias gráficas de diferentes módulos en una misma página para 
-poder analizar la información en busca de patrones, tendencias o correlaciones entre los datos.
 
-El resto de páginas son dedicadas a agrupaciones de datos que tienen relación entre sí. La creación de estas páginas se enfocó en 
-que fuera más dinámica y que permitiera la creación fácil y rápida de nuevas secciones. Estas páginas están enfocadas a mostrar 
-datos de los visitantes de la web desde diferentes puntos de vista. Para una OTT de estas características, pensada para ser 
-utilizada en varias plataformas y dispositivos, una de las secciones interesantes es la de dispositivos, que muestra información
-sobre los dispositivos desde los que se accede a la web, mostrando sistemas operativos, marcas, modelos, etc. Otro punto interesante 
-obviamente son las reproducciones, aquí se buscará mostrar información sobre la visualización de los contenidos, como el número de 
-reproducciones, el tiempo de visualización, videos más vistos, etc.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8  \textwidth]{imaxes/dashboard.png}
+    \caption{Página de inicio de la aplicación de análisis de datos}
+    \label{fig:dashboard}
+\end{figure}
 
-Teniendo claro que enfoques y datos queriamos mostrar, se comenzó con el diseño de las páginas y secciones y la búsqueda de las 
-funcionalidades de la API de Matomo que nos permitieran obtener los datos necesarios para mostrar la información deseada.
-Tras estudiar estas funcionalidades, y teniendo en cuenta cuales estaban implementadas y optimizadas en todos los códigos de
-las disitintas aplicaciones de la empresa, se crearon las pantallas de reproducciones, dispositivos y videos y visitas, además de
-la de inicio y comparador.
+Otra página considerada durante el análisis fue una que permitiera al usuario comparar gráficas de diferentes módulos. La idea 
+era ofrecer al cliente la posibilidad de visualizar varias gráficas en una misma página, facilitando así el análisis de información 
+en busca de patrones, tendencias o correlaciones entre los datos.
 
-\begin{itemize}
-    \item \textbf{Inicio:} En esta página se mostrarán los gráficos más generales y resumidos de los datos, como el número de visitas, 
-    reproducciones, dispositivos, etc en los últimos instántes. La idea es que el usuario pueda obtener una visión general de los datos en un solo vistazo.
-    \item \textbf{Reproducciones:} En esta página se mostrarán los gráficos relacionados con las reproducciones de los videos, como el 
-    número de reproducciones, el tiempo medio de visualización, visitantes únicos, etc. La idea es que el usuario pueda analizar la 
-    información relacionada con las reproducciones de los videos y obtener insights sobre el comportamiento de los usuarios.
-    \item \textbf{Dispositivos:} En esta página se mostrarán los gráficos relacionados con los dispositivos desde los que se accede a la web, 
-    como los sistemas operativos, las marcas, los modelos y tipos. La idea es que el usuario pueda analizar la información relacionada con los 
-    dispositivos y obtener insights sobre las preferencias de los usuarios.
-    \item \textbf{Videos:} Esta página será una lista de todos los contenidos de la plataforma con información para cada uno de ellos. Entre 
-    esta información el usuario puede ver el número de reproducciones, el tiempo medio de visualización, tasa de finalización, etc. Además, 
-    la tabla permite ordenar los datos en función de los diferentes campos. 
-    \item \textbf{Visitas:} Esta sección estará compuesta de varias páginas que muestran información sobre las visitas a la web. Las páginas 
-    existentes por el momento son: resumen, tiempo, frecuencia de visitas e interés de los visitantes.
-    \item \textbf{Comparador:} En esta página se mostrarán los gráficos de diferentes módulos para que el usuario pueda compararlos y analizar 
-    la información en busca de patrones, tendencias o correlaciones entre los datos. La idea es que el usuario pueda obtener insights sobre la 
-    relación entre los diferentes módulos y tomar decisiones informadas.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8  \textwidth]{imaxes/comparador.png}
+    \caption{Página de comparador de la aplicación de análisis de datos}
+    \label{fig:comparador}
+\end{figure}
+
+El resto de las páginas se dedican a agrupaciones de datos que tienen relación entre sí. La creación de estas páginas se diseñó 
+de manera dinámica, permitiendo la creación rápida y sencilla de nuevas secciones. Estas páginas están enfocadas en mostrar 
+datos de los visitantes desde diferentes perspectivas. Para una OTT de estas características, pensada para su uso en diversas 
+plataformas y dispositivos, una sección relevante es la de dispositivos, que ofrece información sobre los sistemas operativos, 
+marcas y modelos desde los cuales se accede. Otro punto clave son las reproducciones, donde se muestra información sobre la 
+visualización de contenidos, como el número de reproducciones, tiempo de visualización y los videos más vistos.
+
+
+\begin{figure}[ht]
+    \centering
+    \begin{minipage}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{imaxes/circleGraph.png}
+        \caption{Ejemplo de grafico circular mostrando la distribución de los tipos de dispositivos en los que se accede a la web}
+        \label{fig:circleGraph}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{imaxes/lineGraph.png}
+        \caption{Ejemplo de gráfico lineal mostrando la evolución del número de visitantes únicos en la web}
+        \label{fig:imagen2}
+    \end{minipage}
+\end{figure}
+
+Con los enfoques y datos claramente definidos, se procedió al diseño de las páginas y secciones, centrándose en las funcionalidades de la API de 
+Matomo que permiten obtener los datos necesarios. Tras analizar las funcionalidades disponibles, y considerando cuáles ya estaban implementadas y 
+optimizadas en los sistemas de la empresa, se desarrollaron las pantallas de reproducciones, dispositivos, videos, visitas, además del dashboard 
+de inicio y el comparador.
+
+\begin{itemize} 
+    \item \textbf{Inicio:} Esta página presenta los gráficos más generales y resumidos de los datos, como el número de visitas, 
+    reproducciones y dispositivos en tiempo real. Está diseñada para ofrecer al usuario una visión global de los datos de un solo vistazo. 
+    \item \textbf{Reproducciones:} Aquí se muestran gráficos relacionados con las reproducciones de videos, incluyendo el número de reproducciones, 
+    tiempo medio de visualización y visitantes únicos. El objetivo es que el usuario pueda analizar los patrones de visualización y obtener insights 
+    sobre el comportamiento de los usuarios. 
+    \item \textbf{Dispositivos:} En esta página se despliegan gráficos relacionados con los dispositivos desde los que se accede a la web, como 
+    sistemas operativos, marcas y modelos. Esto permite al usuario analizar las preferencias de los usuarios en cuanto a dispositivos. 
+    \item \textbf{Videos:} Esta página incluye una lista de los contenidos de la plataforma con información detallada de cada uno, como número de 
+    reproducciones, tiempo medio de visualización y tasa de finalización. Además, la tabla permite ordenar los datos por diferentes campos, facilitando el análisis. 
+    \item \textbf{Visitas:} Esta sección está compuesta por varias páginas que detallan la información sobre las visitas a la web. Actualmente incluye 
+    páginas dedicadas a resumen de visitas, tiempo de navegación, frecuencia de visitas e interés de los visitantes. 
+    \item \textbf{Comparador:} En esta página el usuario puede visualizar y comparar gráficos de diferentes módulos para analizar correlaciones, 
+    tendencias o patrones entre los datos. Esto facilita la obtención de insights sobre la relación entre diferentes variables y módulos, ayudando 
+    a tomar decisiones informadas. 
 \end{itemize}
 
 
 \subsubsection{Funcionalidades de la aplicación}
 \label{sec:diseno-funcionalidades}
 
-El enfoque de la aplicación de análisis de datos es proporcionar al usuario una herramienta sencilla y eficaz para analizar los datos
-de la OTT. Para ello, además de la visualización de gráficos y tablas, otro de los requisitos de la aplicación es que los clientes
-tengan la posibilidad de obtener una explicación de los datos y de las gráficas que se muestran. Para esto los usuarios dispondrán de 
-una opción que les permita obtener una breve explicación de lo que se está mostrando en la gráfica y otra opción gracias a la cual 
-al ser seleccionada el usuario obtendrá un análisis más detallado de los datos a través de la API de OpenAi. Esta funcionalidad utilizará
-un contexto general de la aplicación de la cual se estan visualizando los datos y la información de la gráfica para obtener un análisis
-más detallado y preciso. Este contexto se ira mejorando y detallando con el tiempo y la utilización de la plataforma y será almacenado
-a través de la API de MongoDB praa poder ser suministrado a la API de OpenAi cuando sea necesario. 
+Además de la visualización de gráficos y tablas, la aplicación incluye una funcionalidad que permite al usuario obtener explicaciones sobre los 
+datos que se están mostrando. Esta opción ofrece tanto una breve descripción como un análisis más detallado de los datos a través de la API de OpenAI.
 
-
+Para generar este análisis, se utiliza un contexto general de la sección de la aplicación desde la cual se visualizan los datos, complementado con 
+la información de la gráfica específica. Este contexto, que incluye metadatos relacionados con los usuarios y las interacciones dentro de la OTT, se 
+almacena en MongoDB. Así, a medida que se va utilizando la plataforma, este contexto se enriquece y se optimiza para proporcionar análisis cada vez más 
+precisos y detallados
 
 
 

@@ -1,16 +1,13 @@
 
 \subsection{Diseño de la interfaz de usuario}
 \label{sec:diseno-ux-diseno}
-La interfaz de usuario es la parte de un programa que interactúa con el usuario. En el caso de \textit{Ott} 
-es la parte que se encarga de mostrar la información al usuario y de permitirle interactuar con el sistema
-La interfaz de usuario es una parte fundamental de cualquier sistema, ya que es la parte que el usuario ve 
-y con la que interactúa. Por tanto, es importante que la interfaz de usuario sea clara, sencilla e intuitiva, 
-para que el usuario pueda utilizar el sistema de forma eficiente y sin problemas.
+La interfaz de usuario es la parte de la aplicación que permite la interacción con el sistema. En \textit{Ott}, 
+se encarga de mostrar la información al usuario y permitirle navegar y utilizar las funcionalidades. 
+Es esencial que la interfaz sea clara, sencilla e intuitiva, para garantizar una experiencia de uso eficiente.
 
-Cuando se comenzó con el diseño de de la aplicación, no se trabajó sobre un diseño final exacto ya que este
-dependía de los clientes que fueran uniendose al proyecto y decidiendo su propia interfaz. Lo que se fue diseñando
-a medida que avanzaba el proyecto fue una interfaz base que permitiera ir añadiendo nuevas funcionalidades y 
-los distintos componentes personalizables que se irían añadiendo a la interfaz. 
+El diseño inicial no partió de un esquema definitivo, ya que debía adaptarse a las necesidades de los clientes. 
+Se desarrolló una interfaz base que facilitara la incorporación de nuevas funcionalidades y la personalización 
+según los requisitos de cada cliente.
 
 \begin{figure}[H]
     \centering
@@ -21,7 +18,7 @@ los distintos componentes personalizables que se irían añadiendo a la interfaz
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{imaxes/Home_desp_OhJazz.png}
-    \caption{Captura de la interfaz más recientes, todavía con pruebas por parte del cliente}
+    \caption{Captura de la interfaz más reciente, aún en pruebas por parte del cliente}
     \label{fig:Home_desp_OhJazz}
 \end{figure}
 \begin{figure}[H]
@@ -31,76 +28,68 @@ los distintos componentes personalizables que se irían añadiendo a la interfaz
     \label{fig:Home_CyLTv}
 \end{figure}
 
-En estas imagenes se puede apreciar la evolución de la interfaz de usuario de \textit{Ott} desde sus inicios
-hasta la versión casi final. En la primera imagen se puede ver la interfaz en sus primeras fases, con un diseño
-muy básico y sin apenas funcionalidades. En la segunda imagen se puede ver la interfaz con un diseño más avanzado, 
-pero donde el cliente todavía estaba ajustando diferentes parametros (vemos que los iconos de los menús no se ven, 
-el menu no contrasta con el fondo, etc). En la tercera imagen se puede ver la interfaz casi final, con un diseño
-más pulido y con todas las funcionalidades implementadas.
+Estas imágenes muestran la evolución de la interfaz de usuario de \textit{Ott}. La primera imagen refleja el diseño básico inicial, 
+sin apenas funcionalidades. En la segunda, se observa un diseño más avanzado, aunque el cliente aún estaba ajustando parámetros (por ejemplo, 
+la falta de visibilidad de los iconos de los menús o el contraste del fondo). Finalmente, la tercera imagen muestra la interfaz casi 
+final, con un diseño pulido y todas las funcionalidades implementadas.
 
-Más que un diseño como tal de la interfaz, lo que se ha hecho es centrarse en los diseños de los diferentes componentes y sus
-variantes. 
-La estructura general, los tamaños y posiciones de los componentes principales es la misma (de momento) para todos los clientes, pudiendo
-modificar los colores y los textos. Estos componentes son los siguientes:
+Más que enfocarse en un diseño único, el proyecto se ha centrado en el diseño de componentes y sus variantes. Algunos elementos de 
+la interfaz tienen una estructura fija, aunque permiten personalizar colores y textos:
 
 \begin{itemize}
-    \item Menú lateral: es el menú que se encuentra a la izquierda de la pantalla y que permite al usuario navegar por las diferentes secciones de la aplicación.
-    \item Menú superior: es el menú que se encuentra en la parte superior de la pantalla y que permite al usuario acceder a las opciones de configuración de la aplicación. 
-    Para este componente se pueden llegar a modificar los iconos y los colores de fondo por parte del cliente, pero la posición (depende del número de 
-    opciones de este menú) y la funcionalidad es la misma para todos los clientes.
-    \item Barra de búsqueda: es la barra que se encuentra en la pantalla de búsqueda y que permite al usuario buscar elementos en la aplicación.
-    Esta barra utiliza los colores base del cliente para el difuminado y foco, pero la posición y tamaños es fija. 
-    \item Lista de elementos: es la lista de elementos que se encuentra en la parte central de la pantalla y que 
-    muestra al usuario los elementos disponibles en la aplicación. Estas listas tienen siempre la misma estructura y tamaños. El contenido
-    (titulos y contenidos) es personalizable por parte del cliente, así como el número de listas.
-    \item Detalle de elemento: es el detalle de un elemento que se encuentra en la parte central de la pantalla y que muestra al usuario la información detallada de un elemento.
-    La información es personalizable y es en función de la metadata del contenido, pero la estructura, tamaños y posición de los elementos es fija. En 
-    estos momentos se esta trabajando para que a través del gestor de contenidos el cliente tenga la capacidad de ordenar y personalizar más está 
-    sección.
+    \item \textbf{Menú lateral:} Permite navegar por las secciones de la aplicación y se encuentra a la izquierda de la pantalla.
+    \item \textbf{Menú superior:} Proporciona acceso a las opciones de configuración. Los iconos y colores de fondo son personalizables, pero la posición depende del número de opciones del menú.
+    \item \textbf{Barra de búsqueda:} Situada en la pantalla de búsqueda, su posición y tamaño son fijos, pero utiliza los colores base del cliente para los efectos de foco y difuminado.
+    \item \textbf{Lista de elementos:} Muestra los elementos disponibles en la aplicación. La estructura y tamaños son fijos, aunque el contenido y número de listas pueden personalizarse.
+    \item \textbf{Detalle de elemento:} Muestra la información detallada de un elemento. Aunque la metadata y el contenido son personalizables, la estructura y disposición de los elementos son fijos. Se está trabajando para permitir mayor personalización desde el gestor de contenidos.
 \end{itemize}
 
-El cliente tiene la capacidad de personalizar la interfaz de usuario de \textit{Ott} a su gusto, pudiendo cambiar
-el color de fondo, el color de los textos, el color de los botones, el color del foco etc. Además, el cliente puede añadir sus propios
-logos y textos a la interfaz, para que esta se adapte a su imagen corporativa. 
-
+El cliente puede personalizar la interfaz ajustando colores de fondo, texto, botones, foco y añadiendo sus logos e imágenes, adaptando la 
+aplicación a su identidad visual.
 \subsubsection{Personalización de los componentes}
 \label{sec:diseno-ux-personalizacion}
 
-Como ya se ha comentado, el diseño se ha centrado en el diseño de los componentes y sus variantes. Estos componentes podemos dividirlo en dos tipos
-siendo el enfoque de diseño diferente para cada uno de ellos: los contenidos y los contenedores. Ambos tipos son personalizables en función del 
-"widget" que se este tratando. Un widget es un componente de la interfaz de usuario que almacena y muestra uno o varios contenidos.
+Como se ha mencionado anteriormente, el diseño de la interfaz de usuario se ha centrado en la creación de componentes y sus múltiples variantes. 
+Estos componentes se dividen en dos tipos principales: \textit{contenidos} y \textit{contenedores}, cada uno de los cuales tiene un enfoque de 
+diseño diferente dependiendo del tipo de \textit{widget} en el que se utilicen. Un \textit{widget} es un componente de la interfaz que almacena y 
+muestra uno o varios contenidos de manera específica.
 
-En función del tipo de widget que se este tratando van a cambiar varios aspectos que afectan tanto a los contenidos como al contenedor en si. Para cada
-tipo de widget se debe crear el diseño y desarrollar el código necesario para que este se muestre correctamente en la interfaz de usuario. Los aspectos
-que afectan a los contenidos y a los contenedores son los siguientes:
+Cada tipo de \textit{widget} determina la presentación tanto de los contenidos como de los contenedores, lo que implica que se necesita un diseño y 
+un código específico para asegurar que se muestren correctamente en la interfaz. A continuación, se detallan los aspectos clave que cambian según 
+el tipo de \textit{widget}:
 
 \begin{itemize}
-    \item Disposición de los contenidos: en función del tipo de widget que se este tratando, los contenidos se van a mostrar de una forma u otra. 
-    Si el tipo es uno perteneciente a los destacados, los contenidos se van a mostrar de una forma más grande, en la parte alta de la pantalla y con un
-    diseño más llamativo. En función del tipo concreto de destacados este puede tener: botón, un único contenido, varios contenidos (slider), distinta
-    distribución de textos, iconos, etc. Podemos diferenciar 3 grandes cambios en la disposición de los contenidos: destacados, estos se muestran en la parte
-    superior de la pantalla, con un diseño más llamativo y con un tamaño mayor; mosaico,  los contenidos se muestran en forma de mosaico, con un tamaño
-    más pequeño y en la parte central de la pantalla; resto, para el resto de widgets los contenidos se omstrarán como una lista horizontal. 
-    \item Disposición de la información: en función del tipo de widget que se este tratando, la información se va a mostrar de una forma u otra y se van a mostrar
-    unos campos u otros. Por ejemplo, si el widget es de tipo "destacados" se va a mostrar el título, la descripción y el botón de acceso al contenido. Si el widget
-    es de tipo "banner" unicamente se mostrará el título.
-    \item Forma de las images: las imagenes de los contenidos se van a mostrar de formas diferentes en función del tipo. Podemos destacar 3 casos: destacados, 
-    en este caso las imagenes tiene un tamaño muy grande y están pensadas para solo mostrar una en si espacio y la información puede tener distinta distribución en 
-    función del tipo concreto; banner, las imagenes son más pequeñas y tienen una horientación horizontal utilizando un ratio de 16:9, la información se muestra justo
-    debajo de la imagen y esta varia en función del tipo concreto; poster, las imagenes son más pequeñas y tienen una horientación vertical utilizando un ratio de 9:16,
-    la imagen se muestra en el lateral derecho en un panel que se despliega cuando el foco esta más de un segundo en el contenido.
-    \item Otros: existen más personalizaciones posibles, por ejemplo: si es un directo el widget podrá tener definido que se muestre la barra de progreso y 
-    el nombre del programa actual, si es un tipo "banner-click" este widget está enfocado a mostrar un banner publicitario con horientación horizontal ocupando la mayoría
-    del ancho de la pantalla y haciendo click sobre el elemento (en el caso de televisiones está funcionalidad está desactivada) se redirige a una url externa.
+    \item \textbf{Disposición de los contenidos:} Según el tipo de \textit{widget}, los contenidos se distribuyen de formas diversas. Si se trata de 
+    un \textit{widget} de \textbf{destacados}, los contenidos se mostrarán con un tamaño más grande y ocuparán la parte superior de la pantalla, 
+    siendo más llamativos. Estos \textit{widgets} pueden tener distintas configuraciones, como la inclusión de botones, un único contenido 
+    destacado o varios en formato \textit{slider}, con opciones de distribución de texto e iconos. En contraste, un \textbf{mosaico} organizará los 
+    contenidos de manera compacta en el centro de la pantalla. Para otros tipos de \textit{widgets}, como las listas horizontales, los contenidos 
+    se dispondrán en filas secuenciales. Estos formatos son personalizables según las necesidades del cliente y el tipo de contenido que se desee resaltar.
+    
+    \item \textbf{Disposición de la información:} La cantidad y el tipo de información que se muestra también dependen del \textit{widget}. Por ejemplo, 
+    en un \textbf{destacado}, el sistema puede mostrar el título, una descripción detallada y un botón de acceso al contenido. En un \textbf{banner}, 
+    solo se mostrará el título del contenido. Esta flexibilidad en la información permite que los \textit{widgets} se ajusten a diferentes escenarios 
+    y preferencias del cliente, lo que es clave para mantener una interfaz adaptable y eficaz.
+    
+    \item \textbf{Forma de las imágenes:} La forma y el tamaño de las imágenes asociadas a los contenidos varían según el tipo de \textit{widget}. 
+    En los \textbf{destacados}, las imágenes suelen ser grandes, ocupando una buena parte de la pantalla, y pueden cambiar la distribución de la 
+    información según el caso específico. En los \textbf{banners}, las imágenes tienen una orientación horizontal con un ratio de 16:9, mientras 
+    que en los \textbf{posters}, las imágenes son verticales, con un ratio de 9:16. En los \textbf{posters}, las imágenes aparecen en un panel 
+    lateral cuando el foco se mantiene en el contenido durante más de un segundo. Este enfoque garantiza una presentación visual coherente que 
+    varía según el tipo de contenido y el diseño del \textit{widget}.
+    
+    \item \textbf{Otras características:} Algunos \textit{widgets} permiten funcionalidades adicionales que dependen del tipo de contenido que se esté 
+    presentando. Por ejemplo, en los \textit{widgets} para contenidos en directo, puede aparecer una barra de progreso y el nombre del programa actual. 
+    En un \textbf{widget banner-click}, diseñado para mostrar anuncios, se presenta un banner horizontal que ocupa casi todo el ancho de la pantalla, 
+    y al hacer clic en él (excepto en televisores, donde esta opción está desactivada), redirige al usuario a una URL externa.
 \end{itemize}
 
-Todas estas personalizaciones y otras muchas más existentes meenos utilizadas o en las que se está trabajando, hay que tenerlas soportadas en la aplicación. 
-Como en el caso de las funcionalidades, no podemos saber que widgets va a utilizar el cliente de antemano, por lo que hay que asegurarse que todos los tipos 
-de widget ofrecidos al cliente están soportados y se muestran correctamente y que no interfieren con el resto de widgets. 
+Estas personalizaciones, junto con otras más específicas o en desarrollo, deben estar correctamente implementadas y soportadas por la aplicación 
+para garantizar que los \textit{widgets} seleccionados por el cliente funcionen sin problemas y no interfieran con el resto de la interfaz.
 
-Existen algunas consideraciones como que solo puede existir un tipo de widget destacado en la pantalla, que los si un widget de tipo "mosaico" tiene muchos
-elementos este puede ocupar mucho espacio y dejar de ser comodo para el usuario, que los widgets de tipo "poster", por lo general, se suelen utilizar para
-destacar contenidos y para mostrar más información de estos, etc.
+Adicionalmente, es importante tener en cuenta ciertas limitaciones en la personalización. Solo puede haber un \textit{widget destacado} por 
+pantalla, los \textit{widgets} tipo \textbf{mosaico} con muchos elementos pueden sobrecargar la interfaz, y los \textbf{posters} se utilizan generalmente 
+para destacar ciertos contenidos, mostrando información detallada sobre estos.
 
 \subsubsection{Ejemplos de personalización}
 \label{sec:diseno-ux-ejemplos}

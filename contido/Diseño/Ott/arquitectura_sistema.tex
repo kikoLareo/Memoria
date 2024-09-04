@@ -1,123 +1,87 @@
 \subsection{Diseño de la arquitectura del sistema}
 \label{subsec:diseno:ott:arquitectura}
 
-Como ya se ha mencionado en la sección \ref{subsec:fundamentos_teoricos_arquitectura}
-la arquitectura de esta aplicación esta diseñada para integrarse en la arquitectura general 
-de la empresa y se basa en una arquitectura basada en microservicios. 
+Como ya se ha mencionado en la sección \ref{subsec:fundamentos_teoricos_arquitectura}, 
+la arquitectura de esta aplicación está diseñada para integrarse en la arquitectura general 
+de la empresa y se basa en una arquitectura de microservicios.
 
 \subsubsection{Arquitectura basada en microservicios}
 \label{subsec:diseno:ott:arquitectura_microservicios}
 
-La arquitectura basada en microservicios es un enfoque para el diseño de aplicaciones que consiste en
-un conjunto de pequeños servicios, los cuales se ejecutan en su propio proceso y se comunican con
-mecanismos ligeros (normalmente una API de recursos HTTP como es el caso de este proyecto) \cite{Microservices}.
+La arquitectura basada en microservicios es un enfoque de diseño que organiza una aplicación en un conjunto 
+de pequeños servicios independientes, cada uno especializado en una funcionalidad específica y ejecutado en 
+su propio proceso. Estos servicios se comunican a través de mecanismos ligeros como APIs REST \cite{Microservices}.
 
-Cada microservicios está especializado en una tarea concreta y trabaja de forma independiente. De esta manera
-tendremos las funcionalidades de la plataforma OTT distribuidas en diferentes microservicios, aislando las funcionalidades
-y permitiendo que cada uno de ellos pueda ser desarrollado, desplegado y escalado de forma independiente. Esto facilita
-la evolución de la plataforma, ya que se puede mejorar cada microservicio con la confianza de que si se hace correctamente
-no afectará al resto de la plataforma. Lo mismo ocurre con la tolerancia a fallos, ya que si la arquitectura está bien
-diseñada, un fallo en un microservicio no debería afectar al resto de la plataforma, o debería hacerlo lo menos posible.
-Además, cada microservicio puede ser reutilizado en diferentes proyectos, lo que facilita la creación de nuevas aplicaciones
-y la integración con otros sistemas.
+Cada microservicio está desacoplado del resto, lo que permite que se desarrollen, desplieguen y escalen de 
+manera independiente. Este enfoque facilita la evolución de la plataforma, ya que cada microservicio puede ser 
+mejorado sin afectar al resto de los componentes. Además, la arquitectura proporciona una mayor tolerancia a fallos, 
+ya que un error en un microservicio no debería afectar a toda la plataforma. Este diseño modular también permite 
+la reutilización de microservicios en otros proyectos, simplificando la creación de nuevas aplicaciones y su 
+integración con otros sistemas.
 
 En el caso de la plataforma OTT, se han utilizado los siguientes microservicios creados por la empresa:
 
 \begin{itemize}
-    \item \textbf{IDEN - Identificación de usuarios:} encargado de la gestión de los usuarios de la plataforma, incluyendo el registro,
-    autenticación y autorización de los mismos, así como la gestión de perfiles, intereses, preferencias y historial. 
-    \item \textbf{Directus - CMS:} encargado de la gestión y almacenamiento de los contenidos de la plataforma, de los
-    metadatos de los contenidos y de los ficheros multimedia.
-    \item \textbf{CAS - Servicio de acceso condicional:} encargado de la gestión de los accesos condicionales a los contenidos
-    protegidos de la plataforma, incluyendo la gestión de licencias, DRM, cifrado y protección de contenidos.
-    \item \textbf{Orquestador:} Su objetivo es realizar las comprobaciones y procesos que dependan de más de uno de los microservicios de la aplicación
-    \item \textbf{Importer:} Microservico utilizada en los casos en los que el cliente posee una Base de Datos con todos los contenidos
-    e información de la plataforma OTT y se necesita importar a nuestra BD interna que es la que alimenta a la plataforma.
-    \item \textbf{Player:} Utilizado en otras aplicaciones para la obtención del un HTML que contiene el reproductor de video. Esto
-    no es posible por el momento de utilizar en la aplicación OTT multiplataforma porque para cada SO es necesario reproductores 
-    distintos y el backend todavía no tiene soporte. Sin embargo, a raíz del desarrollo de esta aplicación se ha creado un endpoint
-    que devuelve la URL de un video concreto para poder reproducirlo. Esta URL en un principio era construida por la aplicación 
-    OTT, sin embargo, para poder aliviar a la plataforma de tareas de este estilo se ha modificado el microservicio para que sea él quien
-    construya la URL. Se va a trabajar ahora en adaptación del microservicio para que pueda devolver un HTML con el reproductor necesario
-    para cada SO.
+    \item \textbf{IDEN - Identificación de usuarios:} encargado de la gestión de los usuarios de la plataforma, 
+    incluyendo el registro, autenticación y autorización, así como la gestión de perfiles, intereses y preferencias.
+    
+    \item \textbf{Directus - CMS:} responsable de la gestión y almacenamiento de contenidos, metadatos y archivos multimedia.
+
+    \item \textbf{CAS - Servicio de acceso condicional:} encargado de gestionar accesos condicionales, incluyendo licencias, DRM, cifrado y protección de contenidos.
+
+    \item \textbf{Orquestador:} encargado de realizar las comprobaciones y procesos que requieren la interacción de múltiples microservicios.
+
+    \item \textbf{Importer:} utilizado cuando el cliente necesita importar contenido desde su base de datos externa a la plataforma interna de la OTT.
+
+    \item \textbf{Player:} encargado de proporcionar la URL de reproducción de vídeo. Aunque no se utiliza el reproductor nativo debido a las limitaciones del backend, este microservicio genera una URL para reproducir el contenido en cada SO.
 \end{itemize}
 
+Estos microservicios se comunican entre sí a través de una API REST, enviando y recibiendo datos en formato JSON. 
+El frontend interactúa continuamente con el backend mediante esta API, solicitando y enviando datos a las rutas 
+definidas para cada microservicio. Este modelo de comunicación permite una integración fluida entre los distintos 
+componentes del sistema.
 
-Estos microservicios son utilizados a través de una API REST, que permite la comunicación entre los diferentes componentes de la
-plataforma. Cada microservicio se comunica con los demás a través de esta API, enviando y recibiendo datos en formato JSON.
-De esta manera, el frontend de la aplicación está en continua comunicación con el backend, solicitando y enviando datos a través de
-las distintas rutas de la API. Cada microservicio ofrece un catalogo de peticiones que se pueden realizar, y el frontend las utiliza
-cuando el usuario interactúa con la aplicación. 
 
 \subsubsection{Objetivos de la arquitectura}
 \label{subsec:diseno:ott:arquitectura_objetivos}
 
-La arquitectura utilizada en la aplicación esta creada con el objetivo de crear una aplicación escalable, flexible y fácil de mantener.
-Uno de los pilares fundamentales son los microservicios ya comentados, que permiten aislar las funcionalidades de la aplicación y
-desarrollarlas de forma independiente. Sin embargo, los microservicios por si solos no son suficientes para garantizar que la 
-aplicación sea escalable y flexible, sino que el uso que se haga de ellos y la forma en la que se comuniquen entre ellos también
-es importante. Por ello, se han seguido una serie de buenas prácticas y patrones de diseño que garantizan que la aplicación sea
-robusta y fácil de mantener. Algunos de los objetivos de la arquitectura son:
+La arquitectura utilizada en la aplicación está diseñada para ser escalable, flexible y fácil de mantener. 
+Uno de los pilares fundamentales es el uso de microservicios, que permite aislar las funcionalidades de la aplicación 
+y desarrollar cada una de ellas de forma independiente. No obstante, la correcta utilización de los microservicios 
+y la forma en que se comunican entre ellos es clave para garantizar que la aplicación mantenga estos principios. 
+A continuación, se detallan los principales objetivos de la arquitectura:
 
 \begin{itemize}
-    \item \textbf{Escalabilidad:} Durante la etapa de diseño, la escalabilidad fue un objetivo clave. 
-    Se diseñó la arquitectura del sistema para permitir un crecimiento tanto en la capacidad de usuarios 
-    como en la adición de nuevas funcionalidades. Esto se logró mediante el diseño modular y el desacoplamiento
-     de componentes, lo que permite que cada parte de la aplicación funcione de manera independiente y pueda 
-     escalar horizontalmente (añadiendo más instancias) y verticalmente (optimizando los recursos) según sea necesario.
+    \item \textbf{Escalabilidad:} Desde el diseño, la escalabilidad fue un objetivo prioritario. 
+    La arquitectura permite un crecimiento tanto en la capacidad de usuarios como en la adición de nuevas funcionalidades, 
+    mediante el uso de un diseño modular y el desacoplamiento de componentes. Esto facilita que cada parte del sistema 
+    pueda escalar horizontalmente (añadiendo más instancias) o verticalmente (optimizando recursos) según sea necesario.
 
-    El diseño modular fue esencial para manejar la naturaleza multicliente de la plataforma, permitiendo que 
-    cada cliente personalice la aplicación sin afectar a los demás. Se implementaron patrones de diseño como 
-    microservicios y técnicas de gestión eficiente de la comunicación entre servicios, asegurando que el sistema 
-    mantenga su rendimiento y estabilidad a medida que crece.
+    \item \textbf{Flexibilidad:} La plataforma está diseñada para adaptarse a las necesidades específicas de cada cliente, 
+    permitiendo personalizar la interfaz y ajustar funcionalidades sin modificar el código base. La flexibilidad se logra 
+    mediante una arquitectura basada en componentes, que permite activar o desactivar módulos según los requisitos del cliente. 
+    Además, se garantiza la interoperabilidad con otros sistemas y servicios, facilitando la integración con APIs de terceros.
 
-    \item \textbf{Flexibilidad:} El diseño de la plataforma se centró en crear un sistema flexible que pudiera 
-    adaptarse a las necesidades específicas de cada cliente. Esto incluyó la capacidad de personalizar la interfaz 
-    de usuario y ajustar las funcionalidades sin modificar el código base. La flexibilidad se logró mediante la 
-    implementación de una arquitectura basada en componentes, lo que permite que los módulos sean activados o desactivados 
-    según los requisitos del cliente.
+    \item \textbf{Interoperabilidad:} Se priorizó la capacidad del sistema para integrarse eficazmente con otros sistemas 
+    y servicios externos, utilizando estándares de la industria que aseguren una integración sin problemas. Esto permite 
+    que la plataforma sea compatible con una amplia variedad de servicios, desde APIs hasta sistemas de gestión de contenido 
+    y análisis de datos, facilitando su futura expansión.
 
-    Además, se diseñó la plataforma para ser interoperable con otros sistemas y servicios, facilitando la integración con 
-    APIs de terceros y garantizando que la plataforma pueda operar en diversos entornos tecnológicos.
-
-    \item \textbf{Interoperabilidad:} Desde la etapa de diseño, se priorizó la interoperabilidad del sistema, asegurando 
-    que la plataforma pueda integrarse y comunicarse eficazmente con otros sistemas y servicios externos. El diseño se 
-    centró en utilizar estándares de la industria y tecnologías que permitan una integración sin problemas, asegurando 
-    que la plataforma sea compatible con una amplia gama de servicios, desde APIs hasta sistemas de gestión de contenido y análisis de datos.
-
-    La capacidad de manejar diferentes protocolos de comunicación y formatos de datos fue integrada desde el inicio del 
-    diseño, permitiendo que la plataforma se adapte fácilmente a nuevas integraciones y expansiones futuras.
-
-    \item \textbf{Adaptación Multiplataforma:} Durante la fase de diseño, se puso un gran énfasis en asegurar que la 
-    plataforma OTT fuera capaz de adaptarse a una amplia variedad de dispositivos y sistemas operativos, incluyendo navegadores 
-    web, dispositivos móviles y smart TVs. El diseño responsivo y el uso de frameworks multiplataforma permitieron reutilizar 
-    gran parte del código base, optimizando el desarrollo y garantizando una experiencia de usuario coherente.
-
-    El diseño también incluyó configuraciones específicas para cada plataforma, permitiendo que la aplicación detecte y se 
-    ajuste automáticamente al entorno en el que se ejecuta, lo que garantiza un rendimiento óptimo y la máxima funcionalidad 
+    \item \textbf{Adaptación Multiplataforma:} Se diseñó la arquitectura para asegurar que la plataforma OTT pueda adaptarse 
+    a una gran variedad de dispositivos y sistemas operativos, como navegadores web, dispositivos móviles y smart TVs. 
+    El diseño responsivo y la reutilización de gran parte del código base aseguran una experiencia de usuario coherente 
     en todos los dispositivos.
 
-    \item \textbf{Mantenibilidad:} La mantenibilidad del sistema fue un objetivo central durante la etapa de diseño. Se 
-    diseñó la arquitectura modularmente, permitiendo que los componentes sean actualizados o reemplazados sin afectar el 
-    sistema completo. Además, se implementaron prácticas de diseño que facilitan el mantenimiento continuo, como la documentación 
-    detallada y la automatización de pruebas y despliegues.
+    \item \textbf{Mantenibilidad:} La arquitectura modular facilita que los componentes se actualicen o reemplacen sin 
+    afectar al resto del sistema. Las mejores prácticas en diseño y la automatización de pruebas y despliegues aseguran 
+    que el sistema sea fácil de mantener y actualizar a lo largo del tiempo.
 
-    La elección de herramientas y tecnologías que soporten la integración continua (CI/CD) fue parte integral del diseño, 
-    asegurando que las actualizaciones y mejoras puedan ser implementadas rápidamente, con un mínimo de interrupciones.
+    \item \textbf{Rendimiento y Optimización:} La plataforma está diseñada para manejar grandes volúmenes de tráfico y datos 
+    sin degradar la experiencia del usuario. Se han implementado estrategias como la optimización de la comunicación entre 
+    componentes, el uso de caché y la distribución de la carga de trabajo mediante CDNs para garantizar un rendimiento óptimo.
 
-    \item \textbf{Rendimiento y Optimización:} El rendimiento óptimo fue un objetivo fundamental desde la etapa de diseño. Se 
-    diseñaron estrategias para manejar grandes volúmenes de tráfico y datos sin degradar la experiencia del usuario. Esto incluyó 
-    la optimización de la comunicación entre componentes, el uso de caché, y la distribución de la carga de trabajo a través de 
-    múltiples instancias y CDNs.
-
-    La capacidad de monitorear y ajustar el rendimiento en tiempo real también se integró en el diseño, asegurando que la 
-    plataforma pueda mantener un alto rendimiento bajo condiciones de alta demanda.
-
-    \item \textbf{Experiencia de Usuario (UX):} El diseño de la plataforma se centró en ofrecer una experiencia de 
-    usuario excepcional. Esto implicó la creación de una interfaz intuitiva, accesible y coherente en todos los 
-    dispositivos soportados. El diseño se basó en principios centrados en el usuario, con un enfoque en la personalización y la facilidad de uso.
-
-    Durante el diseño, se realizaron múltiples iteraciones de pruebas de usabilidad para garantizar que la interfaz 
-    no solo fuera funcional, sino también agradable y eficiente para los usuarios finales. El diseño también consideró la 
-    capacidad de personalizar la experiencia del usuario, ofreciendo recomendaciones y configuraciones ajustadas a las preferencias individuales.
+    \item \textbf{Experiencia de Usuario (UX):} El diseño de la plataforma se centra en ofrecer una experiencia de usuario 
+    excepcional, con una interfaz intuitiva, accesible y coherente en todos los dispositivos. Se realizaron iteraciones 
+    de pruebas de usabilidad para garantizar una interfaz funcional y agradable, que pueda personalizarse según las preferencias 
+    individuales de los usuarios.
 \end{itemize}

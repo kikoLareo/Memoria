@@ -1,47 +1,36 @@
 \subsection{Desarrollo de la aplicación de análisis de datos}
 \label{sec:desarrollo-matomo}
 
-Una vez configurada la API de Matomo, se puede comenzar a realizar consultas a la misma para obtener la información. Esta información
-será la que se utilizará para la construcción de las gráficas y tablas que se mostrarán en la aplicación de análisis de datos.
+Una vez configurada la API de Matomo, se pueden comenzar a realizar consultas a la misma para obtener la información necesaria. 
+Estos datos serán utilizados para construir las gráficas y tablas que se mostrarán en la aplicación de análisis de datos.
 
-Para la obtención, procesamiento y gestión de los datos, se ha desarrollado la aplicación con un enfoque escalable y mantenible.
-Durante el desarrollo se ha utilizado la tecnología de React, una biblioteca de JavaScript para la creación de interfaces de usuario.
- Complementado con el uso de Html y Css y diversas librerías y APIs. 
+Para la obtención, procesamiento y gestión de los datos, se ha desarrollado la aplicación con un enfoque escalable y mantenible. 
+Durante el desarrollo, se ha empleado la tecnología de React, una biblioteca de JavaScript para la creación de interfaces de usuario, 
+complementada con el uso de HTML, CSS, así como diversas librerías y APIs.
+
 
 \subsubsection{Estructura de la aplicación}
 \label{sec:estructura-aplicacion}
-
-La aplicación está compuesta por varios módulos cada uno encargado de una tarea específica. La estructura de la aplicación es la
-siguiente:
+La aplicación está compuesta por varios módulos, cada uno encargado de una tarea específica. La estructura de la aplicación es la siguiente:
 
 \begin{itemize}
-    \item \textbf{Configuración:} Módulo encargado de la configuración de la aplicación. Gracias a este módulo la aplicación
-    crea las URLs necesarias y realiza las consultas a la API de Matomo. Cada URL está formada en función del módulo 
-    correspondiente de Matomo, la acción pertinente y las variables necesarias para la consulta. También existen configuraciones
-    para indicar que gráficos y datos se muestran en cada página. 
-    \item \textbf{Consultas:} Módulo encargado de realizar las consultas a la API de Matomo. En este módulo se encuentran las
-    funciones que realizan las consultas a la API y devuelven los datos obtenidos. Para cada acción se intenta llamar al Módulo
-    API y a la acción getProcessedReport para obtener toda la información que nos ofrece Matomo acerca de cada acción. 
-    \item \textbf{Procesamiento:} Módulo encargado de pedir y procesar los datos obtenidos para crear las distintas páginas
-    de la aplicación. Para cada página se buscarán los datos y llamadas asignadas para la creación de la página, se pedirán 
-    los datos y se enviarán a los componentes de gráficas y tablas para su creación y ordenará los resultados de estos componentes 
-    para mostrarlos en la página.
-    \item \textbf{Componentes:} Dentro de este módulo se encuentran los componentes de gráficas y tablas que se utilizan en la
-    aplicación. Cada componente es un archivo independiente que se encarga de la creación de una gráfica o tabla en concreto.
-    \item \textbf{Diseño:} En este módulo se encuentran las hojas de estilo de Css que se utilizan en la aplicación para darle
-    un diseño más atractivo y usable.
+    \item \textbf{Configuración:} Módulo responsable de configurar la aplicación. Este módulo genera las URLs necesarias y realiza las consultas a la API de Matomo. Cada URL se construye según el módulo correspondiente de Matomo, la acción deseada y las variables necesarias para la consulta. También permite configurar qué gráficos y datos se mostrarán en cada página.
+    \item \textbf{Consultas:} Módulo encargado de realizar las consultas a la API de Matomo. Contiene las funciones que ejecutan las consultas y devuelven los datos obtenidos. Para cada acción, se utiliza el módulo API y la función \textit{getProcessedReport} para obtener la información detallada de Matomo sobre cada acción.
+    \item \textbf{Procesamiento:} Módulo responsable de procesar los datos obtenidos y crear las distintas páginas de la aplicación. Se solicitan los datos necesarios y se envían a los componentes de gráficas y tablas para su creación, ordenando los resultados para presentarlos en la página correspondiente.
+    \item \textbf{Componentes:} Módulo que contiene los componentes de gráficas y tablas utilizados en la aplicación. Cada componente es un archivo independiente encargado de generar una gráfica o tabla específica.
+    \item \textbf{Diseño:} Módulo que contiene las hojas de estilo CSS utilizadas en la aplicación para proporcionar un diseño atractivo y usable.
 \end{itemize}
+
 
 \subsubsection{Desarrollo de la aplicación}
 \label{sec:desarrollo-aplicacion}
+Para el desarrollo de la aplicación utilizando la API de Matomo, el primer paso tras configurar y preparar Matomo fue obtener un 
+servidor donde alojar la aplicación, ya que por razones de seguridad, la API bloquea las consultas realizadas desde un servidor local. 
+Para ello, se utilizó el servicio de Netlify \cite{netlify}, una plataforma de alojamiento de aplicaciones web que permite desplegar aplicaciones 
+de manera sencilla y rápida.
 
-Para el desarrollo de la aplicación haciendo uso de la API el primer paso tras tener configurado y listo Matomo fue obtener un 
-servidor donde alojar la aplicación ya que por seguridad el API bloquea las consultas que se realizan desde un servidor local.
-Para ello se utilizó el servicio de Netlify \cite{netlify}, un servicio de alojamiento de aplicaciones web que permite desplegar aplicaciones
-de forma sencilla y rápida.
-   
-Una vez alojada la aplicación, se comenzó a desarrollar la aplicación. Para ello se se comenzó con los archivos de configuración
-los cuales se encargan de crear las URLs necesarias para realizar las consultas a la API. 
+Una vez alojada la aplicación, se procedió con su desarrollo. El primer paso fue trabajar en los archivos de configuración, 
+los cuales se encargan de generar las URLs necesarias para realizar las consultas a la API.
 
 \paragraph{Ejemplo de archivo de configuración de la API de Matomo}
 \begin{lstlisting}[language=Java]
@@ -107,9 +96,9 @@ export const fetchData = async (idSite, requestData) => {
 \end{lstlisting}
 
 
-Una vez obtenidos los datos, a través de la configuración de la página pertinente y con el formato adecuado y unificado se envían
-a los componentes de gráficas y tablas para su creación. Una vez creados los componentes, estos son añadidos a la página y se
-muestran los resultados.
+Una vez obtenidos los datos y procesados según la configuración de la página correspondiente, se formatean y unifican antes de ser enviados 
+a los componentes de gráficas y tablas para su creación. Tras generar los componentes, estos se añaden a la página, mostrando así los resultados.
+
 
 \paragraph{Ejemplo de creación de una gráfica}
 \begin{lstlisting}[language=Java]
@@ -134,10 +123,10 @@ muestran los resultados.
       );
 \end{lstlisting}
 
-Para detectar los formatos y los componentes que hay que crear, se creo el componente GraphRenderer que recibe los datos y el
-tipo de gráfica que se quiere crear y se encarga de llamar al componente correspondiente para la creación de la gráfica. Este componente
-se creo como puentre entre los datos y los componentes de gráficas y tablas para favorecer la escalabilidad y mantenibilidad de la
-aplicación. 
+Para detectar los formatos y los componentes que deben crearse, se desarrolló el componente \textit{GraphRenderer}, que recibe los datos y el 
+tipo de gráfica a generar, y se encarga de invocar al componente correspondiente para su creación. Este componente fue diseñado como un puente 
+entre los datos y los componentes de gráficas y tablas, favoreciendo así la escalabilidad y mantenibilidad de la aplicación.
+
 
 \paragraph{Código del componente GraphRenderer}
 \begin{lstlisting}[language=Java]
@@ -176,11 +165,12 @@ aplicación.
 \end{lstlisting}
 
 
-Para la creación de los distintos gráficos y tablas se han utilizado la librería de Chart.js \cite{ChartJS}. Esta librería
-permite la creación de gráficos y tablas de forma sencilla y rápida. Ofrece una amplia gama de gráficos y tablas que se pueden
-personalizar y adaptar a las necesidades de la aplicación. Es muy flexible lo que permite la creación de gráficos y tablas
-adaptado a las necesidades de la aplicación. Se han utilizado los componentes Line, Bar, Pie y Bubble por el momento para 
-la creación de las gráficas.
+Para la creación de los distintos gráficos y tablas se ha utilizado la librería \textit{Chart.js} \cite{ChartJS}. Esta librería 
+facilita la creación de gráficos y tablas de forma sencilla y rápida, ofreciendo una amplia gama de opciones que pueden 
+personalizarse y adaptarse a las necesidades de la aplicación. Gracias a su flexibilidad, es posible generar gráficos y 
+tablas ajustados a los requisitos específicos del proyecto. Hasta el momento, se han empleado los componentes \textit{Line}, 
+\textit{Bar}, \textit{Pie} y \textit{Bubble} para la creación de las gráficas.
+
 
 \paragraph{Ejemplo de creación de un grafico lineal}
 \begin{lstlisting}[language=Java]
@@ -228,10 +218,11 @@ títulos, ejes, etc.
 \subsubsection{Automatización y configuración de las páginas}
 \label{sec:automatizacion-configuracion-paginas}
 
-Siguiendo con el enfoque de escalabilidad y mantenibilidad de la aplicación, las aplicaciones se han creado de forma dinámica.
-Para cada página existe un archivo de configuración que indica que metodos y acciones se deben realizar para la creación de la
-página. Existe otro archivo con la información básica de cada gráfica por si la llamada a API.getProcessedReport no devuelve la
-información necesaria y con la función para obtener los datos correspondiente para crear dicha gráfica. 
+Siguiendo con el enfoque de escalabilidad y mantenibilidad de la aplicación, las páginas se han creado de forma dinámica. 
+Para cada una de ellas, existe un archivo de configuración que especifica qué métodos y acciones deben ejecutarse para su 
+creación. Además, se dispone de otro archivo que contiene la información básica de cada gráfica, en caso de que la llamada 
+a \textit{API.getProcessedReport} no devuelva los datos necesarios. Este archivo también incluye la función que permite 
+obtener la información requerida para generar dicha gráfica.
 
 \paragraph{Ejemplo de archivo de configuración de una página}
 
@@ -292,35 +283,33 @@ Esta función se llamará desde la página correspondiente y se comenzará el pr
 \subsubsection{Context y Hooks}
 \label{sec:context-hooks}
 
-Para la gestión de los datos y la comunicación entre los distintos componentes de la aplicación se ha utilizado la API de Context
-y Hooks de React. Context es una API que permite compartir datos entre componentes de la aplicación sin tener que pasar los datos
-a través de props. Se crea un contexto y se envuelve la aplicación en un componente que provee el contexto. Los componentes utilizarán
-el contexto para acceder a los datos. 
+Para la gestión de los datos y la comunicación entre los distintos componentes de la aplicación, se ha utilizado la API de Context 
+y Hooks de React. Context es una API que permite compartir datos entre componentes sin la necesidad de pasarlos a través de \textit{props}. 
+Se crea un contexto y se envuelve la aplicación en un componente que provee dicho contexto. Los componentes que lo requieran 
+podrán acceder a los datos desde este contexto.
 
-En el caso de esta aplicación, se ha creado un contexto para la detección del id del sitio web que se está analizando. Este id
-se utiliza para realizar las consultas a la API de Matomo y obtener los datos correspondientes a ese sitio web. 
+En esta aplicación, se ha creado un contexto para la detección del \textit{id} del sitio web que se está analizando. Este \textit{id} 
+es necesario para realizar consultas a la API de Matomo y obtener los datos correspondientes al sitio web.
 
 \paragraph{Ejemplo de uso de Context:}   
 \begin{verbatim}
     const { idSite } = useContext(IdSiteContext);
 \end{verbatim}
 
-Hooks es una API que permite a los componentes de la aplicación utilizar el estado y otras características de React sin tener que
-escribir una clase. Se utilizan para la gestión del estado de los componentes y para la comunicación entre los distintos componentes
-de la aplicación. 
+Hooks es una API que permite a los componentes utilizar el estado y otras características de React sin la necesidad de escribir 
+una clase. Son empleados para la gestión del estado de los componentes y la comunicación entre los mismos.
 
-Los hooks más utilizados en la aplicación son useState y useEffect (y useContext para el uso de Context del id). 
+Los hooks más utilizados en esta aplicación son \texttt{useState} y \texttt{useEffect} (y \texttt{useContext} para el uso de Context del id).
 
-\paragraph{UseState: } Hook que permite añadir estado a los componentes funcionales y actualizarlo cuando sea necesario.
-
+\paragraph{\texttt{useState}:} Hook que permite añadir estado a los componentes funcionales y actualizarlo cuando sea necesario.
 \begin{verbatim}
     const [isLoading, setIsLoading] = useState(true);
 \end{verbatim}
 
-\paragraph{UseEffect: } Hook que permite realizar efectos secundarios en los componentes funcionales. Se ejecuta después de cada
-renderizado del componente.
+\paragraph{\texttt{useEffect}:} Hook que permite realizar efectos secundarios en los componentes funcionales. Se ejecuta después 
+de cada renderizado del componente.
 
-\paragraph{Ejemplo de uso de useEffect para la actualización de los datos cuando cambia el id del sitio web:}
+\paragraph{Ejemplo de uso de \texttt{useEffect} para la actualización de los datos cuando cambia el \texttt{id} del sitio web:}
 \begin{verbatim}
     useEffect(() => {
         const fetchData = async () => {
@@ -338,12 +327,11 @@ renderizado del componente.
       }, [idSite]);
 \end{verbatim}
 
-
 \subsubsection{Despliegue de la aplicación}
 \label{sec:despliegue-aplicacion}
 
-Conforme se iba desarrollando la aplicación, se iban realizando pruebas para comprobar que todo funcionaba correctamente.
-Para realizar estas pruebas se utilizó postman, una herramienta que permite realizar peticiones a una API y comprobar que los
-datos devueltos son los correctos y el servicio de Netlify \cite{netlify} que permite desplegar aplicaciones de forma sencilla y rápida
-para comprobar que la aplicación se desplegaba correctamente. Por el momento la aplicación sigue alojada en Netlify y se puede
-acceder a ella a través de la URL \url{https://kanaloa-dev.netlify.app}
+A medida que se iba desarrollando la aplicación, se realizaron pruebas para asegurar su correcto funcionamiento. Para ello, 
+se utilizó Postman, una herramienta que permite realizar peticiones a una API y verificar que los datos devueltos sean correctos. 
+El despliegue se llevó a cabo en el servicio de Netlify \cite{netlify}, que facilita la publicación de aplicaciones web de manera rápida 
+y sencilla, permitiendo comprobar que la aplicación se desplegaba correctamente. Actualmente, la aplicación sigue alojada en Netlify 
+y es accesible a través de la URL \url{https://kanaloa-dev.netlify.app}.

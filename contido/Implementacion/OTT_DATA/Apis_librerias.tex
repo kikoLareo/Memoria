@@ -1,20 +1,20 @@
 \subsection{APIs y librerías utilizadas}
 \label{sec:apis-librerias}
 
-\subsubsection{Librerias}
+\subsubsection{Librerías}
 \label{sec:librerias}
 
-Para la implementación de la aplicación de análisis de datos se han utilizado diversas librerías que facilitaron el desarrollo de la misma.
-Estas librerías establecen una serie de funciones y métodos que permiten realizar operaciones de forma más sencilla y rápida que si se
-tuviesen que implementar desde cero. 
+Para la implementación de la aplicación de análisis de datos se han utilizado diversas librerías que han facilitado el desarrollo. 
+Estas librerías proporcionan funciones y métodos que permiten realizar operaciones de forma más rápida y eficiente que si se 
+tuvieran que implementar desde cero.
 
-Una de estas librerías es \textit{Axios}. Esta librería facilita la realización de peticiones HTTP desde el cliente a un servidor.
-Esta popular herramienta está basada en promesas que simplifica la comunicación con APIs. Permite realizar solicitudes \textit{GET},
-\textit{POST}, \textit{PUT}, \textit{DELETE}, entre otras, de manera eficiente y con un manejo simplificado de las respuestas y errores.
-Su facilidad de uso y su capacidad para manejar tanto solicitudes asíncronas como configuraciones avanzadas, como el establecimiento 
-de cabeceras personalizadas y la gestión de tiempos de espera, han sido fundamentales para la integración con las APIs REST de la 
-plataforma. Además, \textit{Axios} soporta la interceptación de solicitudes y respuestas, lo que facilita la implementación de
-mecanismos de autenticación y la gestión centralizada de errores, mejorando así la robustez y seguridad de la aplicación.
+Una de estas librerías es \textit{Axios}, la cual facilita la realización de peticiones HTTP desde el cliente a un servidor. 
+Esta herramienta, basada en promesas, simplifica la comunicación con APIs, permitiendo realizar solicitudes \textit{GET}, 
+\textit{POST}, \textit{PUT} y \textit{DELETE}, entre otras, de manera eficiente y con un manejo sencillo de respuestas y errores. 
+Su facilidad de uso y capacidad para manejar solicitudes asíncronas y configuraciones avanzadas, como cabeceras personalizadas 
+y gestión de tiempos de espera, han sido clave para la integración con las APIs REST de la plataforma. Además, \textit{Axios} 
+soporta la interceptación de solicitudes y respuestas, lo que facilita la implementación de mecanismos de autenticación y gestión 
+centralizada de errores, mejorando así la robustez y seguridad de la aplicación.
 
 \begin{verbatim}
     const config = {
@@ -30,48 +30,42 @@ mecanismos de autenticación y la gestión centralizada de errores, mejorando as
   try {
     const response = await axios(config);
     ...
-
 \end{verbatim}
 
-Otra libreria utilizada fue ChartJs cuyo uso se ha explicado en la sección \ref{sec:desarrollo-aplicacion}. Esta librería permite la
- creación de gráficas de forma sencilla y rápida. Ofrece una amplia variedad de gráficos, como barras, líneas, radar, polar,
-entre otros, y permite personalizar los con colores, títulos, leyendas, entre otros.
+Otra librería utilizada fue \textit{ChartJs}, explicada en la sección \ref{sec:desarrollo-aplicacion}. Esta librería permite la 
+creación de gráficos de forma sencilla y rápida. Ofrece una amplia variedad de gráficos, como barras, líneas y gráficos circulares, 
+que se pueden personalizar con colores, títulos y leyendas.
 
-\subsubsection{APIs : OpenAi y MongoDB}
+\subsubsection{APIs: OpenAi y MongoDB}
 \label{sec:apis}
 
-Además de la API de Matomo, se han utilizado otras APIs para dotar de funcionalidades a la aplicación de análisis de datos.
-Una de estas funcionalidades es el análisis y explicación de los datos recopilados a través de la API de \textit{OpenAi}. Esta funcionalidad
-permite a los usuarios obtener una explicación de los datos recopilados, lo que facilita la interpretación de los mismos y la toma
-de decisiones. 
+Además de la API de Matomo, se han integrado otras APIs para dotar de funcionalidades adicionales a la aplicación de análisis de datos. 
+Una de estas funcionalidades es el análisis y explicación de los datos recopilados mediante la API de \textit{OpenAi}. Esta funcionalidad 
+permite a los usuarios obtener una interpretación de los datos, lo que facilita la toma de decisiones.
 
-Esta API utiliza tanto el contexto de la página como los datos de la gráfica a analizar para generar una explicación en lenguaje natural y
-comprensible para cualquier usuario sin conocimientos técnicos. Para ello, hay varios elementos necesarios: contexto, datos y petición. 
+La API de \textit{OpenAi} utiliza tanto el contexto de la página como los datos de las gráficas para generar una explicación en lenguaje 
+natural, comprensible para cualquier usuario sin conocimientos técnicos. Los elementos necesarios para este proceso son: contexto, datos y petición.
 
-\paragraph{Contexto: } Información general de la página web. Este contexto se va creando y detallando con el tiempo ya que cada vez
-que se realiza una petición a la API, además del análisis, se pide que se actualice ese contexto para siguientes peticiones para poder dotar
-a la explicación de un mayor detalle y precisión. 
+\paragraph{Contexto:} Información general del sitio web. Este contexto se va creando y enriqueciendo con cada petición a la API, 
+permitiendo ofrecer explicaciones más detalladas y precisas en futuras consultas.
 
-\paragraph{Datos: } Datos de la gráfica a analizar. Estos datos son los que se recopilan a través de la API de Matomo y se envían a la API
-de \textit{OpenAi} para su análisis.
+\paragraph{Datos:} Datos específicos de la gráfica a analizar, recopilados a través de la API de Matomo y enviados a la API de \textit{OpenAi} 
+para su interpretación.
 
-\paragraph{Petición: } Promt generado a partir de información de la página (Contexto) y los datos de la gráfica (descripción, variables, valores, etc).
-Este promt se envía a la API de \textit{OpenAi} para que genere una explicación en lenguaje natural.
+\paragraph{Petición:} \textit{Prompt} generado a partir de la información del contexto y los datos de la gráfica, que se envía a la API de \textit{OpenAi} 
+para generar una explicación en lenguaje natural.
 
-Tanto el contexto como los datos son almacenados para alimentar a futuras llamadas y crear promts más precisos y detallados. Para almacenar
-estos datos se ha utilizado una base de datos no relacional, en concreto \textit{MongoDB}. 
+Tanto el contexto como los datos se almacenan para alimentar futuras llamadas y crear \textit{prompts} más precisos. Para el almacenamiento de estos datos 
+se utiliza \textit{MongoDB}, una base de datos no relacional.
 
-\paragraph{MongoDB: } MongoDB es una base de datos no relacional que permite almacenar datos en formato JSON. Es una base de datos
-escalable y flexible que permite almacenar grandes cantidades de datos y realizar consultas de forma rápida y eficiente.
-Para la integración de MongoDB con la aplicación de análisis de datos se ha utilizado el servicio en la nube de MongoDB Atlas.
-Este servicio ofrece una base de datos en la nube que permite almacenar y consultar datos de forma segura y eficiente. Además, MongoDB Atlas
-ofrece una serie de funcionalidades avanzadas, como la replicación de datos, la recuperación ante desastres y la escalabilidad automática,
-que garantizan la disponibilidad y el rendimiento de la base de datos.
+\paragraph{MongoDB:} MongoDB es una base de datos no relacional que permite almacenar datos en formato JSON. Su escalabilidad y flexibilidad permiten 
+almacenar grandes cantidades de datos y realizar consultas de manera eficiente. Para este proyecto, se ha utilizado el servicio en la nube \textit{MongoDB Atlas}, 
+que ofrece funcionalidades avanzadas como replicación de datos, recuperación ante desastres y escalabilidad automática, garantizando disponibilidad y rendimiento.
 
-MongoDB Atlas se ha utilizado a través de su api para almacenar los datos de contexto y datos de las gráficas para su posterior análisis
-y generación de explicaciones. 
+MongoDB Atlas se utiliza para almacenar los datos de contexto y las gráficas, permitiendo su análisis y generación de explicaciones.
 
 \paragraph{API de MongoDB}
+
 \begin{lstlisting}[language=Java]
   const BASE_URL = 'https://eu-west-2.aws.data.mongodb-api.com
     /app/data-hrcfvpe/endpoint/data/v1/action';
@@ -112,5 +106,3 @@ y generación de explicaciones.
     }
   };
 \end{lstlisting}
-    
-
