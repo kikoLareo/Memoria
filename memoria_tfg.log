@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.8.19)  4 SEP 2024 21:44
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.8.19)  5 SEP 2024 20:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2078,13 +2078,13 @@ LaTeX Font Info:    Font shape `TU/LinLibertine(0)/b/n' will be
 ]
 
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 134.
+(Font)              scaled to size 10.0pt on input line 135.
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/sl' in size <10> not avail
 able
 (Font)              Font shape `TU/LinLibertine(0)/m/it' tried instead on input
- line 134.
+ line 135.
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/it' will be
-(Font)              scaled to size 10.0pt on input line 134.
+(Font)              scaled to size 10.0pt on input line 135.
 [2])
 \tf@toc=\write7
 \openout7 = `memoria_tfg.toc'.
@@ -2098,14 +2098,6 @@ LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/it' will be
 
 
 [4
-
-] (memoria_tfg.lot)
-\tf@lot=\write9
-\openout9 = `memoria_tfg.lot'.
-
-
-
-[5
 
 ]
 \openout2 = `contido/introducion.aux'.
@@ -2185,37 +2177,46 @@ Capítulo 3.
 
 [20]
 
-[21]))
+[21]
+File: imaxes/gantt_chart.png Graphic file (type bmp)
+<imaxes/gantt_chart.png>
+
 
 [22]
+
+[23]))
+
+[24]
 \openout2 = `contido/Analisis/Analisis.aux'.
 
  (contido/Analisis/Analisis.tex
 Capítulo 4.
 (contido/Analisis/Introduccion.tex) (contido/Analisis/Requisitos.tex
 
-[23
+[25
 
 
 
 
 ]
 
-[24]
+[26]
 
-[25]) (contido/Analisis/Necesidades_cliente.tex
+[27]) (contido/Analisis/Necesidades_cliente.tex
 
-[26]) (contido/Analisis/Viabilidad.tex
-
-[27]
-
-[28]) (contido/Analisis/Estudio.tex
+[28]) (contido/Analisis/Viabilidad.tex
 
 [29]
 
-[30]))
+[30]
 
-[31]
+[31]) (contido/Analisis/Estudio.tex
+
+[32]
+
+[33]))
+
+[34]
 \openout2 = `contido/Diseño/Diseño.aux'.
 
  (contido/Diseño/Diseño.tex
@@ -2226,32 +2227,32 @@ LaTeX Font Info:    Font shape `TU/LinLibertine(0)/b/it' will be
 )
 (contido/Diseño/Ott/arquitectura_sistema.tex
 
-[32
+[35
 
 
 
 
 ]
 
-[33]
+[36]
 
-[34]) (contido/Diseño/Ott/UX.tex
+[37]) (contido/Diseño/Ott/UX.tex
 File: imaxes/UX_inicios.png Graphic file (type bmp)
 <imaxes/UX_inicios.png>
 File: imaxes/Home_desp_OhJazz.png Graphic file (type bmp)
 <imaxes/Home_desp_OhJazz.png>
 
 
-[35]
+[38]
 File: imaxes/Home_CyLTv.png Graphic file (type bmp)
 <imaxes/Home_CyLTv.png>
 
 
-[36]
+[39]
 
-[37]
+[40]
 
-[38]
+[41]
 File: imaxes/Widget_banner.png Graphic file (type bmp)
 <imaxes/Widget_banner.png>
 File: imaxes/Widget_destacado.png Graphic file (type bmp)
@@ -2272,16 +2273,16 @@ Overfull \hbox (44.90903pt too wide) in paragraph at lines 117--128
 
 
 
-[39]) (contido/Diseño/Datos/Introduccion.tex) (contido/Diseño/Datos/Diseño.tex
+[42]) (contido/Diseño/Datos/Introduccion.tex) (contido/Diseño/Datos/Diseño.tex
 
-[40]
+[43]
 File: imaxes/dashboard.png Graphic file (type bmp)
 <imaxes/dashboard.png>
 File: imaxes/comparador.png Graphic file (type bmp)
 <imaxes/comparador.png>
 
 
-[41]
+[44]
 File: imaxes/circleGraph.png Graphic file (type bmp)
 <imaxes/circleGraph.png>
 
@@ -2293,11 +2294,11 @@ File: imaxes/lineGraph.png Graphic file (type bmp)
 <imaxes/lineGraph.png>
 
 
-[42]
+[45]
 
-[43]))
+[46]))
 
-[44]
+[47]
 \openout2 = `contido/Implementacion/Implementacion.aux'.
 
  (contido/Implementacion/Implementacion.tex
@@ -2305,16 +2306,16 @@ Capítulo 6.
 (contido/Implementacion/introduccion.tex)
 (contido/Implementacion/OTT/Desarrollo.tex
 
-[45
+[48
 
 
 
 
 ]
 
-[46]
+[49]
 
-[47]
+[50]
 File: imaxes/OTT/menu_lateral_cerrado.png Graphic file (type bmp)
 <imaxes/OTT/menu_lateral_cerrado.png>
 
@@ -2336,9 +2337,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 123--123
 
 
 
-[48]
+[51]
 
-[49]
+[52]
 File: imaxes/OTT/pantalla_detalle_contenedor1.png Graphic file (type bmp)
 <imaxes/OTT/pantalla_detalle_contenedor1.png>
 File: imaxes/OTT/pantalla_detalle_contenedor2.png Graphic file (type bmp)
@@ -2352,17 +2353,17 @@ File: imaxes/OTT/Pantalla_detalle_contenido.png Graphic file (type bmp)
 <imaxes/OTT/Pantalla_detalle_contenido.png>
 
 
-[50]
-
-[51]) (contido/Implementacion/OTT/Adaptacion.tex
-
-[52]
-
 [53]
 
-[54])
+[54]) (contido/Implementacion/OTT/Adaptacion.tex
 
-[55] (contido/Implementacion/OTT_DATA/Configuracion.tex
+[55]
+
+[56]
+
+[57])
+
+[58] (contido/Implementacion/OTT_DATA/Configuracion.tex
 (C:\Users\francisco.lareo\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstl
 ang1.sty
 File: lstlang1.sty 2024/05/25 1.10b listings language file
@@ -2377,35 +2378,35 @@ LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
 (Font)              scaled to size 9.0pt on input line 31.
 
 
-[56]
+[59]
 Overfull \hbox (15.89778pt too wide) in paragraph at lines 42--43
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 ) (contido/Implementacion/OTT_DATA/Desarrollo.tex
 
-[57]
+[60]
 (C:\Users\francisco.lareo\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstl
 ang1.sty
 File: lstlang1.sty 2024/05/25 1.10b listings language file
 )
 
-[58]
+[61]
 Overfull \hbox (177.89943pt too wide) in paragraph at lines 59--60
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 
 
-[59]
-
-[60]
-
-[61]
-
 [62]
 
 [63]
+
+[64]
+
+[65]
+
+[66]
 Overfull \hbox (22.88933pt too wide) in paragraph at lines 302--303
 []\TU/LinLibertine(0)/m/n/10.95 Los hooks más utilizados en esta aplicación son
  \TU/LinLibertine(5)/m/n/10.95 useState \TU/LinLibertine(0)/m/n/10.95 y \TU/Lin
@@ -2423,35 +2424,19 @@ rts_VisitsSection_Evolution.getData(idSite);[]
 
 
 
-[64]) (contido/Implementacion/OTT_DATA/Apis_librerias.tex
-
-[65]
-
-[66]
-
-[67]))
+[67]) (contido/Implementacion/OTT_DATA/Apis_librerias.tex
 
 [68]
+
+[69]
+
+[70]))
+
+[71]
 \openout2 = `contido/Pruebas/Pruebas.aux'.
 
  (contido/Pruebas/Pruebas.tex
 Capítulo 7.
-
-
-[69
-
-
-
-
-]
-
-[70])
-
-[71]
-\openout2 = `contido/Conclusiones.aux'.
-
- (contido/Conclusiones.tex
-Capítulo 8.
 
 
 [72
@@ -2459,28 +2444,44 @@ Capítulo 8.
 
 
 
+]
+
+[73])
+
+[74]
+\openout2 = `contido/Conclusiones.aux'.
+
+ (contido/Conclusiones.tex
+Capítulo 8.
+
+
+[75
+
+
+
+
 ])
 
-[73]
+[76]
 \openout2 = `contido/FuturosObjetivos.aux'.
 
  (contido/FuturosObjetivos.tex
 Capítulo 9.
 
 
-[74
+[77
 
 
 
 
 ])
 
-[75]
+[78]
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
 (Font)              scaled to size 24.88pt on input line 97.
 
 
-[76
+[79
 
 
 
@@ -2489,7 +2490,7 @@ No file memoria_tfg.acr.
 No file memoria_tfg.gls.
 (memoria_tfg.bbl
 
-[77]
+[80]
 Underfull \hbox (badness 1147) in paragraph at lines 42--46
 []\TU/LinLibertine(0)/m/n/10.95 ——, “6ª ola junio 2024 barÓmetro ott - multidis
 positivo,” 2024.
@@ -2511,11 +2512,11 @@ Overfull \hbox (116.91383pt too wide) in paragraph at lines 97--102
 
 
 
-[78
+[81
 
 ])
 
-[79] (memoria_tfg.aux (portada/portada.aux) (portada/resumo.aux)
+[82] (memoria_tfg.aux (portada/portada.aux) (portada/resumo.aux)
 (contido/introducion.aux) (contido/Fundamentos/fundamentos.aux)
 (contido/Metodologia/metodologia.aux) (contido/Analisis/Analisis.aux)
 (contido/Diseño/Diseño.aux) (contido/Implementacion/Implementacion.aux)
@@ -2526,15 +2527,15 @@ LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-07-20>
  ***********
 Package rerunfilecheck Info: File `memoria_tfg.out' has not changed.
-(rerunfilecheck)             Checksum: 2E571F51C91A30BDA8DD0D95AFB71B5A;15007.
+(rerunfilecheck)             Checksum: BA921AC7E104E1A29BFCCB0B4C96E066;15077.
  ) 
 Here is how much of TeX's memory you used:
- 37920 strings out of 409029
- 772741 string characters out of 5754711
+ 37935 strings out of 409029
+ 773226 string characters out of 5754711
  2185612 words of memory out of 5000000
- 59899 multiletter control sequences out of 15000+600000
+ 59916 multiletter control sequences out of 15000+600000
  567890 words of font info for 119 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  106i,13n,145p,2348b,2051s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on memoria_tfg.xdv (89 pages, 1888528 bytes).
+Output written on memoria_tfg.xdv (91 pages, 1938056 bytes).

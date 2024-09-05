@@ -481,10 +481,6 @@ INPUT .\memoria_tfg.lof
 INPUT .\memoria_tfg.lof
 INPUT memoria_tfg.lof
 OUTPUT memoria_tfg.lof
-INPUT .\memoria_tfg.lot
-INPUT .\memoria_tfg.lot
-INPUT memoria_tfg.lot
-OUTPUT memoria_tfg.lot
 INPUT .\contido\introducion.tex
 INPUT .\contido\introducion.tex
 OUTPUT contido\introducion.aux
@@ -545,6 +541,8 @@ INPUT contido\Metodologia\Desarrollo.tex
 INPUT .\contido\Metodologia\Etapas.tex
 INPUT .\contido\Metodologia\Etapas.tex
 INPUT contido\Metodologia\Etapas.tex
+INPUT .\imaxes\gantt_chart.png
+INPUT .\imaxes\gantt_chart.png
 INPUT .\contido\Analisis\Analisis.tex
 INPUT .\contido\Analisis\Analisis.tex
 OUTPUT contido\Analisis\Analisis.aux

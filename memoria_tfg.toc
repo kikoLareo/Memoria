@@ -10,199 +10,202 @@
 \contentsline {section}{\numberline {2.1}Introducción}{4}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Fundamentos teóricos}{4}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}OTT (Over-the-Top)}{4}{subsection.2.2.1}%
-\contentsline {subsubsection}{Definición, funcionamiento y clasificación de los servicios OTT}{4}{subsubsection*.4}%
-\contentsline {subsubsection}{Evolución y tendencias de los servicios OTT}{5}{subsubsection*.5}%
+\contentsline {subsubsection}{Definición, funcionamiento y clasificación de los servicios OTT}{4}{subsubsection*.3}%
+\contentsline {subsubsection}{Evolución y tendencias de los servicios OTT}{5}{subsubsection*.4}%
 \contentsline {subsection}{\numberline {2.2.2}Arquitectura}{6}{subsection.2.2.2}%
-\contentsline {subsubsection}{Arquitectura basada en microservicios}{6}{subsubsection*.6}%
-\contentsline {subsubsection}{Componentes de la arquitectura}{7}{subsubsection*.7}%
+\contentsline {subsubsection}{Arquitectura basada en microservicios}{6}{subsubsection*.5}%
+\contentsline {subsubsection}{Componentes de la arquitectura}{7}{subsubsection*.6}%
 \contentsline {subsection}{\numberline {2.2.3}Experiencia de usuario (UX)}{8}{subsection.2.2.3}%
-\contentsline {subsubsection}{Principios de diseño de UX}{8}{subsubsection*.8}%
-\contentsline {subsubsection}{Elementos clave de la UX en una plataforma OTT}{8}{subsubsection*.9}%
-\contentsline {subsubsection}{Elementos clave para la UX de la plataforma de análisis de datos}{9}{subsubsection*.10}%
+\contentsline {subsubsection}{Principios de diseño de UX}{8}{subsubsection*.7}%
+\contentsline {subsubsection}{Elementos clave de la UX en una plataforma OTT}{8}{subsubsection*.8}%
+\contentsline {subsubsection}{Elementos clave para la UX de la plataforma de análisis de datos}{9}{subsubsection*.9}%
 \contentsline {subsection}{\numberline {2.2.4}Escalabilidad, adaptabilidad y multiplataforma}{9}{subsection.2.2.4}%
-\contentsline {subsubsection}{Escalabilidad}{10}{subsubsection*.11}%
-\contentsline {subsubsection}{Adaptabilidad}{10}{subsubsection*.12}%
-\contentsline {subsubsection}{Multiplataforma}{11}{subsubsection*.13}%
-\contentsline {subsubsection}{Conclusiones}{11}{subsubsection*.14}%
+\contentsline {subsubsection}{Escalabilidad}{10}{subsubsection*.10}%
+\contentsline {subsubsection}{Adaptabilidad}{10}{subsubsection*.11}%
+\contentsline {subsubsection}{Multiplataforma}{11}{subsubsection*.12}%
+\contentsline {subsubsection}{Conclusiones}{11}{subsubsection*.13}%
 \contentsline {subsection}{\numberline {2.2.5}Importancia de la Analítica de Datos en Plataformas OTT}{11}{subsection.2.2.5}%
-\contentsline {subsubsection}{Herramientas y Frameworks: Matomo}{11}{subsubsection*.15}%
-\contentsline {subsubsection}{Integración con la Plataforma OTT}{12}{subsubsection*.16}%
+\contentsline {subsubsection}{Herramientas y Frameworks: Matomo}{11}{subsubsection*.14}%
+\contentsline {subsubsection}{Integración con la Plataforma OTT}{12}{subsubsection*.15}%
 \contentsline {subsection}{\numberline {2.2.6}Aplicación de los Principios de UX en la Analítica de Datos}{12}{subsection.2.2.6}%
 \contentsline {section}{\numberline {2.3}Fundamentos tecnológicos}{12}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Arquitectura Software: Comunicación entre componentes y desarrollo multicliente}{12}{subsection.2.3.1}%
-\contentsline {subsubsection}{Comunicación entre componentes}{12}{subsubsection*.17}%
-\contentsline {subsubsection}{Desarrollo multicliente}{13}{subsubsection*.18}%
+\contentsline {subsubsection}{Comunicación entre componentes}{12}{subsubsection*.16}%
+\contentsline {subsubsection}{Desarrollo multicliente}{13}{subsubsection*.17}%
 \contentsline {subsection}{\numberline {2.3.2}Tecnologías Web: JavaScript, HTML y CSS}{13}{subsection.2.3.2}%
-\contentsline {subparagraph}{JavaScript (JS)}{13}{subparagraph*.19}%
-\contentsline {subparagraph}{HTML}{13}{subparagraph*.20}%
-\contentsline {subparagraph}{CSS}{13}{subparagraph*.21}%
-\contentsline {subsubsection}{Ventajas y desventajas de las tecnologías web}{13}{subsubsection*.22}%
+\contentsline {subparagraph}{JavaScript (JS)}{13}{subparagraph*.18}%
+\contentsline {subparagraph}{HTML}{13}{subparagraph*.19}%
+\contentsline {subparagraph}{CSS}{13}{subparagraph*.20}%
+\contentsline {subsubsection}{Ventajas y desventajas de las tecnologías web}{13}{subsubsection*.21}%
 \contentsline {subsection}{\numberline {2.3.3}Desarrollo multiplataforma}{14}{subsection.2.3.3}%
-\contentsline {subsubsection}{Adaptación a Web}{14}{subsubsection*.23}%
-\contentsline {subsubsection}{Adaptación a Smart TVs}{14}{subsubsection*.24}%
-\contentsline {subsubsection}{Tizen}{14}{subsubsection*.25}%
-\contentsline {subsubsection}{WebOS}{15}{subsubsection*.26}%
-\contentsline {subsubsection}{Android TV}{15}{subsubsection*.27}%
-\contentsline {paragraph}{Conversión a Android TV: Cordova}{15}{paragraph*.28}%
-\contentsline {subsubsection}{Empaquetado y ejecución de la aplicación}{16}{subsubsection*.29}%
+\contentsline {subsubsection}{Adaptación a Web}{14}{subsubsection*.22}%
+\contentsline {subsubsection}{Adaptación a Smart TVs}{14}{subsubsection*.23}%
+\contentsline {subsubsection}{Tizen}{14}{subsubsection*.24}%
+\contentsline {subsubsection}{WebOS}{15}{subsubsection*.25}%
+\contentsline {subsubsection}{Android TV}{15}{subsubsection*.26}%
+\contentsline {paragraph}{Conversión a Android TV: Cordova}{15}{paragraph*.27}%
+\contentsline {subsubsection}{Empaquetado y ejecución de la aplicación}{16}{subsubsection*.28}%
 \contentsline {subsection}{\numberline {2.3.4}Rendimiento y Optimización}{16}{subsection.2.3.4}%
 \contentsline {subsection}{\numberline {2.3.5}Gestión de Versiones (Git)}{17}{subsection.2.3.5}%
 \contentsline {subsection}{\numberline {2.3.6}Uso de APIs}{17}{subsection.2.3.6}%
 \contentsline {chapter}{\numberline {3}Metodología}{18}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Introducción}{18}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Diseño del proyecto}{18}{subsection.3.1.1}%
-\contentsline {paragraph}{Meta principal:}{19}{paragraph*.30}%
+\contentsline {paragraph}{Meta principal:}{19}{paragraph*.29}%
 \contentsline {section}{\numberline {3.2}Metodología de Desarrollo}{19}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Implementación progresiva e incremental}{19}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Adaptación continua y reuniones de validación}{19}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}Ventajas de la metodología ágil}{20}{subsection.3.2.3}%
 \contentsline {section}{\numberline {3.3}Descripción de las Etapas de Desarrollo}{20}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Fase de Análisis y Planificación}{20}{subsection.3.3.1}%
-\contentsline {subsubsection}{Recolección de Requisitos}{20}{subsubsection*.31}%
+\contentsline {subsubsection}{Recolección de Requisitos}{20}{subsubsection*.30}%
 \contentsline {subsection}{\numberline {3.3.2}Fase de Diseño}{20}{subsection.3.3.2}%
-\contentsline {subsubsection}{Diseño de Arquitectura}{20}{subsubsection*.32}%
-\contentsline {subsubsection}{Diseño de la Interfaz de Usuario}{21}{subsubsection*.33}%
+\contentsline {subsubsection}{Diseño de Arquitectura}{20}{subsubsection*.31}%
+\contentsline {subsubsection}{Diseño de la Interfaz de Usuario}{21}{subsubsection*.32}%
 \contentsline {subsection}{\numberline {3.3.3}Fase de Desarrollo}{21}{subsection.3.3.3}%
-\contentsline {subsubsection}{Implementación de Funcionalidades}{21}{subsubsection*.34}%
-\contentsline {subsubsection}{Optimización y Refactorización}{21}{subsubsection*.35}%
+\contentsline {subsubsection}{Implementación de Funcionalidades}{21}{subsubsection*.33}%
+\contentsline {subsubsection}{Optimización y Refactorización}{21}{subsubsection*.34}%
 \contentsline {subsection}{\numberline {3.3.4}Fase de Pruebas}{21}{subsection.3.3.4}%
-\contentsline {subsubsection}{Pruebas Unitarias y de Integración}{21}{subsubsection*.36}%
-\contentsline {subsubsection}{Pruebas de Compatibilidad}{22}{subsubsection*.37}%
+\contentsline {subsubsection}{Pruebas Unitarias y de Integración}{21}{subsubsection*.35}%
+\contentsline {subsubsection}{Pruebas de Compatibilidad}{22}{subsubsection*.36}%
 \contentsline {subsection}{\numberline {3.3.5}Conclusión}{22}{subsection.3.3.5}%
-\contentsline {chapter}{\numberline {4}Análisis}{23}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Introducción}{23}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Requisitos}{23}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Requisitos de la plataforma OTT}{24}{subsection.4.2.1}%
-\contentsline {subsubsection}{Requisitos funcionales}{24}{subsubsection*.38}%
-\contentsline {paragraph}{Requisitos especificados por el cliente}{24}{paragraph*.39}%
-\contentsline {paragraph}{Requisitos no especificados por el cliente}{24}{paragraph*.40}%
-\contentsline {subsubsection}{Requisitos no funcionales}{24}{subsubsection*.41}%
-\contentsline {paragraph}{Rendimiento:}{24}{paragraph*.42}%
-\contentsline {paragraph}{Seguridad:}{24}{paragraph*.43}%
-\contentsline {paragraph}{Usabilidad:}{24}{paragraph*.44}%
-\contentsline {paragraph}{Mantenimiento:}{24}{paragraph*.45}%
-\contentsline {paragraph}{Escalabilidad:}{24}{paragraph*.46}%
-\contentsline {paragraph}{Disponibilidad:}{24}{paragraph*.47}%
-\contentsline {paragraph}{Compatibilidad:}{25}{paragraph*.48}%
-\contentsline {paragraph}{Internacionalización:}{25}{paragraph*.49}%
-\contentsline {paragraph}{Personalización:}{25}{paragraph*.50}%
-\contentsline {paragraph}{Adaptabilidad:}{25}{paragraph*.51}%
-\contentsline {subsection}{\numberline {4.2.2}Requisitos de la aplicación de análisis de datos}{25}{subsection.4.2.2}%
-\contentsline {subsubsection}{Requisitos funcionales}{25}{subsubsection*.52}%
-\contentsline {subsubsection}{Requisitos no funcionales}{25}{subsubsection*.53}%
-\contentsline {paragraph}{Rendimiento}{25}{paragraph*.54}%
-\contentsline {paragraph}{Seguridad}{25}{paragraph*.55}%
-\contentsline {paragraph}{Usabilidad}{26}{paragraph*.56}%
-\contentsline {paragraph}{Mantenimiento}{26}{paragraph*.57}%
-\contentsline {section}{\numberline {4.3}Necesidades del cliente}{26}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Estudio de viabilidad}{27}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Viabilidad técnica}{27}{subsection.4.4.1}%
-\contentsline {subsubsection}{Adaptación a web}{27}{subsubsection*.58}%
-\contentsline {subsubsection}{Adaptación a televisores}{27}{subsubsection*.59}%
-\contentsline {subsubsection}{Adaptación a dispositivos móviles}{28}{subsubsection*.60}%
-\contentsline {subsubsection}{Conclusión}{28}{subsubsection*.61}%
-\contentsline {subsection}{\numberline {4.4.2}Viabilidad económica}{29}{subsection.4.4.2}%
-\contentsline {subsubsection}{Costes}{29}{subsubsection*.62}%
-\contentsline {subsubsection}{Beneficios}{29}{subsubsection*.63}%
-\contentsline {subsubsection}{Conclusión}{29}{subsubsection*.64}%
-\contentsline {subsection}{\numberline {4.4.3}Conclusión final}{29}{subsection.4.4.3}%
-\contentsline {section}{\numberline {4.5}Estudio de las características de los distintos sistemas operativos, dispositivos y tecnologías}{29}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Sistemas operativos}{30}{subsection.4.5.1}%
-\contentsline {paragraph}{Características de los sistemas operativos}{30}{paragraph*.65}%
-\contentsline {paragraph}{Empaquetado y distribución de aplicaciones}{30}{paragraph*.66}%
-\contentsline {paragraph}{Herramientas de desarrollo}{30}{paragraph*.67}%
-\contentsline {subsection}{\numberline {4.5.2}Dispositivos}{31}{subsection.4.5.2}%
-\contentsline {subsection}{\numberline {4.5.3}Tecnologías}{31}{subsection.4.5.3}%
-\contentsline {chapter}{\numberline {5}Diseño}{32}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Introducción}{32}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Diseño de la aplicación OTT}{32}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Introducción al diseño de la aplicación \textit {ott}}{32}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Diseño de la arquitectura del sistema}{33}{subsection.5.2.2}%
-\contentsline {subsubsection}{Arquitectura basada en microservicios}{33}{subsubsection*.68}%
-\contentsline {subsubsection}{Objetivos de la arquitectura}{34}{subsubsection*.69}%
-\contentsline {subsection}{\numberline {5.2.3}Diseño de la interfaz de usuario}{35}{subsection.5.2.3}%
-\contentsline {subsubsection}{Personalización de los componentes}{38}{subsubsection*.73}%
-\contentsline {subsubsection}{Ejemplos de personalización}{39}{subsubsection*.74}%
-\contentsline {section}{\numberline {5.3}Diseño de la aplicación de análisis de datos}{40}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Introducción al diseño de la aplicación de análisis de datos}{40}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Estudio y diseño de la aplicación de análisis de datos}{40}{subsection.5.3.2}%
-\contentsline {subsubsection}{Estudio de las agrupaciones de datos}{41}{subsubsection*.77}%
-\contentsline {paragraph}{Páginas y secciones}{41}{paragraph*.78}%
-\contentsline {subsubsection}{Funcionalidades de la aplicación}{43}{subsubsection*.82}%
-\contentsline {chapter}{\numberline {6}Implementación}{45}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Introducción a la implementación}{45}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Implementación de la aplicación OTT}{45}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Desarrollo de la funcionalidades básicas}{45}{subsection.6.2.1}%
-\contentsline {subsubsection}{Indicaciones previas}{45}{subsubsection*.83}%
-\contentsline {subsubsection}{Creación de los componentes de la aplicación}{46}{subsubsection*.84}%
-\contentsline {subsubsection}{Movimiento por la aplicación}{47}{subsubsection*.85}%
-\contentsline {subsubsection}{Selección de un componente}{49}{subsubsection*.87}%
-\contentsline {subsubsection}{Creación de la pantalla de detalle}{49}{subsubsection*.88}%
-\contentsline {subsubsection}{Reproducción de un contenido}{51}{subsubsection*.91}%
-\contentsline {paragraph}{Origen del contenido:}{51}{paragraph*.92}%
-\contentsline {paragraph}{Reproductor:}{51}{paragraph*.93}%
-\contentsline {subsubsection}{Añadir a favoritos}{51}{subsubsection*.94}%
-\contentsline {subsubsection}{Búsqueda de contenidos}{52}{subsubsection*.95}%
-\contentsline {subsubsection}{Obtención de la información de un directo}{52}{subsubsection*.96}%
-\contentsline {subsection}{\numberline {6.2.2}Adaptación a los diferentes sistemas operativos de televisión}{52}{subsection.6.2.2}%
-\contentsline {paragraph}{Capacidad de procesamiento de las televisiones}{52}{paragraph*.97}%
-\contentsline {paragraph}{Soporte de los sistemas operativos a las tecnologías web}{53}{paragraph*.98}%
-\contentsline {paragraph}{Diversidad de sistemas operativos}{53}{paragraph*.99}%
-\contentsline {subsubsection}{Adaptación a los diferentes sistemas operativos de televisión}{53}{subsubsection*.100}%
-\contentsline {subsubsection}{Adaptaciones realizadas}{54}{subsubsection*.101}%
-\contentsline {paragraph}{Interfaz}{54}{paragraph*.102}%
-\contentsline {paragraph}{Soporte de tecnologías web}{54}{paragraph*.103}%
-\contentsline {paragraph}{Navegación}{54}{paragraph*.104}%
-\contentsline {paragraph}{Reproducción de video}{54}{paragraph*.105}%
-\contentsline {paragraph}{Detección del estado de la red}{55}{paragraph*.106}%
-\contentsline {paragraph}{Cerrar la aplicación}{55}{paragraph*.107}%
-\contentsline {subsubsection}{Desafíos encontrados}{55}{subsubsection*.108}%
-\contentsline {paragraph}{Foco automático en AndroidTV}{55}{paragraph*.109}%
-\contentsline {paragraph}{Botón de retorno con funcionamiento predefinido en AndroidTV}{55}{paragraph*.110}%
-\contentsline {paragraph}{Splash screen en AndroidTV}{56}{paragraph*.111}%
-\contentsline {section}{\numberline {6.3}Implementación de la aplicación de análisis de datos}{56}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Instalación, configuración e integración de la API de Matomo}{56}{subsection.6.3.1}%
-\contentsline {paragraph}{Ejemplo de código de seguimiento de Matomo}{56}{paragraph*.112}%
-\contentsline {subsection}{\numberline {6.3.2}Desarrollo de la aplicación de análisis de datos}{57}{subsection.6.3.2}%
-\contentsline {subsubsection}{Estructura de la aplicación}{57}{subsubsection*.113}%
-\contentsline {subsubsection}{Desarrollo de la aplicación}{58}{subsubsection*.114}%
-\contentsline {paragraph}{Ejemplo de archivo de configuración de la API de Matomo}{58}{paragraph*.115}%
-\contentsline {paragraph}{Función para la creación de la URL de la API de Matomo}{59}{paragraph*.116}%
-\contentsline {paragraph}{Función para la obtención de los datos de la API de Matomo}{59}{paragraph*.117}%
-\contentsline {paragraph}{Ejemplo de creación de una gráfica}{60}{paragraph*.118}%
-\contentsline {paragraph}{Código del componente GraphRenderer}{60}{paragraph*.119}%
-\contentsline {paragraph}{Ejemplo de creación de un grafico lineal}{61}{paragraph*.120}%
-\contentsline {subsubsection}{Automatización y configuración de las páginas}{62}{subsubsection*.121}%
-\contentsline {paragraph}{Ejemplo de archivo de configuración de una página}{62}{paragraph*.122}%
-\contentsline {paragraph}{Ejemplo de archivo de configuración de una gráfica}{63}{paragraph*.123}%
-\contentsline {subsubsection}{Context y Hooks}{64}{subsubsection*.124}%
-\contentsline {paragraph}{Ejemplo de uso de Context:}{64}{paragraph*.125}%
-\contentsline {paragraph}{\texttt {useState}:}{64}{paragraph*.126}%
-\contentsline {paragraph}{\texttt {useEffect}:}{64}{paragraph*.127}%
-\contentsline {paragraph}{Ejemplo de uso de \texttt {useEffect} para la actualización de los datos cuando cambia el \texttt {id} del sitio web:}{64}{paragraph*.128}%
-\contentsline {subsubsection}{Despliegue de la aplicación}{65}{subsubsection*.129}%
-\contentsline {subsection}{\numberline {6.3.3}APIs y librerías utilizadas}{65}{subsection.6.3.3}%
-\contentsline {subsubsection}{Librerías}{65}{subsubsection*.130}%
-\contentsline {subsubsection}{APIs: OpenAi y MongoDB}{66}{subsubsection*.131}%
-\contentsline {paragraph}{Contexto:}{66}{paragraph*.132}%
-\contentsline {paragraph}{Datos:}{66}{paragraph*.133}%
-\contentsline {paragraph}{Petición:}{66}{paragraph*.134}%
-\contentsline {paragraph}{MongoDB:}{67}{paragraph*.135}%
-\contentsline {paragraph}{API de MongoDB}{67}{paragraph*.136}%
-\contentsline {chapter}{\numberline {7}Pruebas}{69}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Introducción}{69}{section.7.1}%
-\contentsline {subsection}{\numberline {7.1.1}Plan de pruebas unitarias, integración y sistema}{69}{subsection.7.1.1}%
-\contentsline {subsubsection}{Pruebas Unitarias}{69}{subsubsection*.137}%
-\contentsline {subsubsection}{Pruebas de Integración}{69}{subsubsection*.138}%
-\contentsline {subsubsection}{Pruebas de Sistema}{70}{subsubsection*.139}%
-\contentsline {subsubsection}{Enfoque de Pruebas Continuas}{70}{subsubsection*.140}%
-\contentsline {subsection}{\numberline {7.1.2}Pruebas de aceptación}{70}{subsection.7.1.2}%
-\contentsline {subsection}{\numberline {7.1.3}Pruebas realizadas por los marketplaces}{71}{subsection.7.1.3}%
-\contentsline {section}{\numberline {7.2}Resultados de las pruebas}{71}{section.7.2}%
-\contentsline {chapter}{\numberline {8}Conclusiones}{72}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Logros Alcanzados}{72}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Desafíos y Soluciones}{73}{section.8.2}%
-\contentsline {section}{\numberline {8.3}Aprendizajes}{73}{section.8.3}%
-\contentsline {section}{\numberline {8.4}Conclusión Final}{73}{section.8.4}%
-\contentsline {chapter}{\numberline {9}Futuros Objetivos}{74}{chapter.9}%
-\contentsline {chapter}{Bibliografía}{78}{appendix*.141}%
+\contentsline {section}{\numberline {3.4}Diagrama de Gantt}{22}{section.3.4}%
+\contentsline {paragraph}{Explicación detallada del diagrama de Gantt:}{23}{paragraph*.38}%
+\contentsline {chapter}{\numberline {4}Análisis}{25}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introducción}{25}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Requisitos}{25}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Requisitos de la plataforma OTT}{26}{subsection.4.2.1}%
+\contentsline {subsubsection}{Requisitos funcionales}{26}{subsubsection*.39}%
+\contentsline {paragraph}{Requisitos especificados por el cliente}{26}{paragraph*.40}%
+\contentsline {paragraph}{Requisitos no especificados por el cliente}{26}{paragraph*.41}%
+\contentsline {subsubsection}{Requisitos no funcionales}{26}{subsubsection*.42}%
+\contentsline {paragraph}{Rendimiento:}{26}{paragraph*.43}%
+\contentsline {paragraph}{Seguridad:}{26}{paragraph*.44}%
+\contentsline {paragraph}{Usabilidad:}{26}{paragraph*.45}%
+\contentsline {paragraph}{Mantenimiento:}{26}{paragraph*.46}%
+\contentsline {paragraph}{Escalabilidad:}{26}{paragraph*.47}%
+\contentsline {paragraph}{Disponibilidad:}{26}{paragraph*.48}%
+\contentsline {paragraph}{Compatibilidad:}{27}{paragraph*.49}%
+\contentsline {paragraph}{Internacionalización:}{27}{paragraph*.50}%
+\contentsline {paragraph}{Personalización:}{27}{paragraph*.51}%
+\contentsline {paragraph}{Adaptabilidad:}{27}{paragraph*.52}%
+\contentsline {subsection}{\numberline {4.2.2}Requisitos de la aplicación de análisis de datos}{27}{subsection.4.2.2}%
+\contentsline {subsubsection}{Requisitos funcionales}{27}{subsubsection*.53}%
+\contentsline {subsubsection}{Requisitos no funcionales}{27}{subsubsection*.54}%
+\contentsline {paragraph}{Rendimiento}{27}{paragraph*.55}%
+\contentsline {paragraph}{Seguridad}{27}{paragraph*.56}%
+\contentsline {paragraph}{Usabilidad}{28}{paragraph*.57}%
+\contentsline {paragraph}{Mantenimiento}{28}{paragraph*.58}%
+\contentsline {section}{\numberline {4.3}Necesidades del cliente}{28}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Estudio de viabilidad}{29}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Viabilidad técnica}{29}{subsection.4.4.1}%
+\contentsline {subsubsection}{Adaptación a web}{29}{subsubsection*.59}%
+\contentsline {subsubsection}{Adaptación a televisores}{29}{subsubsection*.60}%
+\contentsline {subsubsection}{Adaptación a dispositivos móviles}{30}{subsubsection*.61}%
+\contentsline {subsubsection}{Conclusión}{30}{subsubsection*.62}%
+\contentsline {subsection}{\numberline {4.4.2}Viabilidad económica}{31}{subsection.4.4.2}%
+\contentsline {subsubsection}{Costes}{31}{subsubsection*.63}%
+\contentsline {paragraph}{Costes de desarrollo}{31}{paragraph*.64}%
+\contentsline {subsubsection}{Beneficios}{31}{subsubsection*.65}%
+\contentsline {subsubsection}{Conclusión}{31}{subsubsection*.66}%
+\contentsline {subsection}{\numberline {4.4.3}Conclusión final}{32}{subsection.4.4.3}%
+\contentsline {section}{\numberline {4.5}Estudio de las características de los distintos sistemas operativos, dispositivos y tecnologías}{32}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Sistemas operativos}{32}{subsection.4.5.1}%
+\contentsline {paragraph}{Características de los sistemas operativos}{32}{paragraph*.67}%
+\contentsline {paragraph}{Empaquetado y distribución de aplicaciones}{33}{paragraph*.68}%
+\contentsline {paragraph}{Herramientas de desarrollo}{33}{paragraph*.69}%
+\contentsline {subsection}{\numberline {4.5.2}Dispositivos}{33}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}Tecnologías}{34}{subsection.4.5.3}%
+\contentsline {chapter}{\numberline {5}Diseño}{35}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introducción}{35}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Diseño de la aplicación OTT}{35}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Introducción al diseño de la aplicación \textit {ott}}{35}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Diseño de la arquitectura del sistema}{36}{subsection.5.2.2}%
+\contentsline {subsubsection}{Arquitectura basada en microservicios}{36}{subsubsection*.70}%
+\contentsline {subsubsection}{Objetivos de la arquitectura}{37}{subsubsection*.71}%
+\contentsline {subsection}{\numberline {5.2.3}Diseño de la interfaz de usuario}{38}{subsection.5.2.3}%
+\contentsline {subsubsection}{Personalización de los componentes}{41}{subsubsection*.75}%
+\contentsline {subsubsection}{Ejemplos de personalización}{42}{subsubsection*.76}%
+\contentsline {section}{\numberline {5.3}Diseño de la aplicación de análisis de datos}{43}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Introducción al diseño de la aplicación de análisis de datos}{43}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Estudio y diseño de la aplicación de análisis de datos}{43}{subsection.5.3.2}%
+\contentsline {subsubsection}{Estudio de las agrupaciones de datos}{44}{subsubsection*.79}%
+\contentsline {paragraph}{Páginas y secciones}{44}{paragraph*.80}%
+\contentsline {subsubsection}{Funcionalidades de la aplicación}{46}{subsubsection*.84}%
+\contentsline {chapter}{\numberline {6}Implementación}{48}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Introducción a la implementación}{48}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Implementación de la aplicación OTT}{48}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Desarrollo de la funcionalidades básicas}{48}{subsection.6.2.1}%
+\contentsline {subsubsection}{Indicaciones previas}{48}{subsubsection*.85}%
+\contentsline {subsubsection}{Creación de los componentes de la aplicación}{49}{subsubsection*.86}%
+\contentsline {subsubsection}{Movimiento por la aplicación}{50}{subsubsection*.87}%
+\contentsline {subsubsection}{Selección de un componente}{52}{subsubsection*.89}%
+\contentsline {subsubsection}{Creación de la pantalla de detalle}{52}{subsubsection*.90}%
+\contentsline {subsubsection}{Reproducción de un contenido}{54}{subsubsection*.93}%
+\contentsline {paragraph}{Origen del contenido:}{54}{paragraph*.94}%
+\contentsline {paragraph}{Reproductor:}{54}{paragraph*.95}%
+\contentsline {subsubsection}{Añadir a favoritos}{54}{subsubsection*.96}%
+\contentsline {subsubsection}{Búsqueda de contenidos}{55}{subsubsection*.97}%
+\contentsline {subsubsection}{Obtención de la información de un directo}{55}{subsubsection*.98}%
+\contentsline {subsection}{\numberline {6.2.2}Adaptación a los diferentes sistemas operativos de televisión}{55}{subsection.6.2.2}%
+\contentsline {paragraph}{Capacidad de procesamiento de las televisiones}{55}{paragraph*.99}%
+\contentsline {paragraph}{Soporte de los sistemas operativos a las tecnologías web}{56}{paragraph*.100}%
+\contentsline {paragraph}{Diversidad de sistemas operativos}{56}{paragraph*.101}%
+\contentsline {subsubsection}{Adaptación a los diferentes sistemas operativos de televisión}{56}{subsubsection*.102}%
+\contentsline {subsubsection}{Adaptaciones realizadas}{57}{subsubsection*.103}%
+\contentsline {paragraph}{Interfaz}{57}{paragraph*.104}%
+\contentsline {paragraph}{Soporte de tecnologías web}{57}{paragraph*.105}%
+\contentsline {paragraph}{Navegación}{57}{paragraph*.106}%
+\contentsline {paragraph}{Reproducción de video}{57}{paragraph*.107}%
+\contentsline {paragraph}{Detección del estado de la red}{58}{paragraph*.108}%
+\contentsline {paragraph}{Cerrar la aplicación}{58}{paragraph*.109}%
+\contentsline {subsubsection}{Desafíos encontrados}{58}{subsubsection*.110}%
+\contentsline {paragraph}{Foco automático en AndroidTV}{58}{paragraph*.111}%
+\contentsline {paragraph}{Botón de retorno con funcionamiento predefinido en AndroidTV}{58}{paragraph*.112}%
+\contentsline {paragraph}{Splash screen en AndroidTV}{59}{paragraph*.113}%
+\contentsline {section}{\numberline {6.3}Implementación de la aplicación de análisis de datos}{59}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Instalación, configuración e integración de la API de Matomo}{59}{subsection.6.3.1}%
+\contentsline {paragraph}{Ejemplo de código de seguimiento de Matomo}{59}{paragraph*.114}%
+\contentsline {subsection}{\numberline {6.3.2}Desarrollo de la aplicación de análisis de datos}{60}{subsection.6.3.2}%
+\contentsline {subsubsection}{Estructura de la aplicación}{60}{subsubsection*.115}%
+\contentsline {subsubsection}{Desarrollo de la aplicación}{61}{subsubsection*.116}%
+\contentsline {paragraph}{Ejemplo de archivo de configuración de la API de Matomo}{61}{paragraph*.117}%
+\contentsline {paragraph}{Función para la creación de la URL de la API de Matomo}{62}{paragraph*.118}%
+\contentsline {paragraph}{Función para la obtención de los datos de la API de Matomo}{62}{paragraph*.119}%
+\contentsline {paragraph}{Ejemplo de creación de una gráfica}{63}{paragraph*.120}%
+\contentsline {paragraph}{Código del componente GraphRenderer}{63}{paragraph*.121}%
+\contentsline {paragraph}{Ejemplo de creación de un grafico lineal}{64}{paragraph*.122}%
+\contentsline {subsubsection}{Automatización y configuración de las páginas}{65}{subsubsection*.123}%
+\contentsline {paragraph}{Ejemplo de archivo de configuración de una página}{65}{paragraph*.124}%
+\contentsline {paragraph}{Ejemplo de archivo de configuración de una gráfica}{66}{paragraph*.125}%
+\contentsline {subsubsection}{Context y Hooks}{67}{subsubsection*.126}%
+\contentsline {paragraph}{Ejemplo de uso de Context:}{67}{paragraph*.127}%
+\contentsline {paragraph}{\texttt {useState}:}{67}{paragraph*.128}%
+\contentsline {paragraph}{\texttt {useEffect}:}{67}{paragraph*.129}%
+\contentsline {paragraph}{Ejemplo de uso de \texttt {useEffect} para la actualización de los datos cuando cambia el \texttt {id} del sitio web:}{67}{paragraph*.130}%
+\contentsline {subsubsection}{Despliegue de la aplicación}{68}{subsubsection*.131}%
+\contentsline {subsection}{\numberline {6.3.3}APIs y librerías utilizadas}{68}{subsection.6.3.3}%
+\contentsline {subsubsection}{Librerías}{68}{subsubsection*.132}%
+\contentsline {subsubsection}{APIs: OpenAi y MongoDB}{69}{subsubsection*.133}%
+\contentsline {paragraph}{Contexto:}{69}{paragraph*.134}%
+\contentsline {paragraph}{Datos:}{69}{paragraph*.135}%
+\contentsline {paragraph}{Petición:}{69}{paragraph*.136}%
+\contentsline {paragraph}{MongoDB:}{70}{paragraph*.137}%
+\contentsline {paragraph}{API de MongoDB}{70}{paragraph*.138}%
+\contentsline {chapter}{\numberline {7}Pruebas}{72}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Introducción}{72}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Plan de pruebas unitarias, integración y sistema}{72}{subsection.7.1.1}%
+\contentsline {subsubsection}{Pruebas Unitarias}{72}{subsubsection*.139}%
+\contentsline {subsubsection}{Pruebas de Integración}{72}{subsubsection*.140}%
+\contentsline {subsubsection}{Pruebas de Sistema}{73}{subsubsection*.141}%
+\contentsline {subsubsection}{Enfoque de Pruebas Continuas}{73}{subsubsection*.142}%
+\contentsline {subsection}{\numberline {7.1.2}Pruebas de aceptación}{73}{subsection.7.1.2}%
+\contentsline {subsection}{\numberline {7.1.3}Pruebas realizadas por los marketplaces}{74}{subsection.7.1.3}%
+\contentsline {section}{\numberline {7.2}Resultados de las pruebas}{74}{section.7.2}%
+\contentsline {chapter}{\numberline {8}Conclusiones}{75}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Logros Alcanzados}{75}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Desafíos y Soluciones}{76}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Aprendizajes}{76}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Conclusión Final}{76}{section.8.4}%
+\contentsline {chapter}{\numberline {9}Futuros Objetivos}{77}{chapter.9}%
+\contentsline {chapter}{Bibliografía}{81}{appendix*.143}%
